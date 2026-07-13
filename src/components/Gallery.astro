@@ -3,6 +3,8 @@ import { getI18n } from '../i18n/ui';
 const { messages } = getI18n(Astro.url);
 const g = messages.gallery;
 const images = Array.from({ length: 22 }, (_, i) => `/gallery/cascadas-de-tocoihue-${String(i + 1).padStart(2, '0')}.jpg`);
+const captions = g.captions ?? [];
+const heights = ['h-72', 'h-96', 'h-80', 'h-[22rem]', 'h-64', 'h-[21rem]'];
 ---
 
 <section id="gallery" class="section-padding" style="background: var(--bg-secondary);">
@@ -10,17 +12,20 @@ const images = Array.from({ length: 22 }, (_, i) => `/gallery/cascadas-de-tocoih
     <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">{g.title}</h2>
     <p class="text-center text-lg mb-10" style="color: var(--text-secondary);">{g.subtitle}</p>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
-      {images.map((src) => (
-        <div class="gallery-item">
-          <img src={src} alt={g.photoAlt} loading="lazy" class="w-full h-56 object-cover" />
-        </div>
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4" id="gallery-grid">
+      {images.map((src, index) => (
+        <figure class="gallery-item relative mb-4 break-inside-avoid rounded-2xl overflow-hidden border" style="border-color: var(--border-color); box-shadow: var(--card-shadow);">
+          <img src={src} alt={captions[index] ?? g.photoAlt} loading="lazy" class={`w-full object-cover ${heights[index % heights.length]}`} />
+          <figcaption class="absolute inset-x-0 bottom-0 p-4 text-sm leading-relaxed text-white" style="background: linear-gradient(180deg, rgba(8,18,13,0) 0%, rgba(8,18,13,0.82) 100%);">
+            {captions[index] ?? g.photoAlt}
+          </figcaption>
+        </figure>
       ))}
     </div>
 
     <div class="text-center mt-8 flex flex-col sm:flex-row gap-4 justify-center">
       <a href={g.mapsUrl} target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full font-semibold text-white" style="background: var(--accent);">
-        📍 {g.viewAll}
+        {g.viewAll}
       </a>
     </div>
   </div>

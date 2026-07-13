@@ -20,11 +20,35 @@
     "toggleTheme": "Toggle theme"
   },
   "hero": {
-    "title": "Cascadas de Tocoihue",
-    "subtitle": "A waterfall wrapped in native forest on the Isla Grande de Chiloé, on Huilliche Mapuche territory, a few kilometres from Dalcahue in the Los Lagos Region.",
+    "eyebrow": "Chiloe Temperate Rainforest Reserve",
+    "title": "Cascadas de Tocoihue: Into Chiloe's Native Rainforest and Huilliche Legendscape",
+    "subtitle": "Set on ancestral Huilliche territory a short drive from Dalcahue, this waterfall combines an easy forest walk, basalt geology and cultural interpretation in one of Chiloe's most rewarding nature visits.",
     "rating": "4.7(6,071)",
     "reviewCount": "6,071 reviews",
     "hours": "Typically open by day, ~09:00–18:00 (summer)",
+    "locationNote": "About 18 km east of Dalcahue via the U-48 gravel road",
+    "primaryCta": {
+      "label": "Plan Your Visit",
+      "href": "#transport",
+      "external": false
+    },
+    "secondaryCta": {
+      "label": "Explore Reserve History",
+      "href": "#history",
+      "external": false
+    },
+    "advisory": {
+      "title": "Today's Planning Note",
+      "weatherLabel": "Weather",
+      "weatherText": "Weather shifts quickly on Chiloe; showers are common, so waterproof outerwear and grippy shoes are recommended.",
+      "roadLabel": "Road Access",
+      "roadText": "The gravel road to Tocoihue is usually passable, but after heavy rain it is wise to confirm same-day conditions in Dalcahue."
+    },
+    "factCards": [
+      { "label": "Trail Length", "value": "About 600 m one way" },
+      { "label": "Difficulty", "value": "Easy, family-friendly" },
+      { "label": "Visit Time", "value": "1.5 to 2 hours" }
+    ],
     "openMaps": "View Location",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
@@ -38,6 +62,14 @@
         "Located in the rural sector of Tocoihue, Dalcahue commune, about 18 km from town.",
         "Gravel road and dirt trails; wear suitable shoes and allow time to walk.",
         "Entry to the reserve has a modest fee paid on arrival; confirm the amount on site."
+      ]
+    },
+    "hikingMetrics": {
+      "title": "Trail Snapshot",
+      "items": [
+        { "label": "Trail Length", "value": "About 600 m one way" },
+        { "label": "Difficulty", "value": "Easy / family-friendly" },
+        { "label": "Visit Duration", "value": "1.5 to 2 hours" }
       ]
     },
     "alsoKnownAs": {
@@ -74,16 +106,6 @@
       },
       {
         "label": "Option 02",
-        "title": "Train",
-        "description": "There is no passenger rail service to Chiloé: the island has no railway connection, so train is not an option for reaching the waterfalls.",
-        "details": [
-          "If your trip includes train in southern Chile, you will only use it as far as Puerto Montt or another mainland city.",
-          "From the mainland, the final leg to Chiloé is always by road or ferry.",
-          "In practice, plan your trip to Tocoihue by plane, bus or car."
-        ]
-      },
-      {
-        "label": "Option 03",
         "title": "Public Transport",
         "description": "This is the cheapest way to reach Dalcahue. Buses run frequently from Puerto Montt and from Castro to Dalcahue.",
         "details": [
@@ -93,7 +115,7 @@
         ]
       },
       {
-        "label": "Option 04",
+        "label": "Option 03",
         "title": "Chacao Bridge / Ferry",
         "description": "To enter Chiloé from the mainland you cross the Chacao Channel. Today the crossing is made by the Chacao Bridge, linking Pargua with the island.",
         "details": [
@@ -103,7 +125,7 @@
         ]
       },
       {
-        "label": "Option 05",
+        "label": "Option 04",
         "title": "Taxi / Private Transfer",
         "description": "From Dalcahue or Castro, a taxi or private tour is the most comfortable way to cover the ~18 km of rural road to the reserve.",
         "details": [
@@ -113,7 +135,7 @@
         ]
       },
       {
-        "label": "Option 06",
+        "label": "Option 05",
         "title": "Self-Drive",
         "description": "Driving gives you freedom to explore Chiloé. From Puerto Montt take Route 5 to Pargua, cross the Chacao Channel and continue to Dalcahue, then take Route U-48 towards Tocoihue.",
         "details": [
@@ -123,7 +145,7 @@
         ]
       },
       {
-        "label": "Option 07",
+        "label": "Option 06",
         "title": "Cycling / Walking",
         "description": "From Dalcahue, cyclists can tackle the rural road, though the ~18 km of gravel demands good fitness and a suitable bike.",
         "details": [
@@ -139,12 +161,34 @@
       "The weather changes fast in Chiloé: bring a windbreaker and shoes that can get wet.",
       "If driving your own car, ask in Dalcahue about the gravel road condition that same day."
     ],
+    "packingListTitle": "Packing List",
+    "packingList": [
+      "Waterproof jacket",
+      "Grippy walking or hiking shoes",
+      "Cash for entry and local services",
+      "Reusable water bottle"
+    ],
+    "ticketReference": {
+      "title": "Typical Entry Fee",
+      "range": "Usually CLP 2,000 - 4,000",
+      "note": "Amounts may vary by season and site management; cash is often the safest option."
+    },
     "mapsCta": "View Map & Route",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
   "officialManagement": {
     "title": "About the Cascadas de Tocoihue",
-    "text": "The waterfalls lie within a public-use nature reserve in the rural sector of the Dalcahue commune, on the Isla Grande de Chiloé, Los Lagos Region. The site protects a stretch of the Tocoihue River and its surrounding native forest, and is managed as a conservation property with visitor access. The surroundings are part of ancestral Huilliche territory and of the ecoregion of Chiloé's temperate rainforests, noted for their rich diversity of lichens, ferns and birds."
+    "text": "The waterfalls lie within a public-use nature reserve in the rural sector of the Dalcahue commune, on the Isla Grande de Chiloé, Los Lagos Region. The site protects a stretch of the Tocoihue River and its surrounding native forest, and is managed as a conservation property with visitor access. The surroundings are part of ancestral Huilliche territory and of the ecoregion of Chiloé's temperate rainforests, noted for their rich diversity of lichens, ferns and birds.",
+    "mission": {
+      "eyebrow": "Non-profit & Conservation",
+      "title": "Reserve Mission",
+      "text": "Visitor income helps maintain trails and viewpoints, care for the river corridor and support local educational and interpretive work connected with the Huilliche landscape.",
+      "items": [
+        "Maintain safe access infrastructure and basic visitor services",
+        "Support native forest protection and recovery",
+        "Contribute to community-based interpretation and environmental education"
+      ]
+    }
   },
   "knowledge": {
     "title": "History, Meaning & Legend of the Cascadas de Tocoihue",
@@ -169,12 +213,67 @@
         "title": "A symbol of natural Chiloé",
         "content": "Today the Cascadas de Tocoihue are one of the most loved nature outings near Dalcahue and a landmark of Chiloé's Route of the Waterfalls. Far from the bustle of big cities, they offer a close and accessible experience of the island's temperate forest, with the added value of standing on Huilliche territory. For anyone touring Chiloé in search of its nature and its stories, Tocoihue is an almost mandatory stop."
       }
-    ]
+    ],
+    "speciesGuide": {
+      "eyebrow": "Species Field Notes",
+      "title": "Four organisms that help explain the landscape",
+      "subtitle": "The waterfall is only one visible expression of a larger temperate rainforest system shaped by trees, ferns, mosses and wetland fauna.",
+      "items": [
+        {
+          "name": "Ulmo",
+          "latin": "Eucryphia cordifolia",
+          "imagePrompt": "botanical field guide style photo of Eucryphia cordifolia tree in the temperate rainforest of Chiloé, mossy bark, humid atmosphere, soft natural light, realistic scientific illustration aesthetic",
+          "description": "A characteristic evergreen tree of southern Chilean rainforests, often associated with mossy bark and humid forest structure."
+        },
+        {
+          "name": "Coihue",
+          "latin": "Nothofagus dombeyi",
+          "imagePrompt": "realistic field guide image of Nothofagus dombeyi in southern Chile temperate rainforest, tall evergreen beech tree, wet forest floor, scientific natural history photography",
+          "description": "A dominant canopy tree that helps stabilise slopes and shade the watershed."
+        },
+        {
+          "name": "Rainforest Ferns",
+          "latin": "Blechnum spp. / Hymenophyllum spp.",
+          "imagePrompt": "macro natural history image of Chiloé rainforest ferns and filmy ferns, dripping leaves, moss, cool green palette, realistic botanical documentary photography",
+          "description": "Ferns and filmy ferns indicate persistent humidity and a well-preserved forest understory."
+        },
+        {
+          "name": "South American Rail",
+          "latin": "Pardirallus sanguinolentus",
+          "imagePrompt": "realistic bird field guide portrait of Pardirallus sanguinolentus in wet grassland near temperate rainforest in Chiloé, soft overcast light, scientific wildlife photography",
+          "description": "Wetland birds in the valley remind visitors that the waterfall is part of a broader hydrological ecosystem."
+        }
+      ]
+    }
   },
   "gallery": {
     "title": "Photo Gallery",
     "subtitle": "The waterfall and the native forest of Tocoihue, on the Isla Grande de Chiloé",
     "photoAlt": "Cascadas de Tocoihue in its Chiloé native forest setting",
+    "captions": [
+      "Main waterfall in early mist, with basalt wall and forest edge in view",
+      "The falls appearing through a break in the forest along the trail",
+      "Mid-fall section seen from near the viewpoint",
+      "Higher post-rain flow against the deep green forest backdrop",
+      "Native canopy structure near the walking route",
+      "Fern-rich understory shaped by constant humidity",
+      "Close detail of the basalt wall and its water-cut texture",
+      "Low-angle view of spray and rock at the base of the falls",
+      "Forest path leading toward the viewpoint",
+      "Transition between rural edge and protected forest interior",
+      "Waterfall and evergreen woodland in one frame",
+      "Rain-season volume giving the falls a heavier profile",
+      "Lichen-covered trunks typical of clean, humid air",
+      "Side view that reveals the drop and channel cut",
+      "Root systems and leaf litter holding moisture in the trail zone",
+      "Upward view combining canopy and waterfall crest",
+      "Mossy rock surfaces in the shaded lower forest",
+      "Vertical composition highlighting relief and water descent",
+      "Clearer valley opening on a brighter day",
+      "Close study of water texture and fine spray",
+      "Quiet return section of trail within the reserve",
+      "A final backward view before leaving the site"
+    ],
     "viewAll": "View Location on Google Maps",
     "showMore": "Show More Photos",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
@@ -224,6 +323,7 @@
     "terms": "Terms of Service",
     "cookies": "Cookie Settings",
     "officialResourcesTitle": "Official & Reference Resources",
+    "legalTitle": "Privacy & Terms",
     "mapsLabel": "Google Maps →",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
     "officialLinksList": [

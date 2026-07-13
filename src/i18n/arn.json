@@ -20,11 +20,35 @@
     "toggleTheme": "Reke ñi küyen"
   },
   "hero": {
+    "eyebrow": "Bosque nativo Chiloé mapu",
     "title": "Cascadas de Tocoihue",
-    "subtitle": "Füta co Chiloé mapu mew, Huilliche Wallmapu, Dalcahue püle, Los Lagos.",
+    "subtitle": "Füta co Chiloé mapu mew, Huilliche Wallmapu, Dalcahue püle. Perim pichi, bosque nativo ha jeréia mapu oñondive.",
     "rating": "4,7(6.071)",
     "reviewCount": "6.071 dungu",
     "hours": "Antü rupu, ~09:00–18:00",
+    "locationNote": "Dalcahue guive 18 km püle, U-48 ripia rupi",
+    "primaryCta": {
+      "label": "Plan visita",
+      "href": "#transport",
+      "external": false
+    },
+    "secondaryCta": {
+      "label": "Ehecha jeréia",
+      "href": "#history",
+      "external": false
+    },
+    "advisory": {
+      "title": "Neresẽ mboyve",
+      "weatherLabel": "Küyen",
+      "weatherText": "Chiloé mew oky pya'e oñemboí; impermeable ha sapatu agarre porãva egueru.",
+      "roadLabel": "Ripa",
+      "roadText": "Tocoihue ripia rupi jepive oiko, hána oky tuicha rire Dalcahue pe ehecha estado."
+    },
+    "factCards": [
+      { "label": "Perim", "value": "600 m rupi peteĩ tape" },
+      { "label": "Dificultad", "value": "Pichi, familia-pe iporã" },
+      { "label": "Aravo", "value": "1,5 ha 2 aravo" }
+    ],
     "openMaps": "Kinu mapu",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
@@ -38,6 +62,14 @@
         "Tocoihue mapu, Dalcahue, Chiloé füta wentru, ~18 km püle.",
         "Ripa ruka ha co ñi pünon; maki kañi küzaw.",
         "Reserva ogusteta viru michĩ, ehecha tenda-pe."
+      ]
+    },
+    "hikingMetrics": {
+      "title": "Perim ficha",
+      "items": [
+        { "label": "Puku", "value": "600 m rupi peteĩ tape" },
+        { "label": "Dificultad", "value": "Pichi / familia" },
+        { "label": "Aravo", "value": "1,5 ha 2 aravo" }
       ]
     },
     "alsoKnownAs": {
@@ -72,16 +104,6 @@
       },
       {
         "label": "Tape 02",
-        "title": "Tren",
-        "description": "Chiloé mew ndaipóri tren paisano. Tren ndaha'éi opción Tocoihue pe hag̃ua.",
-        "details": [
-          "Tren reipuru ramo, Puerto Montt peveña.",
-          "Continente guive, Chiloé pe ruta térã transbordador.",
-          "Tocoihue pe avión, bus térã auto iporãve."
-        ]
-      },
-      {
-        "label": "Tape 03",
         "title": "Bus",
         "description": "Dalcahue pe hag̃ua opción mba'evai. Bus oiko Puerto Montt ha Castro guive Dalcahue pe.",
         "details": [
@@ -91,7 +113,7 @@
         ]
       },
       {
-        "label": "Tape 04",
+        "label": "Tape 03",
         "title": "Chacao pünon",
         "description": "Continente guive Chiloé pe Chacao canal ohasa. Ko'ágã Chacao puente ojuaju Pargua ha Chiloé.",
         "details": [
@@ -101,7 +123,7 @@
         ]
       },
       {
-        "label": "Tape 05",
+        "label": "Tape 04",
         "title": "Taxi / traslado",
         "description": "Dalcahue térã Castro guive, taxi térã tour iporãve 18 km ripia rupi reserva pe.",
         "details": [
@@ -111,7 +133,7 @@
         ]
       },
       {
-        "label": "Tape 06",
+        "label": "Tape 05",
         "title": "Auto",
         "description": "Auto reg̃uahẽ Chiloé. Puerto Montt guive Ruta 5 Pargua pe, Chacao ohasa, Dalcahue pe, upéi Ruta U-48 Tocoihue pe.",
         "details": [
@@ -121,7 +143,7 @@
         ]
       },
       {
-        "label": "Tape 07",
+        "label": "Tape 06",
         "title": "Bicicleta / perim",
         "description": "Dalcahue guive, bicicleta iporã 18 km ripia rupi, küzaw ha bicicleta oñecesita.",
         "details": [
@@ -137,12 +159,34 @@
       "Küyen oñemboí Chiloé mew; küzaw kañi.",
       "Auto reg̃uahẽ ramo, Dalcahue pe ripia rehe ehecha."
     ],
+    "packingListTitle": "Mba'e egueraha",
+    "packingList": [
+      "Chaqueta impermeable",
+      "Sapatu agarre porãva",
+      "Viru efectivo",
+      "Y botella"
+    ],
+    "ticketReference": {
+      "title": "Entrada referencial",
+      "range": "CLP 2.000 - 4.000 rupi",
+      "note": "Temporada rupive oñemboí; efectivo iporãve."
+    },
     "mapsCta": "Ehecha mapa ha tape",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
   "officialManagement": {
     "title": "Cascadas de Tocoihue ñemombe'u",
-    "text": "Co kütral reserva natural mew, Dalcahue mapu, Chiloé füta wentru, Los Lagos. Tocoihue rupa ha bosque nativo oñangareko, Wallmapu Huilliche ha Chiloé mapu. Lichen, helecho ha püñi oĩ."
+    "text": "Co kütral reserva natural mew, Dalcahue mapu, Chiloé füta wentru, Los Lagos. Tocoihue rupa ha bosque nativo oñangareko, Wallmapu Huilliche ha Chiloé mapu. Lichen, helecho ha püñi oĩ.",
+    "mission": {
+      "eyebrow": "Conservación",
+      "title": "Reserva misión",
+      "text": "Visitante viru oipytyvõ sendero, mirador ha río borde oñangareko, ha educación ambiental local.",
+      "items": [
+        "Sendero ha mirador mantención",
+        "Bosque nativo ñangareko",
+        "Comunidad ha educación apoyo"
+      ]
+    }
   },
   "knowledge": {
     "title": "Cascadas de Tocoihue jeréia, hesa'ỹ ha ñe'ẽnga",
@@ -167,12 +211,67 @@
         "title": "Chiloé mapu",
         "content": "Ko'ágã Cascadas de Tocoihue ha'e Dalcahue püle küme, Chiloé co ruta. Wallmapu Huilliche mew. Chiloé mapu ha jeréia büsqueda ramo, Tocoihue ha'e tape oñecesitáva."
       }
-    ]
+    ],
+    "speciesGuide": {
+      "eyebrow": "Mongen micro guía",
+      "title": "Meli mongen ko mapu omombe'u",
+      "subtitle": "Füta co añoite ndaha'éi; bosque, helecho, musgo ha püñi oñondive ko küme mapu ojapo.",
+      "items": [
+        {
+          "name": "Ulmo",
+          "latin": "Eucryphia cordifolia",
+          "imagePrompt": "botanical field guide style photo of Eucryphia cordifolia tree in the temperate rainforest of Chiloé, mossy bark, humid atmosphere, soft natural light, realistic scientific illustration aesthetic",
+          "description": "Árbol nativo húmedo bosque mew."
+        },
+        {
+          "name": "Coigüe",
+          "latin": "Nothofagus dombeyi",
+          "imagePrompt": "realistic field guide image of Nothofagus dombeyi in southern Chile temperate rainforest, tall evergreen beech tree, wet forest floor, scientific natural history photography",
+          "description": "Bosque dosel tuicháva, suelo oñangareko."
+        },
+        {
+          "name": "Helecho",
+          "latin": "Blechnum spp. / Hymenophyllum spp.",
+          "imagePrompt": "macro natural history image of Chiloé rainforest ferns and filmy ferns, dripping leaves, moss, cool green palette, realistic botanical documentary photography",
+          "description": "Humedad ha sotobosque ohechauka."
+        },
+        {
+          "name": "Ave humedal",
+          "latin": "Pardirallus sanguinolentus",
+          "imagePrompt": "realistic bird field guide portrait of Pardirallus sanguinolentus in wet grassland near temperate rainforest in Chiloé, soft overcast light, scientific wildlife photography",
+          "description": "Río ha humedal sistema guasu rehe momarandu."
+        }
+      ]
+    }
   },
   "gallery": {
     "title": "Ta'anga aty",
     "subtitle": "Co kütral ha bosque nativo Tocoihue, Chiloé füta wentru",
     "photoAlt": "Cascadas de Tocoihue bosque nativo Chiloé mew",
+    "captions": [
+      "Füta co niebla ndive",
+      "Bosque rupi ehecha co",
+      "Mirador püle co mbyte",
+      "Oky rire co hetave",
+      "Bosque dosel sendero ykére",
+      "Helecho ha musgo sotobosque mew",
+      "Basalto ruka detalle",
+      "Spray ha kueri yvýre",
+      "Sendero mirador pe",
+      "Campo ha bosque transición",
+      "Co ha bosque oñondive",
+      "Temporada oky perfil tuicháva",
+      "Lichen tronco rehe",
+      "Costado guive altura ehecha",
+      "Rapo ha hoja yvýre",
+      "Yvate guive co ha copa",
+      "Musgo kueri sombreado mew",
+      "Vertical relief composición",
+      "Ára porã valle apertura",
+      "Co textura ha bruma",
+      "Reserva ryepýpe silencio tape",
+      "Ipahápe peteĩ jehecha"
+    ],
     "viewAll": "Ehecha Google Maps-pe",
     "showMore": "Ehecha ta'angave",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
@@ -222,6 +321,7 @@
     "terms": "Eipuru reko",
     "cookies": "Cookie",
     "officialResourcesTitle": "Oficial ha referencia",
+    "legalTitle": "Privacidad ha reko",
     "mapsLabel": "Google Maps →",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
     "officialLinksList": [

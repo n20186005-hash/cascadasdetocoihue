@@ -20,11 +20,44 @@
     "toggleTheme": "切换主题"
   },
   "hero": {
-    "title": "Tocoihue 瀑布",
-    "subtitle": "一座被原生森林环抱的瀑布，位于奇洛埃大岛（Isla Grande de Chiloé）的惠利切（Huilliche）马普切人领地上，距湖大区达尔卡韦镇仅数公里。",
+    "eyebrow": "奇洛埃温带雨林保护地",
+    "title": "Tocoihue 瀑布：深入奇洛埃原生雨林与惠利切传说的秘境",
+    "subtitle": "从达尔卡韦出发，沿短途步道穿过惠利切（Huilliche） ancestral territory 上的原生森林，抵达玄武岩壁间倾泻而下的主瀑布。这里兼具轻徒步、地质观察与文化叙事，是奇洛埃最值得专程造访的自然落点之一。",
     "rating": "4.7(6,071)",
     "reviewCount": "6,071 条评价",
     "hours": "通常白天开放，约 09:00–18:00（夏季）",
+    "locationNote": "达尔卡韦以东约 18 公里，U-48 碎石路可达",
+    "primaryCta": {
+      "label": "规划您的行程",
+      "href": "#transport",
+      "external": false
+    },
+    "secondaryCta": {
+      "label": "探索保护区历史",
+      "href": "#history",
+      "external": false
+    },
+    "advisory": {
+      "title": "出发前提示",
+      "weatherLabel": "天气",
+      "weatherText": "奇洛埃天气变化快，阵雨与低云常见；若当天降雨，请改穿防水外套与防滑鞋。",
+      "roadLabel": "路况",
+      "roadText": "达尔卡韦至 Tocoihue 的碎石路通常可通行；连续强降雨后建议先在镇上确认 U-48 当日状态。"
+    },
+    "factCards": [
+      {
+        "label": "步道长度",
+        "value": "单程约 600 米"
+      },
+      {
+        "label": "徒步难度",
+        "value": "初级，适合家庭"
+      },
+      {
+        "label": "建议停留",
+        "value": "1.5 至 2 小时"
+      }
+    ],
     "openMaps": "查看位置",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
@@ -37,7 +70,24 @@
         "仅白天开放；夏季通常约 09:00–18:00，出行前请确认。",
         "位于达尔卡韦镇 Tocoihue 乡村地带，距镇上约 18 公里。",
         "最后一段为碎石路和土路步道，请穿合适的鞋并预留步行时间。",
-        "进入保护区需支付少量门票，于抵达时缴纳，金额以现场为准。"
+        "进入保护区需支付少量门票，于抵达时缴纳；多数情况下仅收现金。"
+      ]
+    },
+    "hikingMetrics": {
+      "title": "徒步技术指标",
+      "items": [
+        {
+          "label": "步道长度",
+          "value": "单程约 600 米"
+        },
+        {
+          "label": "难度等级",
+          "value": "初级 / 适合家庭"
+        },
+        {
+          "label": "游览耗时",
+          "value": "1.5 - 2 小时"
+        }
       ]
     },
     "alsoKnownAs": {
@@ -74,16 +124,6 @@
       },
       {
         "label": "方式 02",
-        "title": "火车",
-        "description": "奇洛埃岛没有客运铁路，因此火车并非前往瀑布的可行方式。",
-        "details": [
-          "若行程包含南部智利的火车，通常只能坐到蒙特港等大陆城市为止。",
-          "从大陆到奇洛埃的最后一段始终是公路或过海峡渡轮。",
-          "实际上，前往 Tocoihue 建议以飞机、大巴或自驾规划。"
-        ]
-      },
-      {
-        "label": "方式 03",
         "title": "公共交通",
         "description": "这是到达达尔卡韦最经济的方式。蒙特港与卡斯特罗均有频繁班次的大巴前往达尔卡韦。",
         "details": [
@@ -93,7 +133,7 @@
         ]
       },
       {
-        "label": "方式 04",
+        "label": "方式 03",
         "title": "查卡奥大桥 / 渡轮",
         "description": "从大陆进入奇洛埃需跨越查卡奥海峡。如今通过连接帕尔瓜（Pargua）与岛屿的查卡奥大桥通行。",
         "details": [
@@ -103,7 +143,7 @@
         ]
       },
       {
-        "label": "方式 05",
+        "label": "方式 04",
         "title": "出租车 / 包车",
         "description": "从达尔卡韦或卡斯特罗出发，出租车或私人游览团是走完约 18 公里乡村公路最省力的方式。",
         "details": [
@@ -113,7 +153,7 @@
         ]
       },
       {
-        "label": "方式 06",
+        "label": "方式 05",
         "title": "自驾",
         "description": "自驾可自由探索奇洛埃。从蒙特港走 5 号公路到帕尔瓜，过查卡奥海峡后继续前往达尔卡韦，再经 U-48 公路驶向 Tocoihue。",
         "details": [
@@ -123,7 +163,7 @@
         ]
       },
       {
-        "label": "方式 07",
+        "label": "方式 06",
         "title": "骑行 / 步行",
         "description": "从达尔卡韦出发，骑行者可挑战这条乡村公路，但约 18 公里的碎石路对体力和车辆都有要求。",
         "details": [
@@ -139,12 +179,34 @@
       "奇洛埃天气变化快：带防风衣和可沾水的鞋。",
       "若自驾，当天在达尔卡韦询问碎石路的路况。"
     ],
+    "packingListTitle": "到达前的打包清单",
+    "packingList": [
+      "防风防水夹克",
+      "防滑登山鞋或可沾水的步行鞋",
+      "现金，现场可能无稳定信号",
+      "可重复灌装水壶"
+    ],
+    "ticketReference": {
+      "title": "门票参考",
+      "range": "通常约 2,000 - 4,000 智利比索",
+      "note": "价格可能因季节与管理安排调整；多数情况下请准备现金，并以入口现场公告为准。"
+    },
     "mapsCta": "查看地图与路线",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
   "officialManagement": {
     "title": "关于 Tocoihue 瀑布",
-    "text": "瀑布位于湖大区奇洛埃大岛达尔卡韦镇乡村地带的一处对公众开放的自然保护区内。该地点保护着托科伊韦河的一段河道及其周边原生森林，作为具有游客访问权的私有保护地经营管理。周边属于古老的惠利切人领地，也是奇洛埃温带雨林生态区的一部分，以丰富的地衣、蕨类与鸟类多样性著称。"
+    "text": "瀑布位于湖大区奇洛埃大岛达尔卡韦镇乡村地带的一处对公众开放的自然保护区内。该地点保护着托科伊韦河的一段河道及其周边原生森林，作为具有游客访问权的私有保护地经营管理。周边属于古老的惠利切人领地，也是奇洛埃温带雨林生态区的一部分，以丰富的地衣、蕨类与鸟类多样性著称。",
+    "mission": {
+      "eyebrow": "非营利与保护",
+      "title": "保护区使命",
+      "text": "这片保护地的访客收入主要用于维持步道、处理垃圾、保护河道缓冲带，并支持当地社区导览与环境教育。对游客而言，门票不仅是入场成本，也是对原生林与惠利切文化景观持续保存的一次直接投入。",
+      "items": [
+        "维护托科伊韦河沿岸步道、观景台与安全设施",
+        "支持原生林恢复，重点关注 coihue、ulmo、tique 与 canelo 群落",
+        "为惠利切社区相关的口述史、地方导览与教育活动提供基础支持"
+      ]
+    }
   },
   "knowledge": {
     "title": "Tocoihue 瀑布的历史、寓意与传说",
@@ -169,12 +231,67 @@
         "title": "自然奇洛埃的象征",
         "content": "如今，Tocoihue 瀑布是达尔卡韦周边最受喜爱的自然去处之一，也是奇洛埃“瀑布之路”上的地标。远离大城市的喧嚣，它让人近距离、轻松地体验岛上的温带森林，更因坐落于惠利切人领地而别具价值。对任何一个在奇洛埃寻找其自然与故事的人来说，Tocoihue 几乎是必到的一站。"
       }
-    ]
+    ],
+    "speciesGuide": {
+      "eyebrow": "物种微图鉴",
+      "title": "为何是这般景致？从林冠到林下的四种代表性生命",
+      "subtitle": "这片温带雨林并不只是一道瀑布背景。它由常绿阔叶树、附生植物、苔藓与湿地鸟类共同构成，也正是这些生命维持了 Tocoihue 的湿润、清凉与水体清澈。",
+      "items": [
+        {
+          "name": "Ulmo",
+          "latin": "Eucryphia cordifolia",
+          "imagePrompt": "botanical field guide style photo of Eucryphia cordifolia tree in the temperate rainforest of Chiloé, mossy bark, humid atmosphere, soft natural light, realistic scientific illustration aesthetic",
+          "description": "Ulmo 是奇洛埃常见的蜜源树种之一，树干常覆苔藓与地衣。它在湿润气候中生长良好，也是森林上层结构的重要组成。"
+        },
+        {
+          "name": "Coihue",
+          "latin": "Nothofagus dombeyi",
+          "imagePrompt": "realistic field guide image of Nothofagus dombeyi in southern Chile temperate rainforest, tall evergreen beech tree, wet forest floor, scientific natural history photography",
+          "description": "智利南假山毛榉（coihue）是南部温带森林的代表树种，形成高大林冠，稳定坡地土壤，并为河流流域提供遮阴与保水作用。"
+        },
+        {
+          "name": "Chiloé 蕨类群落",
+          "latin": "Blechnum spp. / Hymenophyllum spp.",
+          "imagePrompt": "macro natural history image of Chiloé rainforest ferns and filmy ferns, dripping leaves, moss, cool green palette, realistic botanical documentary photography",
+          "description": "林下的蕨类与薄膜蕨偏好持续高湿环境，它们帮助维持地表微气候，也是判断森林保存状况的重要视觉线索。"
+        },
+        {
+          "name": "南美灰头秧鸡",
+          "latin": "Pardirallus sanguinolentus",
+          "imagePrompt": "realistic bird field guide portrait of Pardirallus sanguinolentus in wet grassland near temperate rainforest in Chiloé, soft overcast light, scientific wildlife photography",
+          "description": "河谷与湿地边缘常吸引多种鸟类活动。南美灰头秧鸡等湿地鸟类提醒人们，这里的瀑布景观与周边水文生态系统密不可分。"
+        }
+      ]
+    }
   },
   "gallery": {
     "title": "照片画廊",
     "subtitle": "奇洛埃大岛 Tocoihue 的瀑布与原生森林",
     "photoAlt": "奇洛埃原生森林环境中的 Tocoihue 瀑布",
+    "captions": [
+      "清晨薄雾中的主瀑布，全景可见玄武岩壁与林缘轮廓",
+      "从步道转角远望瀑布，水流在林隙间突然展开",
+      "靠近观景台时的瀑布中段，适合观察水雾与岩壁纹理",
+      "雨后水量较大时的主瀑布，白色水柱与深绿森林形成强烈反差",
+      "步道旁的原生林冠层，coihue 与 ulmo 共同构成遮阴环境",
+      "湿润林下的蕨类与苔藓，体现奇洛埃温带雨林的高湿特征",
+      "玄武岩壁近景，可见流水长期侵蚀形成的层理与裂隙",
+      "从低角度观察瀑布底部，水雾在岩面前形成细密反光",
+      "通向观景台的林间步道，碎石与土路交替出现",
+      "接近入口区域的林缘地带，便于理解保护区与乡村景观的过渡",
+      "瀑布前景与背景森林同框，呈现奇洛埃典型的常绿环境",
+      "雨季时更显丰沛的水量，瀑布轮廓也更为厚重",
+      "沿路可见覆盖地衣的树干，显示空气湿度与生态保存状况",
+      "从侧面观察瀑布落差，更容易理解河道切割出的高度变化",
+      "步道边缘的树根与落叶层，是林地保水的重要组成",
+      "观景台附近向上仰望，可同时看到瀑布上缘与林冠",
+      "林下阴影中的湿润岩面，适合观察苔藓附着状态",
+      "瀑布与原生森林的纵向构图，突出地形落差感",
+      "天气放晴时的瀑布外围，层次更清楚地显现河谷开口",
+      "近距离的水流纹理，能够看见喷溅形成的细碎水幕",
+      "步道回程段的林地景观，展现保护区内部的静谧氛围",
+      "离开前回望瀑布的最后一瞥，适合作为整段游览的视觉收束"
+    ],
     "viewAll": "在 Google 地图上查看位置",
     "showMore": "显示更多照片",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
@@ -224,6 +341,7 @@
     "terms": "服务条款",
     "cookies": "Cookie 设置",
     "officialResourcesTitle": "官方与参考资源",
+    "legalTitle": "隐私与条款",
     "mapsLabel": "Google 地图 →",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
     "officialLinksList": [

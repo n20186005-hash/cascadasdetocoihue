@@ -3,6 +3,8 @@ import { getI18n } from '../i18n/ui';
 const { messages } = getI18n(Astro.url);
 const t = messages.knowledge;
 const sections = t.sections;
+const speciesGuide = t.speciesGuide ?? null;
+const imageUrl = (prompt) => `https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=portrait_4_3`;
 ---
 
 <section id="history" class="section-padding" style="background: var(--bg-primary);">
@@ -25,5 +27,28 @@ const sections = t.sections;
         </div>
       ))}
     </div>
+
+    {speciesGuide?.items?.length > 0 && (
+      <div class="mt-16">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--text-muted);">{speciesGuide.eyebrow}</p>
+          <h3 class="font-display text-2xl sm:text-3xl font-semibold mb-3" style="color: var(--text-primary);">{speciesGuide.title}</h3>
+          <p class="text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary);">{speciesGuide.subtitle}</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+          {speciesGuide.items.map((item) => (
+            <article class="rounded-2xl overflow-hidden border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+              <img src={imageUrl(item.imagePrompt)} alt={item.name} loading="lazy" class="w-full h-48 object-cover" />
+              <div class="p-5">
+                <p class="text-xs uppercase tracking-[0.18em] mb-2" style="color: var(--text-muted);">{item.latin}</p>
+                <h4 class="font-semibold text-lg mb-2" style="color: var(--text-primary);">{item.name}</h4>
+                <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{item.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    )}
   </div>
 </section>

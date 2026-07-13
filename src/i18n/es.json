@@ -20,11 +20,35 @@
     "toggleTheme": "Cambiar tema"
   },
   "hero": {
-    "title": "Cascadas de Tocoihue",
-    "subtitle": "Un salto de agua rodeado de bosque nativo en la Isla Grande de Chiloé, en territorio mapuche huilliche, a pocos kilómetros de Dalcahue, en la Región de Los Lagos.",
+    "eyebrow": "Reserva de bosque templado lluvioso",
+    "title": "Cascadas de Tocoihue: lluvia, bosque nativo y memoria huilliche en una sola visita",
+    "subtitle": "A poca distancia de Dalcahue, este salto combina una caminata breve, geología basáltica y el paisaje cultural huilliche en uno de los mejores paseos de naturaleza de Chiloé.",
     "rating": "4,7(6.071)",
     "reviewCount": "6.071 opiniones",
     "hours": "Suele abrir de día, ~09:00–18:00 (verano)",
+    "locationNote": "A unos 18 km de Dalcahue por la ruta de ripio U-48",
+    "primaryCta": {
+      "label": "Planifica tu visita",
+      "href": "#transport",
+      "external": false
+    },
+    "secondaryCta": {
+      "label": "Explora su historia",
+      "href": "#history",
+      "external": false
+    },
+    "advisory": {
+      "title": "Aviso de salida",
+      "weatherLabel": "Clima",
+      "weatherText": "En Chiloé la lluvia puede aparecer sin aviso; conviene llevar capa impermeable y calzado con agarre.",
+      "roadLabel": "Camino",
+      "roadText": "El tramo de ripio hacia Tocoihue suele estar operativo, pero después de lluvias fuertes es mejor consultar el estado del día en Dalcahue."
+    },
+    "factCards": [
+      { "label": "Sendero", "value": "Aprox. 600 m por tramo" },
+      { "label": "Dificultad", "value": "Baja, apta para familias" },
+      { "label": "Tiempo", "value": "1,5 a 2 horas" }
+    ],
     "openMaps": "Ver ubicación",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
@@ -38,6 +62,14 @@
         "Ubicado en el sector rural de Tocoihue, comuna de Dalcahue, a unos 18 km del pueblo.",
         "Camino de ripio y senderos de tierra; lleva calzado adecuado y tiempo para caminar.",
         "La entrada a la reserva tiene una tarifa modesta que se paga al llegar; confirma el monto en el lugar."
+      ]
+    },
+    "hikingMetrics": {
+      "title": "Ficha de sendero",
+      "items": [
+        { "label": "Longitud", "value": "Aprox. 600 m por tramo" },
+        { "label": "Dificultad", "value": "Baja / familiar" },
+        { "label": "Duración", "value": "1,5 a 2 horas" }
       ]
     },
     "alsoKnownAs": {
@@ -74,16 +106,6 @@
       },
       {
         "label": "Opción 02",
-        "title": "Tren",
-        "description": "No existe servicio de pasajeros a Chiloé: la isla no tiene conexión ferroviaria, así que el tren no es una opción para llegar a las cascadas.",
-        "details": [
-          "Si tu viaje incluye tren en el sur de Chile, lo usarás solo hasta Puerto Montt u otra ciudad continental.",
-          "Desde el continente, el tramo final a Chiloé es siempre por carretera o transbordador.",
-          "En la práctica, conviene planear el viaje a Tocoihue por avión, bus o auto."
-        ]
-      },
-      {
-        "label": "Opción 03",
         "title": "Transporte público",
         "description": "Es la opción más económica para llegar a Dalcahue. Hay buses desde Puerto Montt y desde Castro hasta Dalcahue de forma frecuente.",
         "details": [
@@ -93,7 +115,7 @@
         ]
       },
       {
-        "label": "Opción 04",
+        "label": "Opción 03",
         "title": "Transbordador / Puente Chacao",
         "description": "Para entrar a Chiloé desde el continente se cruza el Canal de Chacao. Hoy el cruce se hace por el Puente de Chacao, que une Pargua con la isla.",
         "details": [
@@ -103,7 +125,7 @@
         ]
       },
       {
-        "label": "Opción 05",
+        "label": "Opción 04",
         "title": "Taxi / traslado privado",
         "description": "Desde Dalcahue o Castro, un taxi o un tour privado es la forma más cómoda de cubrir los ~18 km de camino rural hasta la reserva.",
         "details": [
@@ -113,7 +135,7 @@
         ]
       },
       {
-        "label": "Opción 06",
+        "label": "Opción 05",
         "title": "Auto",
         "description": "Conducir te da libertad para recorrer Chiloé. Desde Puerto Montt vas por la Ruta 5 hasta Pargua, cruzas el Canal de Chacao y sigues hasta Dalcahue, luego por la Ruta U-48 hacia Tocoihue.",
         "details": [
@@ -123,7 +145,7 @@
         ]
       },
       {
-        "label": "Opción 07",
+        "label": "Opción 06",
         "title": "Bicicleta / a pie",
         "description": "Desde Dalcahue, los ciclistas pueden encarar el camino rural, aunque los ~18 km de ripio exigen buen estado físico y bicicleta adecuada.",
         "details": [
@@ -139,12 +161,34 @@
       "El clima cambia rápido en Chiloé: lleva cortaviento y calzado que se pueda mojar.",
       "Si vas en auto propio, pregunta en Dalcahue por el estado del camino de ripio ese mismo día."
     ],
+    "packingListTitle": "Lista de equipaje",
+    "packingList": [
+      "Chaqueta cortaviento e impermeable",
+      "Zapatos de trekking o con buena tracción",
+      "Efectivo para entrada y gastos básicos",
+      "Botella reutilizable con agua"
+    ],
+    "ticketReference": {
+      "title": "Entrada referencial",
+      "range": "Normalmente entre CLP 2.000 y 4.000",
+      "note": "El valor puede cambiar según temporada y administración; conviene llevar efectivo."
+    },
     "mapsCta": "Ver mapa y ruta",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
   "officialManagement": {
     "title": "Acerca de las Cascadas de Tocoihue",
-    "text": "Las cascadas se encuentran dentro de una reserva natural de uso público en el sector rural de la comuna de Dalcahue, en la Isla Grande de Chiloé, Región de Los Lagos. El sitio protege un tramo del río Tocoihue y su bosque nativo circundante, y se gestiona como propiedad privada de conservación con acceso de visitantes. El entorno forma parte del territorio ancestral huilliche y de la ecorregión de bosques templados lluviosos de Chiloé, reconocida por su alta diversidad de líquenes, helechos y aves."
+    "text": "Las cascadas se encuentran dentro de una reserva natural de uso público en el sector rural de la comuna de Dalcahue, en la Isla Grande de Chiloé, Región de Los Lagos. El sitio protege un tramo del río Tocoihue y su bosque nativo circundante, y se gestiona como propiedad privada de conservación con acceso de visitantes. El entorno forma parte del territorio ancestral huilliche y de la ecorregión de bosques templados lluviosos de Chiloé, reconocida por su alta diversidad de líquenes, helechos y aves.",
+    "mission": {
+      "eyebrow": "Conservación y comunidad",
+      "title": "Misión de la reserva",
+      "text": "Los ingresos de visitantes ayudan a mantener senderos, cuidar el cauce del río y sostener acciones básicas de interpretación local y educación ambiental ligadas al paisaje huilliche.",
+      "items": [
+        "Mantención de senderos, miradores y servicios básicos",
+        "Protección y recuperación de bosque nativo",
+        "Apoyo a lectura territorial y educación ambiental"
+      ]
+    }
   },
   "knowledge": {
     "title": "Historia, significado y leyenda de las Cascadas de Tocoihue",
@@ -169,12 +213,67 @@
         "title": "Un símbolo de Chiloé natural",
         "content": "Hoy las Cascadas de Tocoihue son uno de los paseos de naturaleza más queridos cerca de Dalcahue y un hito de la Ruta de las Cascadas de Chiloé. Lejos del bullicio de las grandes ciudades, ofrecen una experiencia cercana y accesible del bosque templado insular, con el valor añadido de estar en territorio huilliche. Para quien recorre Chiloé en busca de su naturaleza y sus historias, Tocoihue es una parada casi obligada."
       }
-    ]
+    ],
+    "speciesGuide": {
+      "eyebrow": "Microguía de especies",
+      "title": "Cuatro formas de vida que explican el paisaje",
+      "subtitle": "La cascada es parte de un sistema mayor: árboles, helechos, musgos y fauna de humedal sostienen la humedad y la identidad ecológica del lugar.",
+      "items": [
+        {
+          "name": "Ulmo",
+          "latin": "Eucryphia cordifolia",
+          "imagePrompt": "botanical field guide style photo of Eucryphia cordifolia tree in the temperate rainforest of Chiloé, mossy bark, humid atmosphere, soft natural light, realistic scientific illustration aesthetic",
+          "description": "Árbol emblemático del bosque templado lluvioso, frecuente en sectores húmedos y de gran valor para la estructura del dosel."
+        },
+        {
+          "name": "Coigüe",
+          "latin": "Nothofagus dombeyi",
+          "imagePrompt": "realistic field guide image of Nothofagus dombeyi in southern Chile temperate rainforest, tall evergreen beech tree, wet forest floor, scientific natural history photography",
+          "description": "Especie dominante del bosque, importante para la estabilidad de laderas y la regulación de humedad."
+        },
+        {
+          "name": "Helechos del sotobosque",
+          "latin": "Blechnum spp. / Hymenophyllum spp.",
+          "imagePrompt": "macro natural history image of Chiloé rainforest ferns and filmy ferns, dripping leaves, moss, cool green palette, realistic botanical documentary photography",
+          "description": "Indicadores visibles de alta humedad y de un sotobosque bien conservado."
+        },
+        {
+          "name": "Tagua o ave de humedal",
+          "latin": "Pardirallus sanguinolentus",
+          "imagePrompt": "realistic bird field guide portrait of Pardirallus sanguinolentus in wet grassland near temperate rainforest in Chiloé, soft overcast light, scientific wildlife photography",
+          "description": "Las aves de borde fluvial recuerdan que la cascada forma parte de un sistema hídrico más amplio."
+        }
+      ]
+    }
   },
   "gallery": {
     "title": "Galería de fotos",
     "subtitle": "El salto de agua y el bosque nativo de Tocoihue, en la Isla Grande de Chiloé",
     "photoAlt": "Cascadas de Tocoihue en su entorno de bosque nativo de Chiloé",
+    "captions": [
+      "Vista general de la cascada principal entre niebla baja y bosque nativo",
+      "El salto asomando entre la vegetación desde un tramo del sendero",
+      "Sección media de la caída observada desde el mirador",
+      "Mayor caudal después de la lluvia, con fuerte contraste entre agua y bosque",
+      "Dosel nativo junto a la ruta peatonal",
+      "Sotobosque húmedo dominado por helechos y musgos",
+      "Detalle de la pared basáltica modelada por el río",
+      "Spray y roca observados desde un ángulo bajo",
+      "Tramo de sendero que conduce al mirador",
+      "Transición entre paisaje rural y bosque protegido",
+      "Cascada y bosque siempreverde en una sola escena",
+      "Perfil más robusto del salto en temporada lluviosa",
+      "Troncos cubiertos de líquenes en aire húmedo y limpio",
+      "Vista lateral que revela la altura del salto",
+      "Raíces y hojarasca que conservan la humedad del suelo",
+      "Mirada ascendente hacia copa de árboles y borde superior de la cascada",
+      "Rocas húmedas y musgos en la zona sombreada",
+      "Composición vertical que enfatiza relieve y descenso del agua",
+      "Apertura del valle visible en un día más claro",
+      "Detalle cercano de la textura del agua y la bruma fina",
+      "Regreso silencioso por el interior de la reserva",
+      "Última mirada al salto antes de salir del predio"
+    ],
     "viewAll": "Ver ubicación en Google Maps",
     "showMore": "Mostrar más fotos",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
@@ -224,6 +323,7 @@
     "terms": "Términos del servicio",
     "cookies": "Configuración de cookies",
     "officialResourcesTitle": "Recursos oficiales y de referencia",
+    "legalTitle": "Privacidad y términos",
     "mapsLabel": "Google Maps →",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
     "officialLinksList": [

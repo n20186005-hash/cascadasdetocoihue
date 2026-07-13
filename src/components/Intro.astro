@@ -3,19 +3,40 @@ import { getI18n } from '../i18n/ui';
 const { messages } = getI18n(Astro.url);
 const intro = messages.intro;
 const om = messages.officialManagement;
+const hikingMetrics = intro.hikingMetrics?.items ?? [];
+const mission = om.mission ?? null;
 ---
 
 <section id="visit" class="section-padding" style="background: var(--bg-secondary);">
   <div class="max-w-6xl mx-auto px-4">
-    <div class="grid lg:grid-cols-2 gap-12 items-start">
+    <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-start">
       <div>
         <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">{intro.title}</h2>
         <p class="text-lg leading-relaxed mb-8" style="color: var(--text-secondary);">{intro.description}</p>
 
-        <div class="rounded-2xl p-6 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
+        <div class="rounded-2xl p-6 border mb-6" style="background: var(--bg-tertiary); border-color: var(--border-color);">
           <h3 class="font-semibold mb-3" style="color: var(--text-primary);">{om.title}</h3>
           <p class="text-base leading-relaxed" style="color: var(--text-secondary);">{om.text}</p>
         </div>
+
+        {mission && (
+          <div class="rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+              <div>
+                <p class="text-xs uppercase tracking-[0.18em] mb-2" style="color: var(--text-muted);">{mission.eyebrow}</p>
+                <h3 class="font-semibold text-xl mb-3" style="color: var(--text-primary);">{mission.title}</h3>
+              </div>
+            </div>
+            <p class="text-base leading-relaxed mb-4" style="color: var(--text-secondary);">{mission.text}</p>
+            {mission.items?.length > 0 && (
+              <ul class="space-y-3 text-base" style="color: var(--text-secondary);">
+                {mission.items.map((item) => (
+                  <li class="flex gap-3"><span style="color: var(--accent);">•</span><span>{item}</span></li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
       </div>
 
       <div class="space-y-6">
@@ -27,6 +48,20 @@ const om = messages.officialManagement;
             ))}
           </ul>
         </div>
+
+        {hikingMetrics.length > 0 && (
+          <div class="rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+            <h3 class="font-semibold mb-4" style="color: var(--text-primary);">{intro.hikingMetrics.title}</h3>
+            <div class="grid sm:grid-cols-3 gap-4">
+              {hikingMetrics.map((item) => (
+                <div class="rounded-xl p-4 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
+                  <p class="text-xs uppercase tracking-[0.16em] mb-2" style="color: var(--text-muted);">{item.label}</p>
+                  <p class="text-lg font-semibold" style="color: var(--text-primary);">{item.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div class="rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
           <h3 class="font-semibold mb-4" style="color: var(--text-primary);">{intro.alsoKnownAs.title}</h3>

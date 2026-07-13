@@ -3,6 +3,8 @@ import { getI18n } from '../i18n/ui';
 const { messages } = getI18n(Astro.url);
 const r = messages.reviews;
 const stars = (n) => Array.from({ length: 5 }, (_, i) => i < n ? 'star-filled' : 'star-empty');
+const featured = r.featured ?? r.items.slice(0, 2);
+const remaining = r.featured ? r.items : r.items.slice(2);
 ---
 
 <section id="reviews" class="section-padding" style="background: var(--bg-primary);">
@@ -10,8 +12,19 @@ const stars = (n) => Array.from({ length: 5 }, (_, i) => i < n ? 'star-filled' :
     <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">{r.title}</h2>
     <p class="text-center text-base mb-10" style="color: var(--text-secondary);">{r.declaration}</p>
 
+    {featured.length > 0 && (
+      <div class="grid md:grid-cols-2 gap-6 mb-10">
+        {featured.map((item) => (
+          <blockquote class="rounded-2xl p-6 border" style="background: color-mix(in srgb, var(--bg-secondary) 92%, transparent); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+            <p class="text-xl sm:text-2xl leading-relaxed mb-4" style="color: var(--text-primary);">"{item.text}"</p>
+            <footer class="text-sm" style="color: var(--text-secondary);">{item.name} · {item.date}</footer>
+          </blockquote>
+        ))}
+      </div>
+    )}
+
     <div class="grid md:grid-cols-2 gap-6">
-      {r.items.map((item) => (
+      {remaining.map((item) => (
         <div class="rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
           <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
             <div class="flex items-center gap-3">
@@ -34,7 +47,7 @@ const stars = (n) => Array.from({ length: 5 }, (_, i) => i < n ? 'star-filled' :
 
     <div class="text-center mt-10">
       <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex w-full sm:w-auto justify-center px-8 py-3 rounded-full font-semibold text-white" style="background: var(--accent);">
-        📍 {r.moreReviews}
+        {r.moreReviews}
       </a>
     </div>
   </div>

@@ -2,29 +2,110 @@
 import { getI18n } from '../i18n/ui';
 const { messages } = getI18n(Astro.url);
 const h = messages.hero;
+const primaryCta = h.primaryCta ?? { label: h.openMaps, href: h.mapsUrl, external: true };
+const secondaryCta = h.secondaryCta ?? null;
+const advisory = h.advisory ?? null;
+const factCards = h.factCards ?? [];
 ---
 
-<section class="relative min-h-[78vh] sm:min-h-[88vh] flex items-center justify-center text-center overflow-hidden">
-  <div class="absolute inset-0" style={`background-image: linear-gradient(rgba(15,32,21,0.55), rgba(15,32,21,0.55)), url('/gallery/cascadas-de-tocoihue-01.jpg'); background-size: cover; background-position: center;`}></div>
-  <div class="relative z-10 px-4 sm:px-6 py-16 sm:py-20 max-w-3xl animate-fade-in-up">
-    <span class="inline-flex max-w-full flex-wrap items-center justify-center gap-1 px-3 py-1 mb-5 rounded-full text-xs sm:text-sm font-medium" style="background: rgba(255,255,255,0.15); color: #fff; backdrop-filter: blur(4px);">
-      ⭐ {h.rating} · {h.reviewCount}
-    </span>
-    <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-5">
-      {h.title}
-    </h1>
-    <p class="text-base sm:text-xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed">
-      {h.subtitle}
-    </p>
-    <p class="text-sm text-white/80 mb-8 inline-flex items-center justify-center gap-2 flex-wrap">
-      🕒 {h.hours}
-    </p>
-    <div class="flex justify-center">
-      <a href={h.mapsUrl} target="_blank" rel="noopener noreferrer"
-         class="inline-flex w-full sm:w-auto justify-center px-8 py-3.5 rounded-full font-semibold text-white shadow-lg hover:opacity-90 transition"
-         style="background: var(--accent);">
-        📍 {h.openMaps}
-      </a>
+<section class="relative min-h-[86vh] sm:min-h-[96vh] flex items-center overflow-hidden">
+  <div class="absolute inset-0" style={`background-image: linear-gradient(rgba(15,32,21,0.64), rgba(15,32,21,0.58)), url('/gallery/cascadas-de-tocoihue-01.jpg'); background-size: cover; background-position: center;`}></div>
+  <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(8, 18, 13, 0.15) 0%, rgba(8, 18, 13, 0.52) 100%);"></div>
+
+  <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 py-18 sm:py-24">
+    <div class="max-w-3xl animate-fade-in-up">
+      {(h.eyebrow || h.rating) && (
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          {h.eyebrow && (
+            <span class="inline-flex px-3 py-1 rounded-full text-xs sm:text-sm font-medium tracking-[0.14em] uppercase" style="background: rgba(255,255,255,0.14); color: #fff; backdrop-filter: blur(6px);">
+              {h.eyebrow}
+            </span>
+          )}
+          <span class="inline-flex px-3 py-1 rounded-full text-xs sm:text-sm font-medium" style="background: rgba(255,255,255,0.1); color: #fff; backdrop-filter: blur(6px);">
+            {h.rating} · {h.reviewCount}
+          </span>
+        </div>
+      )}
+
+      <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-5">
+        {h.title}
+      </h1>
+      <p class="text-base sm:text-xl text-white/90 mb-5 max-w-2xl leading-relaxed">
+        {h.subtitle}
+      </p>
+
+      <div class="flex flex-wrap gap-3 text-sm text-white/80 mb-8">
+        {h.hours && (
+          <span class="inline-flex items-center px-3 py-1.5 rounded-full border border-white/15" style="background: rgba(255,255,255,0.06);">
+            {h.hours}
+          </span>
+        )}
+        {h.locationNote && (
+          <span class="inline-flex items-center px-3 py-1.5 rounded-full border border-white/15" style="background: rgba(255,255,255,0.06);">
+            {h.locationNote}
+          </span>
+        )}
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 mb-8">
+        <a
+          href={primaryCta.href}
+          target={primaryCta.external ? '_blank' : undefined}
+          rel={primaryCta.external ? 'noopener noreferrer' : undefined}
+          class="inline-flex w-full sm:w-auto justify-center px-8 py-3.5 rounded-full font-semibold text-white shadow-lg hover:opacity-90 transition"
+          style="background: var(--accent);"
+        >
+          {primaryCta.label}
+        </a>
+        {secondaryCta && (
+          <a
+            href={secondaryCta.href}
+            target={secondaryCta.external ? '_blank' : undefined}
+            rel={secondaryCta.external ? 'noopener noreferrer' : undefined}
+            class="inline-flex w-full sm:w-auto justify-center px-8 py-3.5 rounded-full font-semibold border border-white/20 text-white hover:bg-white/8 transition"
+            style="background: rgba(255,255,255,0.06); backdrop-filter: blur(6px);"
+          >
+            {secondaryCta.label}
+          </a>
+        )}
+      </div>
+
+      {advisory && (
+        <div class="grid sm:grid-cols-2 gap-3 mb-8 max-w-2xl">
+          <div class="sm:col-span-2 rounded-2xl px-5 py-4 border border-white/15" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
+            <p class="text-xs uppercase tracking-[0.18em] text-white/65 mb-3">{advisory.title}</p>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div class="rounded-xl px-4 py-3" style="background: rgba(255,255,255,0.06);">
+                <p class="text-xs uppercase tracking-[0.16em] text-white/60 mb-1">{advisory.weatherLabel}</p>
+                <p class="text-sm sm:text-base text-white/90 leading-relaxed">{advisory.weatherText}</p>
+              </div>
+              <div class="rounded-xl px-4 py-3" style="background: rgba(255,255,255,0.06);">
+                <p class="text-xs uppercase tracking-[0.16em] text-white/60 mb-1">{advisory.roadLabel}</p>
+                <p class="text-sm sm:text-base text-white/90 leading-relaxed">{advisory.roadText}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {factCards.length > 0 && (
+        <div class="grid sm:grid-cols-3 gap-3 max-w-3xl">
+          {factCards.map((card) => (
+            <div class="rounded-2xl px-5 py-4 border border-white/15" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);">
+              <p class="text-xs uppercase tracking-[0.18em] text-white/60 mb-2">{card.label}</p>
+              <p class="text-lg sm:text-xl font-semibold text-white">{card.value}</p>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {!factCards.length && (
+        <div class="flex justify-start">
+          <a href={h.mapsUrl} target="_blank" rel="noopener noreferrer" class="inline-flex text-sm text-white/85 underline underline-offset-4 hover:text-white">
+            {h.openMaps}
+          </a>
+        </div>
+      )}
     </div>
   </div>
 </section>
