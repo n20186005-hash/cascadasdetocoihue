@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "title": "Cascadas de Tocoihue | Dalcahue, Chiloé, Chile",
+    "description": "The complete guide to Cascadas de Tocoihue: history, its native forest setting on Chiloé, photos, visitor reviews, and how to reach this waterfall in the Dalcahue commune, Los Lagos Region."
+  },
+  "header": {
+    "siteName": "Cascadas de Tocoihue",
+    "home": "Home",
+    "visit": "Visit",
+    "transport": "Getting Here",
+    "history": "History",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "map": "Map",
+    "backToHome": "Back to Home"
+  },
+  "common": {
+    "changeLanguage": "Switch language",
+    "toggleTheme": "Toggle theme"
+  },
+  "hero": {
+    "title": "Cascadas de Tocoihue",
+    "subtitle": "A waterfall wrapped in native forest on the Isla Grande de Chiloé, on Huilliche Mapuche territory, a few kilometres from Dalcahue in the Los Lagos Region.",
+    "rating": "4.7(6,071)",
+    "reviewCount": "6,071 reviews",
+    "hours": "Typically open by day, ~09:00–18:00 (summer)",
+    "openMaps": "View Location",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "intro": {
+    "title": "Discover the Cascadas de Tocoihue",
+    "description": "The Cascadas de Tocoihue are a series of waterfalls on the Tocoihue River, in the rural sector of the Dalcahue commune on the Isla Grande de Chiloé. The trail passes through a native forest of coihue, ulmo and tique trees to a main drop that falls down a wall of volcanic rock. The site is part of a public-use nature reserve and lies within ancestral Huilliche territory, inside the ecoregion of Chiloé's temperate rainforests. It is one of the best-rated nature outings near Dalcahue and a key stop on Chiloé's Route of the Waterfalls.",
+    "visitGuide": {
+      "title": "Visitor Guide",
+      "items": [
+        "Access is by daylight; in summer it is usually open ~09:00–18:00, confirm before you go.",
+        "Located in the rural sector of Tocoihue, Dalcahue commune, about 18 km from town.",
+        "Gravel road and dirt trails; wear suitable shoes and allow time to walk.",
+        "Entry to the reserve has a modest fee paid on arrival; confirm the amount on site."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Highlights",
+      "items": [
+        "Waterfall in native forest, inside a nature reserve",
+        "Ancestral Huilliche territory, on the Isla Grande de Chiloé",
+        "Short walk past volcanic rock and temperate vegetation",
+        "Part of Chiloé's Route of the Waterfalls, near Dalcahue"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "How to Reach the Cascadas de Tocoihue",
+    "subtitle": "From the international flight to the final stretch of gravel through rural Dalcahue, here are the most common ways to get to the Cascadas de Tocoihue on the Isla Grande de Chiloé.",
+    "overviewTitle": "Start with where you are coming from",
+    "overviewText": "If you are coming from outside Chiloé, the usual pattern is to fly or take a bus to Puerto Montt, cross the Chacao Channel onto the island, then continue by road to Dalcahue. From there the waterfalls are about 18 km along a rural road. For most visitors the final stretch is by own car, taxi or tour, because public transport does not reach the reserve gate.",
+    "arrivalTitle": "Know this before you set out",
+    "arrivalItems": [
+      "The reserve is in the rural sector of Tocoihue; the last stretch is gravel and gets muddy in the rain.",
+      "Dalcahue and Castro are the nearest bases to eat, refuel and arrange a transfer.",
+      "In winter and on very rainy days the road can be heavy going; spring and summer are the most comfortable seasons."
+    ],
+    "modes": [
+      {
+        "label": "Option 01",
+        "title": "Air Travel",
+        "description": "The nearest island airport is Mocopulli (MHC), near Castro. From the mainland, El Tepual Airport (PMC) in Puerto Montt is the main option.",
+        "details": [
+          "From Mocopulli it is about 45–60 min by car to Dalcahue via Route 5.",
+          "If you land in Puerto Montt, first cross the Chacao Channel, then continue by road into Chiloé.",
+          "The plane drops you on the island; from there you still need a car, bus or transfer to reach Tocoihue."
+        ]
+      },
+      {
+        "label": "Option 02",
+        "title": "Train",
+        "description": "There is no passenger rail service to Chiloé: the island has no railway connection, so train is not an option for reaching the waterfalls.",
+        "details": [
+          "If your trip includes train in southern Chile, you will only use it as far as Puerto Montt or another mainland city.",
+          "From the mainland, the final leg to Chiloé is always by road or ferry.",
+          "In practice, plan your trip to Tocoihue by plane, bus or car."
+        ]
+      },
+      {
+        "label": "Option 03",
+        "title": "Public Transport",
+        "description": "This is the cheapest way to reach Dalcahue. Buses run frequently from Puerto Montt and from Castro to Dalcahue.",
+        "details": [
+          "From Puerto Montt you go to Castro or Dalcahue via Route 5, which runs through Chiloé.",
+          "From Dalcahue there is no direct bus to the reserve; the last stretch is taxi, colectivo or tour.",
+          "Public transport gets you to town, but access to Tocoihue is arranged separately."
+        ]
+      },
+      {
+        "label": "Option 04",
+        "title": "Chacao Bridge / Ferry",
+        "description": "To enter Chiloé from the mainland you cross the Chacao Channel. Today the crossing is made by the Chacao Bridge, linking Pargua with the island.",
+        "details": [
+          "If you come by car or bus from Puerto Montt, you cross the channel and follow Route 5 south.",
+          "The crossing is the mandatory gateway to the island before heading to Dalcahue.",
+          "From the northern entrance of Chiloé to Dalcahue is a little over an hour's drive."
+        ]
+      },
+      {
+        "label": "Option 05",
+        "title": "Taxi / Private Transfer",
+        "description": "From Dalcahue or Castro, a taxi or private tour is the most comfortable way to cover the ~18 km of rural road to the reserve.",
+        "details": [
+          "Ideal if you have no car and want to avoid changing transport on the final stretch.",
+          "Many tours include a guide and pick you up at your accommodation in Castro or Dalcahue.",
+          "Agree the price before getting in, especially in high season."
+        ]
+      },
+      {
+        "label": "Option 06",
+        "title": "Self-Drive",
+        "description": "Driving gives you freedom to explore Chiloé. From Puerto Montt take Route 5 to Pargua, cross the Chacao Channel and continue to Dalcahue, then take Route U-48 towards Tocoihue.",
+        "details": [
+          "From Dalcahue, Route U-48 heads into the rural sector of Tocoihue on a gravel road.",
+          "Carry fuel: stations are in Dalcahue and Castro, not on the rural route.",
+          "Parking is at the reserve entrance; from there you walk to the viewpoint."
+        ]
+      },
+      {
+        "label": "Option 07",
+        "title": "Cycling / Walking",
+        "description": "From Dalcahue, cyclists can tackle the rural road, though the ~18 km of gravel demands good fitness and a suitable bike.",
+        "details": [
+          "The road is quiet but unpaved; it rains often in Chiloé, so the route gets muddy.",
+          "On foot it is only advisable if you stay in the rural area near Tocoihue.",
+          "For most people, bike or walk as a local outing, not as arrival from afar."
+        ]
+      }
+    ],
+    "localTipsTitle": "Useful tips for the final approach",
+    "localTips": [
+      "Refuel and carry some cash in Dalcahue before heading into the rural sector.",
+      "The weather changes fast in Chiloé: bring a windbreaker and shoes that can get wet.",
+      "If driving your own car, ask in Dalcahue about the gravel road condition that same day."
+    ],
+    "mapsCta": "View Map & Route",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "officialManagement": {
+    "title": "About the Cascadas de Tocoihue",
+    "text": "The waterfalls lie within a public-use nature reserve in the rural sector of the Dalcahue commune, on the Isla Grande de Chiloé, Los Lagos Region. The site protects a stretch of the Tocoihue River and its surrounding native forest, and is managed as a conservation property with visitor access. The surroundings are part of ancestral Huilliche territory and of the ecoregion of Chiloé's temperate rainforests, noted for their rich diversity of lichens, ferns and birds."
+  },
+  "knowledge": {
+    "title": "History, Meaning & Legend of the Cascadas de Tocoihue",
+    "sections": [
+      {
+        "id": "history",
+        "title": "Origins of the place",
+        "content": "The name Tocoihue points to the Huilliche Mapuche root of Chiloé's territory, and the river that names the waterfalls rises in the hills of the Dalcahue interior. For centuries this watercourse was part of daily life for the Huilliche communities of Chiloé, who knew the forest and its springs long before the arrival of the colonial haciendas. Over time the main drop became a local recreation spot, and already in the 20th century Dalcahue families began visiting it as a nature outing. Today the property is organised as a public-access nature reserve, caring for the riverbed and the native forest."
+      },
+      {
+        "id": "meaning",
+        "title": "Why this landscape?",
+        "content": "Chiloé is a volcanic island, and the wall the water falls down is basalt rock shaped by the river over thousands of years. The forest around the falls is temperate native woodland: coihue, ulmo, tique and canelo, with a dense understory of ferns and moss that holds the moisture of the rainy climate. This combination — clean water, volcanic rock and cold rainforest — is exactly what makes the place unique, and explains why the water stays clear and the setting stays so green."
+      },
+      {
+        "id": "legend",
+        "title": "Huilliche legends",
+        "content": "In the Mapuche worldview, every river, forest and stone has its own spirit, the ngen. The Huilliche elders of Chiloé spoke of the ngen of the water that lives in the springs and the falls, and taught people to approach the river with respect, never polluting or disturbing it. They also tell that on foggy mornings the sound of the falls seems like an ancient voice reminding the listener that water is life. Whether fable or teaching, the legend invites you to visit the waterfalls as one enters a sacred place, not merely a viewpoint."
+      },
+      {
+        "id": "significance",
+        "title": "A symbol of natural Chiloé",
+        "content": "Today the Cascadas de Tocoihue are one of the most loved nature outings near Dalcahue and a landmark of Chiloé's Route of the Waterfalls. Far from the bustle of big cities, they offer a close and accessible experience of the island's temperate forest, with the added value of standing on Huilliche territory. For anyone touring Chiloé in search of its nature and its stories, Tocoihue is an almost mandatory stop."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "The waterfall and the native forest of Tocoihue, on the Isla Grande de Chiloé",
+    "photoAlt": "Cascadas de Tocoihue in its Chiloé native forest setting",
+    "viewAll": "View Location on Google Maps",
+    "showMore": "Show More Photos",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "reviews": {
+    "title": "Visitor Reviews",
+    "declaration": "Visitor feedback is available on Google Maps (external link).",
+    "moreReviews": "View on Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "items": [
+      {
+        "name": "Camila R.",
+        "date": "March 2026",
+        "rating": 5,
+        "text": "A beautiful, close-by outing. We walked through the native forest to the falls; the water was super clear and the place very well kept. We drove from Dalcahue and it was straightforward."
+      },
+      {
+        "name": "Matías G.",
+        "date": "February 2026",
+        "rating": 5,
+        "text": "Great with kids. The walk is short and the waterfall viewpoint is well worth it. Best to go early, before more people arrive."
+      },
+      {
+        "name": "Francisca L.",
+        "date": "January 2026",
+        "rating": 4,
+        "text": "A lovely corner of Chiloé. The gravel road was a bit heavy after the rain, but the falls against the forest backdrop are an incredible postcard."
+      },
+      {
+        "name": "Diego S.",
+        "date": "December 2025",
+        "rating": 5,
+        "text": "We went on a tour from Castro and they explained the Huilliche history of the place. That added a lot to the visit; I would go back without a doubt."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "How to Get Here",
+    "subtitle": "Tocoihue, rural sector, Dalcahue, Los Lagos Region, Chile",
+    "openMaps": "Open in Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "footer": {
+    "siteName": "Cascadas de Tocoihue",
+    "rights": "© 2026 Cascadas de Tocoihue — Independent Travel Guide. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings",
+    "officialResourcesTitle": "Official & Reference Resources",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "officialLinksList": [
+      { "name": "Tourism Chile (Sernatur)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
+      { "name": "Municipality of Dalcahue", "url": "https://www.munidalcahue.cl" },
+      { "name": "Ministry of the Environment — Los Lagos", "url": "https://mma.gob.cl/los-lagos/" },
+      { "name": "Los Lagos Regional Government", "url": "https://goreloslagos.cl/" },
+      { "name": "Tourism Services Registry (Sernatur)", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" }
+    ],
+    "disclaimer": "This is an independent, non-profit visitor information project. We are not affiliated with any government body or official institution."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": [
+      {
+        "heading": "1. Information Collection",
+        "content": "We generally do not actively collect personally identifiable information from users. Any information provided by you through contact forms or emails will be kept strictly confidential."
+      },
+      {
+        "heading": "2. Use of Information",
+        "content": "The information we collect is used solely to provide, maintain, and improve our services, and to communicate with you. We do not sell or share your personal information with third parties for marketing purposes."
+      },
+      {
+        "heading": "3. Cookies and Tracking",
+        "content": "We use cookies and similar tracking technologies to track the activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."
+      },
+      {
+        "heading": "4. Data Security",
+        "content": "The security of your data is important to us. We use commercially acceptable means to protect your Personal Data, though no method of transmission over the Internet is 100% secure."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": [
+      {
+        "heading": "1. Acceptance of Terms",
+        "content": "By accessing and using this website, you agree to be bound by these terms of service. If you disagree with any part of the terms, you may not access the service."
+      },
+      {
+        "heading": "2. Use of Service",
+        "content": "This website is an independent, non-profit visitor information project. The information provided is for general informational purposes only. You agree to use the site responsibly and lawfully."
+      },
+      {
+        "heading": "3. Intellectual Property",
+        "content": "All content on this website, including texts, images, and logos, is the property of the website owner unless otherwise stated. Unauthorized use, reproduction, or distribution is strictly prohibited."
+      },
+      {
+        "heading": "4. Limitation of Liability",
+        "content": "We shall not be held liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this website or the information contained herein."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie Settings",
+    "description": "Manage your cookie preferences.",
+    "essential": {
+      "title": "Strictly Necessary Cookies",
+      "description": "Required for basic website functionality.",
+      "badge": "Always active"
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "description": "Help us understand how visitors interact with the site."
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "description": "Used to track visitors across websites."
+    },
+    "save": "Save Preferences",
+    "saved": "Preferences saved!"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Practical information on facilities, history and planning your visit to the Cascadas de Tocoihue.",
+    "amenities": {
+      "title": "Facilities nearby",
+      "items": [
+        { "icon": "🅿️", "label": "Parking", "value": "At the reserve entrance" },
+        { "icon": "🚻", "label": "Restrooms", "value": "At reception / main house" },
+        { "icon": "🔌", "label": "Fuel / EV", "value": "Stations in Dalcahue & Castro" },
+        { "icon": "♿", "label": "Accessibility", "value": "Gravel path; sloped viewpoints" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transport & Facilities",
+        "items": [
+          {
+            "q": "Is there parking? How much does it cost?",
+            "a": "Yes. The reserve has parking at the entrance, inside the property. There is usually no extra charge for the vehicle beyond the reserve entry, but confirm the amount on arrival, as it can vary by season."
+          },
+          {
+            "q": "Can wheelchairs or strollers get close?",
+            "a": "Access is partial. The entrance and reception are fairly flat, but the trail to the viewpoint is dirt and gravel, with slopes and roots, so it is not comfortably suitable for wheelchairs or strollers. Visitors needing reduced access can ask at reception about the day's options."
+          },
+          {
+            "q": "Are there restrooms or food nearby?",
+            "a": "There are restrooms at the reserve's reception or main house. There is no restaurant along the trail, so bring water and some food; in Dalcahue and Castro you will find cafés, restaurants and shops to stock up before you arrive."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "History & Geology",
+        "items": [
+          {
+            "q": "What kind of geological formation are the waterfalls?",
+            "a": "Chiloé is a volcanic island, and the waterfall drops down a wall of basalt rock that the Tocoihue River has shaped over time. The setting is temperate rainforest, with coihue, ulmo, tique and canelo, and an understory of ferns and moss typical of Chiloé's ecoregion."
+          },
+          {
+            "q": "Where does the name Tocoihue come from?",
+            "a": "Tocoihue points to the Huilliche Mapuche root of Chiloé's territory. The river that names the waterfalls rises in the hills of the Dalcahue interior and, for centuries, was part of Huilliche community life long before it became a nature outing."
+          },
+          {
+            "q": "Why does the water look so clear?",
+            "a": "Because it rises in well-preserved native forest basins, where vegetation filters and retains moisture. Still, after heavy rain the flow rises and the water clouds a little; in spring and summer it is usually at its clearest."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planning & Tickets",
+        "items": [
+          {
+            "q": "Is there an entrance fee?",
+            "a": "Yes. Entry to the reserve has a modest fee paid on arrival, because it is a private conservation property with visitor access. Confirm the exact amount on site or by phone before your visit."
+          },
+          {
+            "q": "How long does a visit take?",
+            "a": "Plan 1.5 to 2.5 hours: park, walk the gravel trail to the viewpoint, enjoy the falls and return. If you add a stop in Dalcahue or Castro, the outing easily fills half a day."
+          },
+          {
+            "q": "Can I go in bad weather?",
+            "a": "Yes, and with rain the falls are usually fuller and more spectacular. That said, the gravel road gets muddy and the rock can be slippery, so wear proper footwear and avoid the strongest storms, when access may be limited."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "What to see nearby",
+        "items": [
+          {
+            "q": "After visiting, what else do you recommend nearby?",
+            "a": "Very close is Dalcahue, with its UNESCO heritage church and its famous market of local produce. A bit further, Castro and its stilt houses (palafitos), and the Chiloé National Park for anyone who wants to keep exploring native forest, birds and the island coast."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Discover More in Chiloé",
+    "attractionsTitle": "Nearby Attractions",
+    "toursTitle": "Recommended Tours & Activities",
+    "attractions": [
+      { "name": "Dalcahue Church (UNESCO Heritage)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
+      { "name": "Chiloé National Park", "url": "https://www.munidalcahue.cl" },
+      { "name": "Castro and its palafitos", "url": "https://goreloslagos.cl/" }
+    ],
+    "tours": [
+      { "name": "Waterfall excursion from Castro", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" },
+      { "name": "Birdwatching in native forest", "url": "https://mma.gob.cl/los-lagos/" },
+      { "name": "Chiloé Route of the Waterfalls", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" }
+    ]
+  }
+}

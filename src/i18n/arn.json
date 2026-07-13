@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "title": "Cascadas de Tocoihue | Dalcahue, Chiloé, Chile",
+    "description": "Cascadas de Tocoihue mboyerovia: jeréia, Chiloé mapu bosque nativo, ta'anga, dungu che mew ha mba'éichapa ogusteta Dalcahue, Los Lagos."
+  },
+  "header": {
+    "siteName": "Cascadas de Tocoihue",
+    "home": "Ruka",
+    "visit": "Küpa",
+    "transport": "Chara",
+    "history": "Ngütram",
+    "gallery": "Kinu",
+    "reviews": "Dungu",
+    "faq": "Küdaw",
+    "map": "Mapu",
+    "backToHome": "Ruka mew"
+  },
+  "common": {
+    "changeLanguage": "Reke ñi dungun",
+    "toggleTheme": "Reke ñi küyen"
+  },
+  "hero": {
+    "title": "Cascadas de Tocoihue",
+    "subtitle": "Füta co Chiloé mapu mew, Huilliche Wallmapu, Dalcahue püle, Los Lagos.",
+    "rating": "4,7(6.071)",
+    "reviewCount": "6.071 dungu",
+    "hours": "Antü rupu, ~09:00–18:00",
+    "openMaps": "Kinu mapu",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "intro": {
+    "title": "Eikuaa Cascadas de Tocoihue",
+    "description": "Cascadas de Tocoihue küne füta co Tocoihue ruka mew, Dalcahue mapu, Chiloé füta wentru. Kütral rupa coigüe, ulmo, tique kütral mapu, füta co ruka kütral. Tocoihue mapu küme newen ko, Wallmapu Huilliche mew, Chiloé mapu. Dalcahue püle küme trawün, Chiloé co ruta.",
+    "visitGuide": {
+      "title": "Küpa reko",
+      "items": [
+        "Antü rupu kütran; verano mew ~09:00–18:00, ehecha mboyve.",
+        "Tocoihue mapu, Dalcahue, Chiloé füta wentru, ~18 km püle.",
+        "Ripa ruka ha co ñi pünon; maki kañi küzaw.",
+        "Reserva ogusteta viru michĩ, ehecha tenda-pe."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Mba'evai",
+      "items": [
+        "Füta co bosque nativo mew, reserva natural",
+        "Wallmapu Huilliche, Chiloé füta wentru",
+        "Pichi perim kütral ruka",
+        "Chiloé co ruta, Dalcahue püle"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "Mba'éichapa ogusteta Cascadas de Tocoihue",
+    "subtitle": "Avión guive, Tocoihue ripia rupi guata hag̃uáicha, ko sección ombyaty tape ojepuruvéva Chiloé füta wentru mew.",
+    "overviewTitle": "Ehecha moõ guipa reju",
+    "overviewText": "Chiloé guive reju ramo, jepive reg̃uahẽ Puerto Montt pe, Chacao canal ohasa Chiloé mew, upéi Dalcahue pe. Tocoihue pe 18 km ripia rupi. Hetaiterei visitante-pe g̃uarã, ipahápe auto, taxi térã tour. Bus noõ reju reserva mboyve.",
+    "arrivalTitle": "Neresẽ mboyve",
+    "arrivalItems": [
+      "Reserva oĩ Tocoihue mapu; ipahápe ripia, oky ramo oiko."
+    ],
+    "modes": [
+      {
+        "label": "Tape 01",
+        "title": "Avión",
+        "description": "Aeropuerto ojepuruvéva Chiloé mew ha'e Mocopulli (MHC), Castro püle. Continente guive, El Tepual (PMC) Puerto Montt mew.",
+        "details": [
+          "Mocopulli guive Dalcahue pe 45–60 aravo Ruta 5 rupi.",
+          "Puerto Montt pe reg̃uahẽ ramo, Chacao canal ohasa, upéi Chiloé pe.",
+          "Avión reg̃uahẽ Chiloé mew; upéi auto, bus térã traslado Tocoihue pe."
+        ]
+      },
+      {
+        "label": "Tape 02",
+        "title": "Tren",
+        "description": "Chiloé mew ndaipóri tren paisano. Tren ndaha'éi opción Tocoihue pe hag̃ua.",
+        "details": [
+          "Tren reipuru ramo, Puerto Montt peveña.",
+          "Continente guive, Chiloé pe ruta térã transbordador.",
+          "Tocoihue pe avión, bus térã auto iporãve."
+        ]
+      },
+      {
+        "label": "Tape 03",
+        "title": "Bus",
+        "description": "Dalcahue pe hag̃ua opción mba'evai. Bus oiko Puerto Montt ha Castro guive Dalcahue pe.",
+        "details": [
+          "Puerto Montt guive Castro térã Dalcahue pe Ruta 5 rupi.",
+          "Dalcahue guive reserva pe bus ndaipóri; ipahápe taxi, colectivo térã tour.",
+          "Bus reg̃uahẽ táva pe; Tocoihue pe ambue."
+        ]
+      },
+      {
+        "label": "Tape 04",
+        "title": "Chacao pünon",
+        "description": "Continente guive Chiloé pe Chacao canal ohasa. Ko'ágã Chacao puente ojuaju Pargua ha Chiloé.",
+        "details": [
+          "Auto térã bus Puerto Montt guive canal ohasa, Ruta 5 sur rupi.",
+          "Ohasa ha'e Chiloé pe ogusteta; upéi Dalcahue pe.",
+          "Chiloé norte guive Dalcahue pe 1 aravo rasa."
+        ]
+      },
+      {
+        "label": "Tape 05",
+        "title": "Taxi / traslado",
+        "description": "Dalcahue térã Castro guive, taxi térã tour iporãve 18 km ripia rupi reserva pe.",
+        "details": [
+          "Auto ndaipóri ramo iporã.",
+          "Heta tour oguiraha Castro térã Dalcahue pe.",
+          "Viru ehecha mboyve, temporada alta mew."
+        ]
+      },
+      {
+        "label": "Tape 06",
+        "title": "Auto",
+        "description": "Auto reg̃uahẽ Chiloé. Puerto Montt guive Ruta 5 Pargua pe, Chacao ohasa, Dalcahue pe, upéi Ruta U-48 Tocoihue pe.",
+        "details": [
+          "Dalcahue guive Ruta U-48 ripia rupi Tocoihue pe.",
+          "Nafta Dalcahue ha Castro mew.",
+          "Estacionamiento reserva mboyve; upéi perim mirador pe."
+        ]
+      },
+      {
+        "label": "Tape 07",
+        "title": "Bicicleta / perim",
+        "description": "Dalcahue guive, bicicleta iporã 18 km ripia rupi, küzaw ha bicicleta oñecesita.",
+        "details": [
+          "Ripa opytúva, oky Chiloé mew.",
+          "Perim ramo Tocoihue püle oikóva.",
+          "Hetave tapicha-pe bicicleta pichi trawün."
+        ]
+      }
+    ],
+    "localTipsTitle": "Consejo ipahápe g̃uarã",
+    "localTips": [
+      "Nafta ha viru Dalcahue pe, Tocoihue mboyve.",
+      "Küyen oñemboí Chiloé mew; küzaw kañi.",
+      "Auto reg̃uahẽ ramo, Dalcahue pe ripia rehe ehecha."
+    ],
+    "mapsCta": "Ehecha mapa ha tape",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "officialManagement": {
+    "title": "Cascadas de Tocoihue ñemombe'u",
+    "text": "Co kütral reserva natural mew, Dalcahue mapu, Chiloé füta wentru, Los Lagos. Tocoihue rupa ha bosque nativo oñangareko, Wallmapu Huilliche ha Chiloé mapu. Lichen, helecho ha püñi oĩ."
+  },
+  "knowledge": {
+    "title": "Cascadas de Tocoihue jeréia, hesa'ỹ ha ñe'ẽnga",
+    "sections": [
+      {
+        "id": "history",
+        "title": "Jeipuru",
+        "content": "Tocoihue ha'e Huilliche Wallmapu ñe'ẽ. Co rupa Dalcahue yvytu guive. Huilliche kuéra oikuaa bosque ha co, colonial hacienda mboyve. Upéi koñe co küme paseo oiko, siglo XX mew Dalcahue kuéra. Ko'ágã reserva natural, rupa ha bosque nativo oñangareko."
+      },
+      {
+        "id": "meaning",
+        "title": "Mba'ére ko mapu?",
+        "content": "Chiloé ha'e volcán ypa. Co kütral basalto ruka, rupa ojapo. Bosque nativo coigüe, ulmo, tique, canelo, helecho ha musgo. Co pohã, volcán ha ka'ỹ kütral, ko mapu iporãvéva."
+      },
+      {
+        "id": "legend",
+        "title": "Ñe'ẽnga Huilliche",
+        "content": "Mapuche jeréia mew, opa rupa, bosque ha kueri orekopa ngen. Huilliche txakay ruka ko ngen oĩ helecho ha co mew, ko ñe'ẽ: co ha'e mongen. Rupi oky ramo, co ñe'ẽ tapia oiko. Ñe'ẽnga térã jeréia, Tocoihue ha'e mapu küme, ndaha'éi picha michĩ."
+      },
+      {
+        "id": "significance",
+        "title": "Chiloé mapu",
+        "content": "Ko'ágã Cascadas de Tocoihue ha'e Dalcahue püle küme, Chiloé co ruta. Wallmapu Huilliche mew. Chiloé mapu ha jeréia büsqueda ramo, Tocoihue ha'e tape oñecesitáva."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Ta'anga aty",
+    "subtitle": "Co kütral ha bosque nativo Tocoihue, Chiloé füta wentru",
+    "photoAlt": "Cascadas de Tocoihue bosque nativo Chiloé mew",
+    "viewAll": "Ehecha Google Maps-pe",
+    "showMore": "Ehecha ta'angave",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "reviews": {
+    "title": "Che dungu",
+    "declaration": "Che dungu oĩ Google Maps-pe (enlace externo).",
+    "moreReviews": "Ehecha Google Maps-pe",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "items": [
+      {
+        "name": "Camila R.",
+        "date": "Marzo 2026",
+        "rating": 5,
+        "text": "Küme paseo. Bosque nativo rupi co pe roguyhy, co pohã ha mapu küme. Dalcahue guive auto ramo iporã."
+      },
+      {
+        "name": "Matías G.",
+        "date": "Febrero 2026",
+        "rating": 5,
+        "text": "Mitã ndive iporã. Perim pichi ha mirador küme. Pyhareve eguahẽ, tapicha oĩ mboyve."
+      },
+      {
+        "name": "Francisca L.",
+        "date": "Enero 2026",
+        "rating": 4,
+        "text": "Chiloé rincón küme. Ripia oky ramo oiko, hána co bosque ndive ipostal."
+      },
+      {
+        "name": "Diego S.",
+        "date": "Diciembre 2025",
+        "rating": 5,
+        "text": "Castro guive tour, Huilliche jeréia oñemombe'u. Iporãve, rojuehe."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Mba'éichapa ogusteta",
+    "subtitle": "Tocoihue, Dalcahue, Los Lagos, Chile",
+    "openMaps": "Eipe'a Google Maps-pe",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "footer": {
+    "siteName": "Cascadas de Tocoihue",
+    "rights": "© 2026 Cascadas de Tocoihue — Jeheka peteĩha. Opaite derecho oñongatu.",
+    "privacy": "Privacidad reko",
+    "terms": "Eipuru reko",
+    "cookies": "Cookie",
+    "officialResourcesTitle": "Oficial ha referencia",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "officialLinksList": [
+      { "name": "Turismo de Chile (Sernatur)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
+      { "name": "Municipalidad de Dalcahue", "url": "https://www.munidalcahue.cl" },
+      { "name": "Ministerio del Medio Ambiente — Los Lagos", "url": "https://mma.gob.cl/los-lagos/" },
+      { "name": "Gobierno Regional de Los Lagos", "url": "https://goreloslagos.cl/" },
+      { "name": "Registro de Servicios Turísticos (Sernatur)", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" }
+    ],
+    "disclaimer": "Ko ha'e peteĩ jeheka peteĩha, ndaha'éi mba'e oficiable. Ndaroikuaa gobierno térã institución oficial ndive."
+  },
+  "privacy": {
+    "title": "Privacidad reko",
+    "lastUpdated": "Ipahúma: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Marandu japo",
+        "content": "Ndarojapo activo rupive tapicha marandu ojehechakuaáva. Eme'ẽva formulario térã e-mail rupive ha'e confidencial."
+      },
+      {
+        "heading": "2. Eipuru marandu",
+        "content": "Marandu japóva oipuru servicio oñeme'ẽ, oñangareko ha ombohovy. Ndajakogua térã ñaime tercero-pe marketing."
+      },
+      {
+        "heading": "3. Cookie ha seguimiento",
+        "content": "Jajapo cookie ha tecnología ojojogua seguimiento. Nde navegador ikatu oiko'ã cookie opaite térã oñemombe'u cookie oĩrõ."
+      },
+      {
+        "heading": "4. Datos seguridad",
+        "content": "Nde datos seguridad ja'ekatu. Jajapo medida datos oñangareko, internet rupive ndaha'éi 100% seguido."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Eipuru reko",
+    "lastUpdated": "Ipahúma: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Eipuru",
+        "content": "Eipuru rupive, eñe'ẽ ko reko. Eikovia'ỹramo, ndereko ogusteta."
+      },
+      {
+        "heading": "2. Servicio eipuru",
+        "content": "Ko web ha'e jeheka peteĩha, ndaha'éi mba'e oficiable. Marandu oĩ información general. Eipuru iviru'ỹ ha ley."
+      },
+      {
+        "heading": "3. Propiedad intelectual",
+        "content": "Opaite contenido, texto, ta'anga ha logo, ha'e dueño web. Ndaha'éi autorizado uso, reproducción térã distribución."
+      },
+      {
+        "heading": "4. Responsabilidad límite",
+        "content": "Ndajahayhu daño uso rupive web térã información."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie",
+    "description": "Eñangareko cookie.",
+    "essential": {
+      "title": "Cookie necesario",
+      "description": "Web funcionamiento necesario.",
+      "badge": "Siempre activo"
+    },
+    "analytics": {
+      "title": "Cookie analítica",
+      "description": "Oipytyvõ visitante ojojogua."
+    },
+    "marketing": {
+      "title": "Cookie marketing",
+      "description": "Oipuru visitante seguimiento."
+    },
+    "save": "Eñongatu",
+    "saved": "¡Eñongatu!"
+  },
+  "faq": {
+    "title": "Porandu oĩporãva",
+    "subtitle": "Marandu porã infraestructura, jeréia ha jeguata rehegua Cascadas de Tocoihue-pe g̃uarã.",
+    "amenities": {
+      "title": "Tenda oĩva",
+      "items": [
+        { "icon": "🅿️", "label": "Estacionamiento", "value": "Reserva mboyve" },
+        { "icon": "🚻", "label": "Baño", "value": "Recepción / ruka" },
+        { "icon": "🔌", "label": "Nafta / Carga", "value": "Dalcahue ha Castro" },
+        { "icon": "♿", "label": "Accesibilidad", "value": "Ripa ruka; mirador menjúva" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transporte ha infraestructura",
+        "items": [
+          {
+            "q": "¿Oĩ estacionamiento tenda-pe? ¿Mba'épa precio?",
+            "a": "Hup. Reserva oĩ estacionamiento mboyve. Auto viru ndaha'éi, hána reserva viru ehecha tenda-pe, temporada rupive oñemboí."
+          },
+          {
+            "q": "¿Ikatu silla de ruedas térã coche de bebé?",
+            "a": "Parcial. Mboyve ha recepción opytúva, hána mirador ripia ha kueri. Silla de ruedas ndive hasy. Recepción pe ehecha."
+          },
+          {
+            "q": "¿Oĩ baño térã comida tenda-pe?",
+            "a": "Recepción pe baño oĩ. Restaurante ndaha'éi, ko ha comida eguerahá; Dalcahue ha Castro mew café, restaurante ha tienda."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "Jeréia ha geología",
+        "items": [
+          {
+            "q": "¿Mba'épa geología co kütral?",
+            "a": "Chiloé ha'e volcán ypa, co basalto ruka. Bosque nativo coigüe, ulmo, tique, canelo, helecho ha musgo."
+          },
+          {
+            "q": "¿Mba'ére Tocoihue?",
+            "a": "Tocoihue ha'e Huilliche Wallmapu ñe'ẽ. Rupa Dalcahue yvytu guive, Huilliche kuéra ombo'e."
+          },
+          {
+            "q": "¿Mba'ére co pohã?",
+            "a": "Bosque nativo rupive, vegetación oñumí. Oky ramo co oñemboí; primavera ha verano mew pohãve."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planificación ha entrada",
+        "items": [
+          {
+            "q": "¿Oĩ entrada pago?",
+            "a": "Hup. Reserva viru michĩ ogusteta, privado conservación. Ehecha tenda-pe térã telefono rupive."
+          },
+          {
+            "q": "¿Mba'éichapa aravo jeheka?",
+            "a": "1,5 ha 2,5 aravo. Dalcahue térã Castro juajey ramo media mañana."
+          },
+          {
+            "q": "¿Ikaturõ ára vai?",
+            "a": "Hup, oky ramo co hetave. Hána ripia oiko ha kueri poyvíva. Küzaw kañi, tormenta tuichakueve ani."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "Mba'épa ehecha cerca",
+        "items": [
+          {
+            "q": "Jeheka rire, ¿mba'épa tenda oĩva jerurhe?",
+            "a": "Dalcahue ipüpe, iglesia UNESCO ha mercado. Castro palafitos ha Parque Nacional Chiloé bosque nativo, püñi ha costa."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Eikuaave Chiloé",
+    "attractionsTitle": "Tenda oĩva",
+    "toursTitle": "Jeguata ha actividad",
+    "attractions": [
+      { "name": "Iglesia de Dalcahue (UNESCO)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
+      { "name": "Parque Nacional Chiloé", "url": "https://www.munidalcahue.cl" },
+      { "name": "Castro palafitos", "url": "https://goreloslagos.cl/" }
+    ],
+    "tours": [
+      { "name": "Cascadas tour Castro guive", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" },
+      { "name": "Püñi bosque nativo", "url": "https://mma.gob.cl/los-lagos/" },
+      { "name": "Chiloé co ruta", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" }
+    ]
+  }
+}

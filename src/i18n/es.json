@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "title": "Cascadas de Tocoihue | Dalcahue, Chiloé, Chile",
+    "description": "Guía completa de las Cascadas de Tocoihue: historia, su entorno de bosque nativo en Chiloé, fotos, opiniones de visitantes y cómo llegar a este salto de agua en la comuna de Dalcahue, Región de Los Lagos."
+  },
+  "header": {
+    "siteName": "Cascadas de Tocoihue",
+    "home": "Inicio",
+    "visit": "Visita",
+    "transport": "Cómo llegar",
+    "history": "Historia",
+    "gallery": "Galería",
+    "reviews": "Opiniones",
+    "faq": "FAQ",
+    "map": "Mapa",
+    "backToHome": "Volver al inicio"
+  },
+  "common": {
+    "changeLanguage": "Cambiar idioma",
+    "toggleTheme": "Cambiar tema"
+  },
+  "hero": {
+    "title": "Cascadas de Tocoihue",
+    "subtitle": "Un salto de agua rodeado de bosque nativo en la Isla Grande de Chiloé, en territorio mapuche huilliche, a pocos kilómetros de Dalcahue, en la Región de Los Lagos.",
+    "rating": "4,7(6.071)",
+    "reviewCount": "6.071 opiniones",
+    "hours": "Suele abrir de día, ~09:00–18:00 (verano)",
+    "openMaps": "Ver ubicación",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "intro": {
+    "title": "Descubre las Cascadas de Tocoihue",
+    "description": "Las Cascadas de Tocoihue son un sistema de saltos de agua sobre el río Tocoihue, en el sector rural de la comuna de Dalcahue, en la Isla Grande de Chiloé. El acceso atraviesa un bosque nativo de coigües, ulmos y tiques hasta una cascada principal que cae por una pared de roca volcánica. El lugar forma parte de una reserva natural de uso público y se encuentra en el territorio ancestral huilliche, dentro de la ecorregión de los bosques templados de Chiloé. Es una de las excursiones de naturaleza mejor valoradas cerca de Dalcahue y un punto clave de la Ruta de las Cascadas de Chiloé.",
+    "visitGuide": {
+      "title": "Guía de visita",
+      "items": [
+        "El acceso es de día; en verano suele estar habilitado de ~09:00 a 18:00, confirma antes de ir.",
+        "Ubicado en el sector rural de Tocoihue, comuna de Dalcahue, a unos 18 km del pueblo.",
+        "Camino de ripio y senderos de tierra; lleva calzado adecuado y tiempo para caminar.",
+        "La entrada a la reserva tiene una tarifa modesta que se paga al llegar; confirma el monto en el lugar."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Destacados",
+      "items": [
+        "Salto de agua en bosque nativo, dentro de una reserva natural",
+        "Territorio ancestral huilliche, en la Isla Grande de Chiloé",
+        "Caminata corta por roca volcánica y vegetación templada",
+        "Parte de la Ruta de las Cascadas de Chiloé, cerca de Dalcahue"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "Cómo llegar a las Cascadas de Tocoihue",
+    "subtitle": "Desde el vuelo internacional hasta el último tramo de ripio por el sector rural de Dalcahue, aquí tienes las formas más habituales de llegar a las Cascadas de Tocoihue, en la Isla Grande de Chiloé.",
+    "overviewTitle": "Primero define tu punto de partida",
+    "overviewText": "Si vienes desde fuera de Chiloé, lo habitual es volar o tomar un bus hasta Puerto Montt, cruzar el Canal de Chacao hacia la isla y continuar por carretera hasta Dalcahue. Desde ahí, las cascadas quedan a unos 18 km por un camino rural. Para la mayoría de los visitantes, el tramo final se hace en vehículo propio, taxi o tour, porque el transporte público no llega hasta la puerta de la reserva.",
+    "arrivalTitle": "Antes de salir",
+    "arrivalItems": [
+      "La reserva está en el sector rural de Tocoihue; el último tramo es de ripio y sube/baja con la lluvia.",
+      "Dalcahue y Castro son las bases más cercanas para comer, cargar combustible y organizar el traslado.",
+      "En invierno y días de mucha lluvia el camino puede estar pesado; la primavera y el verano son las épocas más cómodas."
+    ],
+    "modes": [
+      {
+        "label": "Opción 01",
+        "title": "Avión",
+        "description": "La puerta aérea más cercana en la isla es el Aeropuerto de Mocopulli (MHC), cerca de Castro. Desde el continente, el Aeropuerto El Tepual (PMC) en Puerto Montt es la opción principal.",
+        "details": [
+          "Desde Mocopulli hay unos 45–60 min de auto hasta Dalcahue por la Ruta 5.",
+          "Si aterrizas en Puerto Montt, primero cruzas el Canal de Chacao y luego sigues por carretera a Chiloé.",
+          "El avión te deja en la isla; de ahí en adelante necesitas auto, bus o traslado para llegar a Tocoihue."
+        ]
+      },
+      {
+        "label": "Opción 02",
+        "title": "Tren",
+        "description": "No existe servicio de pasajeros a Chiloé: la isla no tiene conexión ferroviaria, así que el tren no es una opción para llegar a las cascadas.",
+        "details": [
+          "Si tu viaje incluye tren en el sur de Chile, lo usarás solo hasta Puerto Montt u otra ciudad continental.",
+          "Desde el continente, el tramo final a Chiloé es siempre por carretera o transbordador.",
+          "En la práctica, conviene planear el viaje a Tocoihue por avión, bus o auto."
+        ]
+      },
+      {
+        "label": "Opción 03",
+        "title": "Transporte público",
+        "description": "Es la opción más económica para llegar a Dalcahue. Hay buses desde Puerto Montt y desde Castro hasta Dalcahue de forma frecuente.",
+        "details": [
+          "Desde Puerto Montt vas a Castro o Dalcahue vía la Ruta 5 que recorre Chiloé.",
+          "Desde Dalcahue no hay bus directo a la reserva; toca taxi, colectivo o tour el último tramo.",
+          "El transporte público te acerca al pueblo, pero el acceso a Tocoihue se coordina aparte."
+        ]
+      },
+      {
+        "label": "Opción 04",
+        "title": "Transbordador / Puente Chacao",
+        "description": "Para entrar a Chiloé desde el continente se cruza el Canal de Chacao. Hoy el cruce se hace por el Puente de Chacao, que une Pargua con la isla.",
+        "details": [
+          "Si vienes en auto o bus desde Puerto Montt, cruzas el canal y sigues por la Ruta 5 hacia el sur.",
+          "El cruce es el acceso obligado a la isla antes de dirigirte a Dalcahue.",
+          "Desde el acceso norte de Chiloé a Dalcahue hay algo más de una hora de camino."
+        ]
+      },
+      {
+        "label": "Opción 05",
+        "title": "Taxi / traslado privado",
+        "description": "Desde Dalcahue o Castro, un taxi o un tour privado es la forma más cómoda de cubrir los ~18 km de camino rural hasta la reserva.",
+        "details": [
+          "Ideal si no llevas auto y quieres evitar combinar transporte en el tramo final.",
+          "Muchos tours incluyen guía y te recogen en tu alojamiento de Castro o Dalcahue.",
+          "Agua clara: confirma el precio antes de subir, sobre todo en temporada alta."
+        ]
+      },
+      {
+        "label": "Opción 06",
+        "title": "Auto",
+        "description": "Conducir te da libertad para recorrer Chiloé. Desde Puerto Montt vas por la Ruta 5 hasta Pargua, cruzas el Canal de Chacao y sigues hasta Dalcahue, luego por la Ruta U-48 hacia Tocoihue.",
+        "details": [
+          "Desde Dalcahue, la Ruta U-48 sale hacia el sector rural de Tocoihue por camino de ripio.",
+          "Lleva combustible: las estaciones están en Dalcahue y Castro, no en la ruta rural.",
+          "El estacionamiento está en la entrada de la reserva; de ahí se camina al mirador."
+        ]
+      },
+      {
+        "label": "Opción 07",
+        "title": "Bicicleta / a pie",
+        "description": "Desde Dalcahue, los ciclistas pueden encarar el camino rural, aunque los ~18 km de ripio exigen buen estado físico y bicicleta adecuada.",
+        "details": [
+          "El camino es tranquilo pero de tierra; llueve seguido en Chiloé, así que la ruta se embarra.",
+          "A pie solo es recomendable si pernoctas en el sector rural cercano a Tocoihue.",
+          "Para la mayoría, bici o caminata conviene como paseo local, no como llegada desde lejos."
+        ]
+      }
+    ],
+    "localTipsTitle": "Consejos para el tramo final",
+    "localTips": [
+      "Carga combustible y lleva algo de efectivo en Dalcahue antes de internarte en el sector rural.",
+      "El clima cambia rápido en Chiloé: lleva cortaviento y calzado que se pueda mojar.",
+      "Si vas en auto propio, pregunta en Dalcahue por el estado del camino de ripio ese mismo día."
+    ],
+    "mapsCta": "Ver mapa y ruta",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "officialManagement": {
+    "title": "Acerca de las Cascadas de Tocoihue",
+    "text": "Las cascadas se encuentran dentro de una reserva natural de uso público en el sector rural de la comuna de Dalcahue, en la Isla Grande de Chiloé, Región de Los Lagos. El sitio protege un tramo del río Tocoihue y su bosque nativo circundante, y se gestiona como propiedad privada de conservación con acceso de visitantes. El entorno forma parte del territorio ancestral huilliche y de la ecorregión de bosques templados lluviosos de Chiloé, reconocida por su alta diversidad de líquenes, helechos y aves."
+  },
+  "knowledge": {
+    "title": "Historia, significado y leyenda de las Cascadas de Tocoihue",
+    "sections": [
+      {
+        "id": "history",
+        "title": "Orígenes del lugar",
+        "content": "El nombre Tocoihue remite a la raíz mapuche huilliche del territorio chilote, y el río que da nombre a las cascadas nace en las lomas del interior de Dalcahue. Durante siglos, este curso de agua fue parte de la vida cotidiana de las comunidades huilliche de Chiloé, que conocían el bosque y sus vertientes mucho antes de la llegada de las haciendas coloniales. Con el tiempo, el salto principal se volvió un punto de recreo local, y ya en el siglo XX las familias de Dalcahue comenzaron a visitarlo como paseo de naturaleza. Hoy la propiedad se organiza como reserva natural de acceso público, cuidando el cauce y el bosque nativo."
+      },
+      {
+        "id": "meaning",
+        "title": "¿Por qué este paisaje?",
+        "content": "Chiloé es una isla de origen volcánico, y la pared por donde cae el agua es roca basáltica modelada por el río a lo largo de miles de años. El bosque que rodea las cascadas es bosque nativo templado: coigüe, ulmo, tique y canelo, con un sotobosque denso de helechos y musgos que retiene la humedad del clima lluvioso. Esa combinación —agua limpia, roca volcánica y selva fría— es justo lo que hace único al lugar y lo que explica por qué el agua se mantiene clara y el entorno, tan verde."
+      },
+      {
+        "id": "legend",
+        "title": "Leyendas huilliche",
+        "content": "En la cosmovisión mapuche, cada río, bosque y piedra tiene su propio espíritu, el ngen. Los ancianos huilliche de Chiloé hablaban del ngen del agua que habita las vertientes y los saltos, y enseñaban a acercarse al río con respeto, sin ensuciarlo ni perturbarlo. Cuentan también que en las mañanas de niebla el sonido del salto parece una voz antigua que recuerda a quien escucha que el agua es vida. Sea fábula o enseñanza, la leyenda invita a visitar las cascadas como quien entra a un lugar sagrado, no solo a un mirador."
+      },
+      {
+        "id": "significance",
+        "title": "Un símbolo de Chiloé natural",
+        "content": "Hoy las Cascadas de Tocoihue son uno de los paseos de naturaleza más queridos cerca de Dalcahue y un hito de la Ruta de las Cascadas de Chiloé. Lejos del bullicio de las grandes ciudades, ofrecen una experiencia cercana y accesible del bosque templado insular, con el valor añadido de estar en territorio huilliche. Para quien recorre Chiloé en busca de su naturaleza y sus historias, Tocoihue es una parada casi obligada."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galería de fotos",
+    "subtitle": "El salto de agua y el bosque nativo de Tocoihue, en la Isla Grande de Chiloé",
+    "photoAlt": "Cascadas de Tocoihue en su entorno de bosque nativo de Chiloé",
+    "viewAll": "Ver ubicación en Google Maps",
+    "showMore": "Mostrar más fotos",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "reviews": {
+    "title": "Opiniones de los visitantes",
+    "declaration": "Las opiniones de los visitantes están disponibles en Google Maps (enlace externo).",
+    "moreReviews": "Ver en Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "items": [
+      {
+        "name": "Camila R.",
+        "date": "Marzo 2026",
+        "rating": 5,
+        "text": "Un paseo hermoso y cercano. Caminamos por el bosque nativo hasta el salto; el agua súper clara y el entorno muy bien cuidado. Llegamos en auto desde Dalcahue y fue sencillo."
+      },
+      {
+        "name": "Matías G.",
+        "date": "Febrero 2026",
+        "rating": 5,
+        "text": "Ideal para llevar a los cabros. La caminata es corta y el mirador de la cascada vale mucho la pena. Lo mejor es ir temprano, antes de que llegue más gente."
+      },
+      {
+        "name": "Francisca L.",
+        "date": "Enero 2026",
+        "rating": 4,
+        "text": "Lindo rincón de Chiloé. El camino de ripio estaba algo pesado por la lluvia, pero la cascada con el bosque de fondo es una postal increíble."
+      },
+      {
+        "name": "Diego S.",
+        "date": "Diciembre 2025",
+        "rating": 5,
+        "text": "Fuimos en tour desde Castro y nos explicaron la historia huilliche del lugar. Eso le sumó muchísimo a la visita; volvería sin dudarlo."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Cómo llegar",
+    "subtitle": "Tocoihue, sector rural, Dalcahue, Región de Los Lagos, Chile",
+    "openMaps": "Abrir en Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "footer": {
+    "siteName": "Cascadas de Tocoihue",
+    "rights": "© 2026 Cascadas de Tocoihue — Guía de viaje independiente. Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "cookies": "Configuración de cookies",
+    "officialResourcesTitle": "Recursos oficiales y de referencia",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "officialLinksList": [
+      { "name": "Turismo de Chile (Sernatur)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
+      { "name": "Municipalidad de Dalcahue", "url": "https://www.munidalcahue.cl" },
+      { "name": "Ministerio del Medio Ambiente — Los Lagos", "url": "https://mma.gob.cl/los-lagos/" },
+      { "name": "Gobierno Regional de Los Lagos", "url": "https://goreloslagos.cl/" },
+      { "name": "Registro de Servicios Turísticos (Sernatur)", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" }
+    ],
+    "disclaimer": "Este es un proyecto independiente y sin fines de lucro de información para visitantes. No estamos afiliados con ningún organismo gubernamental ni institución oficial."
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Recopilación de información",
+        "content": "Por lo general, no recopilamos activamente información personal identificable de los usuarios. Cualquier información que nos proporciones mediante formularios de contacto o correos electrónicos se mantendrá estrictamente confidencial."
+      },
+      {
+        "heading": "2. Uso de la información",
+        "content": "La información que recopilamos se utiliza únicamente para ofrecer, mantener y mejorar nuestros servicios, y para comunicarnos contigo. No vendemos ni compartimos tu información personal con terceros con fines de marketing."
+      },
+      {
+        "heading": "3. Cookies y seguimiento",
+        "content": "Utilizamos cookies y tecnologías de seguimiento similares para monitorear la actividad en nuestro sitio web y almacenar cierta información. Puedes configurar tu navegador para rechazar todas las cookies o para avisarte cuando se envía una cookie."
+      },
+      {
+        "heading": "4. Seguridad de los datos",
+        "content": "La seguridad de tus datos es importante para nosotros. Utilizamos medios comercialmente aceptables para proteger tus datos personales, aunque ningún método de transmisión por Internet es 100% seguro."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Términos del servicio",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Aceptación de los términos",
+        "content": "Al acceder y utilizar este sitio web, aceptas quedar vinculado por estos términos del servicio. Si no estás de acuerdo con alguna parte de los términos, no podrás acceder al servicio."
+      },
+      {
+        "heading": "2. Uso del servicio",
+        "content": "Este sitio web es un proyecto independiente y sin fines de lucro de información para visitantes. La información proporcionada es solo para fines informativos generales. Aceptas utilizar el sitio de manera responsable y lícita."
+      },
+      {
+        "heading": "3. Propiedad intelectual",
+        "content": "Todo el contenido de este sitio web, incluidos textos, imágenes y logotipos, es propiedad del titular del sitio salvo que se indique lo contrario. Queda estrictamente prohibido el uso, reproducción o distribución no autorizados."
+      },
+      {
+        "heading": "4. Limitación de responsabilidad",
+        "content": "No nos hacemos responsables de ningún daño directo, indirecto, incidental o consecuente derivado del uso o la imposibilidad de usar este sitio web o la información que contiene."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Configuración de cookies",
+    "description": "Gestiona tus preferencias de cookies.",
+    "essential": {
+      "title": "Cookies estrictamente necesarias",
+      "description": "Requeridas para la funcionalidad básica del sitio web.",
+      "badge": "Siempre activas"
+    },
+    "analytics": {
+      "title": "Cookies de analítica",
+      "description": "Nos ayudan a entender cómo interactúan los visitantes con el sitio."
+    },
+    "marketing": {
+      "title": "Cookies de marketing",
+      "description": "Se utilizan para rastrear a los visitantes entre sitios web."
+    },
+    "save": "Guardar preferencias",
+    "saved": "¡Preferencias guardadas!"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Información práctica sobre servicios, historia y planificación de tu visita a las Cascadas de Tocoihue.",
+    "amenities": {
+      "title": "Servicios en la zona",
+      "items": [
+        { "icon": "🅿️", "label": "Estacionamiento", "value": "En la entrada de la reserva" },
+        { "icon": "🚻", "label": "Baños", "value": "En recepción / casa patronal" },
+        { "icon": "🔌", "label": "Carga / Gasolina", "value": "Cargueros en Dalcahue y Castro" },
+        { "icon": "♿", "label": "Accesibilidad", "value": "Camino de ripio; miradores con pendiente" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transporte e infraestructura",
+        "items": [
+          {
+            "q": "¿Hay estacionamiento en la zona? ¿Cuánto cuesta?",
+            "a": "Sí. La reserva cuenta con estacionamiento en la entrada, dentro de la propiedad. No suele haber cobro adicional por el vehículo más allá de la entrada a la reserva, pero confirma el monto al llegar, porque puede variar según la temporada."
+          },
+          {
+            "q": "¿Se puede acceder con silla de ruedas o coche de bebé?",
+            "a": "El acceso es parcial. La entrada y la recepción son relativamente planas, pero el sendero al mirador es de tierra y ripio, con pendientes y raíces, por lo que no es apto para sillas de ruedas ni coches de bebé cómodamente. Quienes necesiten acceso reducido pueden preguntar en la recepción por las opciones del día."
+          },
+          {
+            "q": "¿Hay baños o servicios de comida en la zona?",
+            "a": "Hay baños en la recepción o casa patronal de la reserva. No hay restaurante en el interior del sendero, así que conviene llevar agua y algo de comida; en Dalcahue y Castro hay cafés, restaurantes y carnicerías donde aprovisionarse antes de llegar."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "Historia y geología",
+        "items": [
+          {
+            "q": "¿Qué tipo de formación geológica tienen las cascadas?",
+            "a": "Chiloé es una isla de origen volcánico, y la cascada cae por una pared de roca basáltica que el río Tocoihue ha ido modelando con el tiempo. El entorno es bosque nativo templado lluvioso, con coigüe, ulmo, tique y canelo, y un sotobosque de helechos y musgos típico de la ecorregión de Chiloé."
+          },
+          {
+            "q": "¿De dónde viene el nombre Tocoihue?",
+            "a": "Tocoihue remite a la raíz mapuche huilliche del territorio chilote. El río que da nombre a las cascadas nace en las lomas del interior de Dalcahue y fue, durante siglos, parte de la vida de las comunidades huilliche antes de convertirse en paseo de naturaleza."
+          },
+          {
+            "q": "¿Por qué el agua se ve tan clara?",
+            "a": "Porque nace en cuencas de bosque nativo bien conservado, donde la vegetación filtra y retiene la humedad. Aun así, tras lluvias fuertes el cauce sube y el agua se enturbia un poco; en primavera y verano suele estar en su punto más límpido."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planificación y entradas",
+        "items": [
+          {
+            "q": "¿Se paga entrada?",
+            "a": "Sí. El ingreso a la reserva tiene una tarifa modesta que se paga al llegar, porque es una propiedad privada de conservación con acceso de visitantes. El monto exacto confírmalo en el lugar o por teléfono antes de tu visita."
+          },
+          {
+            "q": "¿Cuánto tiempo se necesita para visitarlo?",
+            "a": "Calcula unas 1,5 a 2,5 horas: estacionar, caminar el sendero de ripio hasta el mirador, disfrutar la cascada y volver. Si sumas una parada en Dalcahue o Castro, la excursión llena fácilmente medio día."
+          },
+          {
+            "q": "¿Se puede ir con mal tiempo?",
+            "a": "Sí, y con lluvia el salto suele verse más caudaloso y espectacular. Eso sí, el camino de ripio se embarra y la piedra puede estar resbalosa, así que ve con calzado adecuado y evita las tormentas más fuertes, cuando el acceso puede estar limitado."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "Qué ver cerca",
+        "items": [
+          {
+            "q": "Terminando la visita, ¿qué otros lugares recomiendan cerca?",
+            "a": "Muy cerca está Dalcahue, con su iglesia patrimonio de la UNESCO y su famoso mercado de productos locales. Un poco más allá, Castro y sus palafitos, y el Parque Nacional Chiloé para quien quiera seguir explorando bosque nativo, aves y la costa insular."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Descubre más en Chiloé",
+    "attractionsTitle": "Atracciones cercanas",
+    "toursTitle": "Tours y actividades recomendados",
+    "attractions": [
+      { "name": "Iglesia de Dalcahue (Patrimonio UNESCO)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
+      { "name": "Parque Nacional Chiloé", "url": "https://www.munidalcahue.cl" },
+      { "name": "Castro y sus palafitos", "url": "https://goreloslagos.cl/" }
+    ],
+    "tours": [
+      { "name": "Excursión a las cascadas desde Castro", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" },
+      { "name": "Avistamiento de aves en bosque nativo", "url": "https://mma.gob.cl/los-lagos/" },
+      { "name": "Ruta de las cascadas de Chiloé", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" }
+    ]
+  }
+}
