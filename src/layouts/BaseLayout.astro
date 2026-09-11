@@ -4,18 +4,34 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getLangFromUrl, buildAlternates, htmlLangAttr } from '../i18n/ui';
 import { ogLocale } from '../config';
+import { attraction, SITE_URL } from '../config/attraction';
 
 interface Props {
   title: string;
   description: string;
   path?: string;
+  /** Absolute URL of the social share image (defaults to the attraction hero image). */
+  image?: string;
+  imageAlt?: string;
+  /** Set to true on pages that should not be indexed (e.g. redirect helpers). */
+  noindex?: boolean;
 }
 
-const { title, description, path = '' } = Astro.props;
+const {
+  title,
+  description,
+  path = '',
+  image = attraction.heroImage,
+  imageAlt = `${attraction.fullName} in ${attraction.city}`,
+  noindex = false,
+} = Astro.props;
+
 const lang = getLangFromUrl(Astro.url);
 const htmlLang = htmlLangAttr(lang);
 const alts = buildAlternates(path);
 const canonical = alts[lang] ?? alts.es;
+const siteName = attraction.fullName;
+const ga4Id = 'G-HXM22WWPKP';
 ---
 
 <!doctype html>
@@ -25,22 +41,65 @@ const canonical = alts[lang] ?? alts.es;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+    <meta name="author" content={siteName} />
     <link rel="canonical" href={canonical} />
+
+    <!-- Language alternates -->
     <link rel="alternate" hreflang="es" href={alts.es} />
     <link rel="alternate" hreflang="en" href={alts.en} />
     <link rel="alternate" hreflang="zh" href={alts.zh} />
     <link rel="alternate" hreflang="arn" href={alts.arn} />
     <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
 
+    <!-- Geographic signals for the physical entity (NAP / geo binding) -->
+    <meta name="geo.region" content={`${attraction.countryCode}-${attraction.stateProvince}`} />
+    <meta name="geo.placename" content={`${attraction.city}, ${attraction.stateProvince}, ${attraction.country}`} />
+    <meta name="geo.position" content={`${attraction.latitude};${attraction.longitude}`} />
+    <meta name="ICBM" content={`${attraction.latitude}, ${attraction.longitude}`} />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content={ogLocale[lang] ?? lang} />
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0f2015" />
+    <meta name="application-name" content={siteName} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content={siteName} />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+    <link rel="author" href={`${SITE_URL}/es`} />
 
     <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
     <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+    <!-- Google Analytics 4 -->
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+    <script is:inline define:vars={{ ga4Id }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', ga4Id, { anonymize_ip: true });
+    </script>
 
     <script is:inline>
       (function () {
@@ -61,5 +120,13 @@ const canonical = alts[lang] ?? alts.es;
       <slot />
     </main>
     <Footer />
+
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function () {});
+        });
+      }
+    </script>
   </body>
 </html>

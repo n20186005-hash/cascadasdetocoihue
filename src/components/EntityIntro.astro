@@ -1,0 +1,161 @@
+---
+import { getI18n } from '../i18n/ui';
+import { attraction } from '../config/attraction';
+
+const { lang, messages } = getI18n(Astro.url);
+const e = messages.entity;
+const home = messages.header?.home ?? 'Inicio';
+
+const breadcrumb = [
+  { label: home, href: `/${lang}` },
+  { label: attraction.fullName, href: `/${lang}` },
+  { label: attraction.city, href: `/${lang}` },
+  { label: attraction.stateProvince, href: `/${lang}` },
+  { label: attraction.country, href: `/${lang}` },
+];
+
+const landmarks = e.landmarks.items ?? [];
+const facts = e.about.facts ?? [];
+
+const coordinates = `${attraction.latitude}, ${attraction.longitude}`;
+---
+
+<section id="about" class="section-padding" style="background: var(--bg-primary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Geographic hierarchy / breadcrumb: Attraction → City → Region → Country -->
+    <nav
+      aria-label={e.breadcrumbLabel}
+      class="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm"
+      style="color: var(--text-muted);"
+    >
+      {breadcrumb.map((item, index) => (
+        <>
+          {index > 0 && <span aria-hidden="true" style="color: var(--border-color);">›</span>}
+          <a href={item.href} class="hover:opacity-70" style="color: inherit;">
+            {index === breadcrumb.length - 1 ? <strong>{item.label}</strong> : item.label}
+          </a>
+        </>
+      ))}
+    </nav>
+
+    <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
+      <div>
+        <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">
+          {e.about.heading}
+        </h2>
+        <p
+          class="text-lg leading-relaxed mb-6"
+          style="color: var(--text-secondary);"
+          set:html={e.about.lead}
+        ></p>
+
+        <p class="text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary);">
+          <a
+            href={`/${lang}#transport`}
+            class="underline underline-offset-4"
+            style="color: var(--accent);"
+          >
+            {messages.header.transport}
+          </a>
+        </p>
+      </div>
+
+      <!-- Entity facts: official name / also known as / category -->
+      <div class="rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+        <p class="text-xs uppercase tracking-[0.18em] mb-4" style="color: var(--text-muted);">
+          {e.about.factsLabel}
+        </p>
+        <dl class="space-y-3">
+          {facts.map((fact) => (
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 border-b pb-3 last:border-b-0 last:pb-0" style="border-color: var(--border-color);">
+              <dt class="text-sm" style="color: var(--text-muted);">{fact.label}</dt>
+              <dd class="text-sm font-semibold" style="color: var(--text-primary);">{fact.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+
+    <!-- Location & NAP (Name / Address / Phone) -->
+    <div class="mt-16 grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-start">
+      <div>
+        <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">
+          {e.location.heading}
+        </h2>
+        <p class="text-lg leading-relaxed mb-6" style="color: var(--text-secondary);">
+          {e.location.text}
+        </p>
+        <a
+          href={attraction.mapsShareUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex w-full sm:w-auto justify-center px-8 py-3 rounded-full font-semibold text-white"
+          style="background: var(--accent);"
+        >
+          📍 {e.location.mapsCta}
+        </a>
+      </div>
+
+      <address class="not-italic rounded-2xl p-6 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
+        <p class="font-semibold text-lg mb-4" style="color: var(--text-primary);">{attraction.fullName}</p>
+        <dl class="space-y-3 text-sm" style="color: var(--text-secondary);">
+          <div class="flex gap-3">
+            <dt class="shrink-0 w-24 font-medium" style="color: var(--text-muted);">{e.location.addressLabel}</dt>
+            <dd>
+              {attraction.streetAddress}, {attraction.city}, {attraction.stateProvince}, {attraction.country} — {attraction.postalCode}
+            </dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="shrink-0 w-24 font-medium" style="color: var(--text-muted);">{e.location.phoneLabel}</dt>
+            <dd>
+              <a href={`tel:${attraction.telephone}`} class="hover:opacity-70" style="color: var(--accent);">
+                {attraction.telephoneDisplay}
+              </a>
+            </dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="shrink-0 w-24 font-medium" style="color: var(--text-muted);">{e.location.coordinatesLabel}</dt>
+            <dd>{coordinates}</dd>
+          </div>
+          <div class="flex gap-3">
+            <dt class="shrink-0 w-24 font-medium" style="color: var(--text-muted);">{e.location.plusCodeLabel}</dt>
+            <dd>{attraction.plusCode}</dd>
+          </div>
+        </dl>
+      </address>
+    </div>
+
+    <!-- Landmarks & nearby semantic cluster -->
+    <div class="mt-16">
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">
+        {e.landmarks.heading}
+      </h2>
+      <p class="text-lg leading-relaxed mb-8 max-w-3xl" style="color: var(--text-secondary);" set:html={e.landmarks.text}></p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {landmarks.map((item) => (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-2xl p-6 border h-full hover:shadow-md transition"
+            style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+          >
+            <h3 class="font-semibold text-lg mb-2" style="color: var(--text-primary);">
+              {item.name} <span style="color: var(--accent);">↗</span>
+            </h3>
+            <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{item.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- History & significance -->
+    <div class="mt-16 max-w-3xl">
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">
+        {e.history.heading}
+      </h2>
+      <p class="text-lg leading-relaxed" style="color: var(--text-secondary);">{e.history.text}</p>
+    </div>
+  </div>
+</section>

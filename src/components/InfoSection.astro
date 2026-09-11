@@ -1,13 +1,15 @@
 ---
+import { Image } from 'astro:assets';
 import { getI18n } from '../i18n/ui';
+import { speciesImages } from '../data/media';
+
 const { messages } = getI18n(Astro.url);
 const t = messages.knowledge;
 const sections = t.sections;
 const speciesGuide = t.speciesGuide ?? null;
-const imageUrl = (prompt) => `https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=${encodeURIComponent(prompt)}&image_size=portrait_4_3`;
 ---
 
-<section id="history" class="section-padding" style="background: var(--bg-primary);">
+<section id="nature" class="section-padding" style="background: var(--bg-primary);">
   <div class="max-w-4xl mx-auto px-4">
     <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-6 text-center" style="color: var(--text-primary);">{t.title}</h2>
     <div class="w-12 h-0.5 mb-12 mx-auto" style="background: var(--accent);"></div>
@@ -39,7 +41,16 @@ const imageUrl = (prompt) => `https://coresg-normal.trae.ai/api/ide/v1/text_to_i
         <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {speciesGuide.items.map((item) => (
             <article class="rounded-2xl overflow-hidden border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
-              <img src={imageUrl(item.imagePrompt)} alt={item.name} loading="lazy" class="w-full h-48 object-cover" />
+              {speciesImages[item.id] && (
+                <Image
+                  src={speciesImages[item.id]}
+                  alt={item.name}
+                  widths={[320, 480]}
+                  sizes="(min-width: 1280px) 280px, (min-width: 768px) 45vw, 90vw"
+                  loading="lazy"
+                  class="w-full h-48 object-cover"
+                />
+              )}
               <div class="p-5">
                 <p class="text-xs uppercase tracking-[0.18em] mb-2" style="color: var(--text-muted);">{item.latin}</p>
                 <h4 class="font-semibold text-lg mb-2" style="color: var(--text-primary);">{item.name}</h4>

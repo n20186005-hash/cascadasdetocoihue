@@ -1,8 +1,11 @@
 ---
 import { getI18n } from '../i18n/ui';
+import { attraction } from '../config/attraction';
+
 const { messages } = getI18n(Astro.url);
 const m = messages.mapSection;
-const embedUrl = 'https://www.google.com/maps?q=Cascadas+de+Tocoihue+Dalcahue+Chile&output=embed';
+const s = messages.sources;
+const embedUrl = attraction.mapsEmbedSrc;
 ---
 
 <section id="map" class="section-padding" style="background: var(--bg-secondary);">
@@ -18,8 +21,9 @@ const embedUrl = 'https://www.google.com/maps?q=Cascadas+de+Tocoihue+Dalcahue+Ch
         height="420"
         style="border:0;"
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title={m.title}
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+        title={`${attraction.fullName} — ${attraction.city}, ${attraction.stateProvince}, ${attraction.country}`}
       ></iframe>
     </div>
 
@@ -28,5 +32,19 @@ const embedUrl = 'https://www.google.com/maps?q=Cascadas+de+Tocoihue+Dalcahue+Ch
         📍 {m.openMaps}
       </a>
     </div>
+
+    <!-- Authoritative outbound reference (official tourism portal) -->
+    <p class="text-center text-sm sm:text-base leading-relaxed mt-8 max-w-3xl mx-auto" style="color: var(--text-secondary);">
+      {s.officialTourism}
+      <a
+        href={attraction.govtTourismUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-semibold hover:opacity-70"
+        style="color: var(--accent);"
+      >
+        {attraction.country} / {attraction.stateProvince}
+      </a>.
+    </p>
   </div>
 </section>

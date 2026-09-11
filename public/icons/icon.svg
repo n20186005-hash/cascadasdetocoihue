@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cascadas de Tocoihue">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2015"/>
+      <stop offset="1" stop-color="#1a3a24"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfeef7"/>
+      <stop offset="0.5" stop-color="#7ec6da"/>
+      <stop offset="1" stop-color="#3a7a8d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" ry="112" fill="url(#bg)"/>
+
+  <!-- distant hills -->
+  <path d="M0 318 L118 218 L214 292 L318 202 L512 312 L512 512 L0 512 Z" fill="#234830"/>
+
+  <!-- basalt cliff faces -->
+  <path d="M148 214 L214 172 L256 200 L256 420 L148 420 Z" fill="#2f4a37"/>
+  <path d="M364 214 L298 172 L256 200 L256 420 L364 420 Z" fill="#22392b"/>
+
+  <!-- waterfall -->
+  <path d="M232 176 C232 176 240 236 236 300 C233 352 240 386 240 386 L272 386 C272 386 279 352 276 300 C272 236 280 176 280 176 Z" fill="url(#water)"/>
+  <path d="M248 190 C247 250 249 320 250 382" stroke="#ffffff" stroke-opacity="0.55" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- plunge pool -->
+  <ellipse cx="256" cy="400" rx="96" ry="22" fill="#4a90a4" fill-opacity="0.85"/>
+  <ellipse cx="256" cy="400" rx="58" ry="13" fill="#cfeef7" fill-opacity="0.6"/>
+
+  <!-- foreground trees -->
+  <path d="M64 392 L96 300 L128 392 Z" fill="#142d1c"/>
+  <path d="M104 402 L140 316 L176 402 Z" fill="#1a3a24"/>
+  <path d="M384 402 L420 316 L456 402 Z" fill="#142d1c"/>
+  <path d="M344 392 L376 300 L408 392 Z" fill="#1a3a24"/>
+</svg>

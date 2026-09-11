@@ -13,15 +13,25 @@ const switchTo = (l: string) => (pageSeg ? `/${l}/${pageSeg}` : `/${l}`);
 
 <header class="sticky top-0 z-50 backdrop-blur" style="background: color-mix(in srgb, var(--bg-primary) 85%, transparent); border-bottom: 1px solid var(--border-color);">
   <div class="max-w-6xl mx-auto px-4 min-h-16 py-3 flex items-center justify-between gap-3 md:gap-4">
-    <a href={`/${lang}`} class="font-display text-base sm:text-lg font-semibold leading-tight max-w-[11rem] sm:max-w-none" style="color: var(--text-primary);" set:html={h.siteName}></a>
+    <a href={`/${lang}`} class="flex flex-col leading-tight max-w-[11rem] sm:max-w-none" style="color: var(--text-primary);">
+      <span class="font-display text-base sm:text-lg font-semibold" set:html={h.siteName}></span>
+      {h.napLine && (
+        <span class="hidden sm:block text-[0.62rem] uppercase tracking-[0.16em] mt-0.5" style="color: var(--text-muted);">{h.napLine}</span>
+      )}
+    </a>
 
-    <nav class="hidden md:flex items-center gap-4 text-sm lg:gap-5" style="color: var(--text-secondary);">
+    <nav class="hidden md:flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-sm lg:gap-x-5" style="color: var(--text-secondary);">
       <a href={`/${lang}`} class="hover:opacity-70" set:html={h.home}></a>
       <a href={`/${lang}#visit`} class="hover:opacity-70" set:html={h.visit}></a>
+      <a href={`/${lang}#schedule`} class="hover:opacity-70" set:html={h.schedule}></a>
+      <a href={`/${lang}#directions`} class="hover:opacity-70" set:html={h.directions}></a>
       <a href={`/${lang}#transport`} class="hover:opacity-70" set:html={h.transport}></a>
+      <a href={`/${lang}#weather`} class="hover:opacity-70" set:html={h.weather}></a>
+      <a href={`/${lang}#services`} class="hover:opacity-70" set:html={h.services}></a>
       <a href={`/${lang}#history`} class="hover:opacity-70" set:html={h.history}></a>
-      <a href={`/${lang}#gallery`} class="hover:opacity-70" set:html={h.gallery}></a>
-      <a href={`/${lang}#reviews`} class="hover:opacity-70" set:html={h.reviews}></a>
+      <a href={`/${lang}#heritage`} class="hidden lg:inline hover:opacity-70" set:html={h.heritage}></a>
+      <a href={`/${lang}#gallery`} class="hidden lg:inline hover:opacity-70" set:html={h.gallery}></a>
+      <a href={`/${lang}#reviews`} class="hidden lg:inline hover:opacity-70" set:html={h.reviews}></a>
       <a href={`/${lang}#faq`} class="hover:opacity-70" set:html={h.faq}></a>
       <a href={`/${lang}#map`} class="hover:opacity-70" set:html={h.map}></a>
     </nav>
@@ -56,8 +66,13 @@ const switchTo = (l: string) => (pageSeg ? `/${l}/${pageSeg}` : `/${l}`);
     <nav class="grid grid-cols-2 gap-2 text-sm" style="color: var(--text-secondary);">
       <a href={`/${lang}`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.home}></a>
       <a href={`/${lang}#visit`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.visit}></a>
+      <a href={`/${lang}#schedule`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.schedule}></a>
+      <a href={`/${lang}#directions`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.directions}></a>
       <a href={`/${lang}#transport`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.transport}></a>
+      <a href={`/${lang}#weather`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.weather}></a>
+      <a href={`/${lang}#services`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.services}></a>
       <a href={`/${lang}#history`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.history}></a>
+      <a href={`/${lang}#heritage`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.heritage}></a>
       <a href={`/${lang}#gallery`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.gallery}></a>
       <a href={`/${lang}#reviews`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.reviews}></a>
       <a href={`/${lang}#faq`} class="rounded-lg px-3 py-2 border hover:opacity-80" style="border-color: var(--border-color);" set:html={h.faq}></a>

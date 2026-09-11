@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# All languages and pages of the attraction guide are crawlable.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+Sitemap: https://cascadasdetocoihue.com/sitemap.xml

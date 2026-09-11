@@ -1,13 +1,22 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
+import EntityIntro from '../../components/EntityIntro.astro';
 import Intro from '../../components/Intro.astro';
+import Schedule from '../../components/Schedule.astro';
+import Directions from '../../components/Directions.astro';
 import Transport from '../../components/Transport.astro';
+import Weather from '../../components/Weather.astro';
+import Facilities from '../../components/Facilities.astro';
+import Timeline from '../../components/Timeline.astro';
+import Heritage from '../../components/Heritage.astro';
 import InfoSection from '../../components/InfoSection.astro';
 import Gallery from '../../components/Gallery.astro';
 import Reviews from '../../components/Reviews.astro';
-import MapEmbed from '../../components/MapEmbed.astro';
 import FAQ from '../../components/FAQ.astro';
+import Recommendations from '../../components/Recommendations.astro';
+import SourcesSection from '../../components/SourcesSection.astro';
+import StructuredData from '../../components/StructuredData.astro';
 import { getI18n, languagesList } from '../../i18n/ui';
 
 export function getStaticPaths() {
@@ -18,12 +27,21 @@ const { messages } = getI18n(Astro.url);
 ---
 
 <BaseLayout title={messages.meta.title} description={messages.meta.description} path="">
+  <StructuredData slot="head" />
   <Hero />
+  <EntityIntro />
   <Intro />
+  <Schedule />
+  <Directions />
+  <Weather />
   <Transport />
+  <Facilities />
   <InfoSection />
+  <Timeline />
+  <Heritage />
   <Gallery />
   <Reviews />
-  <MapEmbed />
   <FAQ />
+  <Recommendations />
+  <SourcesSection />
 </BaseLayout>

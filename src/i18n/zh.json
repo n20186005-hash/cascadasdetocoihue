@@ -1,19 +1,25 @@
 {
   "meta": {
-    "title": "Tocoihue 瀑布 | 智利达尔卡韦，奇洛埃岛",
-    "description": "Tocoihue 瀑布完整指南：历史背景、奇洛埃岛的原生森林环境、照片、游客评价，以及如何前往位于湖大区达尔卡韦镇的这座瀑布。"
+    "title": "Tocoihue 瀑布（奇洛埃）：开放时间、怎么去、游览攻略",
+    "description": "奇洛埃达尔卡韦 Tocoihue 瀑布游览攻略：最新开放时间与季节可达性、从达尔卡韦出发的详细路线、GPS 坐标与 Plus Code、门票价格与当地地名传说。"
   },
   "header": {
     "siteName": "Tocoihue 瀑布",
     "home": "首页",
     "visit": "导览",
-    "transport": "交通",
+    "transport": "交通方式",
     "history": "历史",
     "gallery": "画廊",
     "reviews": "评价",
     "faq": "问答",
     "map": "地图",
-    "backToHome": "返回首页"
+    "weather": "天气",
+    "services": "服务设施",
+    "backToHome": "返回首页",
+    "napLine": "达尔卡韦 · 奇洛埃岛 · 湖大区 · 智利",
+    "schedule": "开放时间",
+    "directions": "怎么去",
+    "heritage": "地名与传说"
   },
   "common": {
     "changeLanguage": "切换语言",
@@ -22,11 +28,12 @@
   "hero": {
     "eyebrow": "奇洛埃温带雨林保护地",
     "title": "Tocoihue 瀑布：深入奇洛埃原生雨林与惠利切传说的秘境",
+    "h1Name": "Cascadas de Tocoihue（达尔卡韦）",
     "subtitle": "从达尔卡韦出发，沿短途步道穿过惠利切（Huilliche） ancestral territory 上的原生森林，抵达玄武岩壁间倾泻而下的主瀑布。这里兼具轻徒步、地质观察与文化叙事，是奇洛埃最值得专程造访的自然落点之一。",
-    "rating": "4.7(6,071)",
-    "reviewCount": "6,071 条评价",
-    "hours": "通常白天开放，约 09:00–18:00（夏季）",
-    "locationNote": "达尔卡韦以东约 18 公里，U-48 碎石路可达",
+    "rating": "4.7(6,081)",
+    "reviewCount": "6,081 条评价",
+    "hours": "通常白天开放，约 10:00–20:00（夏季）",
+    "locationNote": "达尔卡韦以东约 20 公里，U-48 碎石路可达",
     "primaryCta": {
       "label": "规划您的行程",
       "href": "#transport",
@@ -61,14 +68,74 @@
     "openMaps": "查看位置",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
   },
+  "entity": {
+    "breadcrumbLabel": "面包屑导航",
+    "about": {
+      "heading": "关于 Cascadas de Tocoihue",
+      "lead": "欢迎来到 <strong>Cascadas de Tocoihue</strong>，人们通常简称它为 <strong>Tocoihue</strong>。它位于 <strong>智利</strong><strong>湖大区</strong><strong>达尔卡韦</strong>的核心地带，是前往奇洛埃大岛旅行者的重要地标。",
+      "factsLabel": "景点档案",
+      "facts": [
+        {
+          "label": "官方全称",
+          "value": "Cascadas de Tocoihue"
+        },
+        {
+          "label": "常用名称",
+          "value": "Tocoihue · Tocoihue 瀑布"
+        },
+        {
+          "label": "类别",
+          "value": "自然保护区 / 旅游景点"
+        },
+        {
+          "label": "管理属性",
+          "value": "对公众开放的自然保护区"
+        }
+      ]
+    },
+    "location": {
+      "heading": "位置与如何游览达尔卡韦的 Tocoihue",
+      "text": "Cascadas de Tocoihue 位于智利湖大区达尔卡韦镇的 Tocoihue 乡村地带，沿 U-48 公路距镇中心约 20 公里。此地的地理归属层级为：Cascadas de Tocoihue → 达尔卡韦 → 湖大区 → 智利。",
+      "addressLabel": "地址",
+      "phoneLabel": "电话",
+      "coordinatesLabel": "坐标",
+      "plusCodeLabel": "Plus Code",
+      "mapsCta": "在 Google 地图查看路线"
+    },
+    "landmarks": {
+      "heading": "Tocoihue 周边地标与景点",
+      "text": "参观 <strong>Cascadas de Tocoihue</strong> 时，游客可以轻松探访周边的历史地标与景点，例如 <strong>达尔卡韦教堂</strong> 与 <strong>奇洛埃国家公园</strong>。",
+      "items": [
+        {
+          "name": "达尔卡韦教堂（世界遗产）",
+          "description": "18 世纪木造教堂，是列入联合国教科文组织世界遗产的奇洛埃教堂群之一。",
+          "url": "https://www.munidalcahue.cl"
+        },
+        {
+          "name": "奇洛埃国家公园",
+          "description": "原生森林、沙丘与太平洋海岸，位于岛屿西侧，车程不远。",
+          "url": "https://www.munidalcahue.cl"
+        },
+        {
+          "name": "卡斯特罗水上木屋（palafitos）",
+          "description": "卡斯特罗海岸边的彩色高脚屋，距达尔卡韦约 20 分钟车程。",
+          "url": "https://goreloslagos.cl/"
+        }
+      ]
+    },
+    "history": {
+      "heading": "Cascadas de Tocoihue 的历史与意义",
+      "text": "“Tocoihue”一名源自奇洛埃领土上的惠利切马普切语词根，赋予瀑布之名的河流发源于达尔卡韦内陆山丘。数百年间，它一直是惠利切族群日常生活的一部分，后来成为奇洛埃最受珍视的自然出游地之一。"
+    }
+  },
   "intro": {
     "title": "探索 Tocoihue 瀑布",
     "description": "Tocoihue 瀑布是托科伊韦河（Tocoihue River）上的一组跌水，位于奇洛埃大岛达尔卡韦镇的乡村地带。步道穿过由智利南假山毛榉（coihue）、ulmo、tique 等组成的原生森林，抵达从火山岩壁跌落的主瀑布。这里是一处对公众开放的自然保护区，地处古老的惠利切人领地，属于奇洛埃温带雨林生态区。它是达尔卡韦周边评价最高的自然游览地之一，也是奇洛埃“瀑布之路”上的重要一站。",
     "visitGuide": {
       "title": "游览指南",
       "items": [
-        "仅白天开放；夏季通常约 09:00–18:00，出行前请确认。",
-        "位于达尔卡韦镇 Tocoihue 乡村地带，距镇上约 18 公里。",
+        "仅白天开放；夏季通常约 10:00–20:00，出行前请确认。",
+        "位于达尔卡韦镇 Tocoihue 乡村地带，距镇上约 20 公里。",
         "最后一段为碎石路和土路步道，请穿合适的鞋并预留步行时间。",
         "进入保护区需支付少量门票，于抵达时缴纳；多数情况下仅收现金。"
       ]
@@ -101,10 +168,10 @@
     }
   },
   "transportSection": {
-    "title": "如何前往 Tocoihue 瀑布",
+    "title": "到达方式：巴士、自驾、渡轮与航班",
     "subtitle": "从国际航班到达尔卡韦乡村的最后一段碎石路，下面按不同交通方式梳理前往奇洛埃大岛 Tocoihue 瀑布的常见路线。",
     "overviewTitle": "先判断你从哪里出发",
-    "overviewText": "如果你从奇洛埃岛以外前来，通常的模式是乘飞机或大巴到蒙特港（Puerto Montt），穿越查卡奥海峡（Canal de Chacao）进入岛上，再沿公路前往达尔卡韦。从那里到瀑布还有约 18 公里的乡村公路。对多数游客而言，最后一段需自驾、出租车或参加游览团，因为公共交通并不直达保护区门口。",
+    "overviewText": "如果你从奇洛埃岛以外前来，通常的模式是乘飞机或大巴到蒙特港（Puerto Montt），穿越查卡奥海峡（Canal de Chacao）进入岛上，再沿公路前往达尔卡韦。从那里到瀑布还有约 20 公里的乡村公路。对多数游客而言，最后一段需自驾、出租车或参加游览团，因为公共交通并不直达保护区门口。",
     "arrivalTitle": "出发前先记住",
     "arrivalItems": [
       "保护区位于 Tocoihue 乡村地带，最后一段是碎石路，雨后易泥泞。",
@@ -145,7 +212,7 @@
       {
         "label": "方式 04",
         "title": "出租车 / 包车",
-        "description": "从达尔卡韦或卡斯特罗出发，出租车或私人游览团是走完约 18 公里乡村公路最省力的方式。",
+        "description": "从达尔卡韦或卡斯特罗出发，出租车或私人游览团是走完约 20 公里乡村公路最省力的方式。",
         "details": [
           "若你没有车、又想避免最后一段多次转车，最为合适。",
           "许多游览团含向导，并在卡斯特罗或达尔卡韦的住宿点接人。",
@@ -165,7 +232,7 @@
       {
         "label": "方式 06",
         "title": "骑行 / 步行",
-        "description": "从达尔卡韦出发，骑行者可挑战这条乡村公路，但约 18 公里的碎石路对体力和车辆都有要求。",
+        "description": "从达尔卡韦出发，骑行者可挑战这条乡村公路，但约 20 公里的碎石路对体力和车辆都有要求。",
         "details": [
           "道路安静但为土路；奇洛埃多雨，路面容易泥泞。",
           "步行仅建议在 Tocoihue 附近乡村住宿时考虑。",
@@ -188,7 +255,7 @@
     ],
     "ticketReference": {
       "title": "门票参考",
-      "range": "通常约 2,000 - 4,000 智利比索",
+      "range": "通常约 1,000 - 3,000 智利比索",
       "note": "价格可能因季节与管理安排调整；多数情况下请准备现金，并以入口现场公告为准。"
     },
     "mapsCta": "查看地图与路线",
@@ -230,6 +297,21 @@
         "id": "significance",
         "title": "自然奇洛埃的象征",
         "content": "如今，Tocoihue 瀑布是达尔卡韦周边最受喜爱的自然去处之一，也是奇洛埃“瀑布之路”上的地标。远离大城市的喧嚣，它让人近距离、轻松地体验岛上的温带森林，更因坐落于惠利切人领地而别具价值。对任何一个在奇洛埃寻找其自然与故事的人来说，Tocoihue 几乎是必到的一站。"
+      },
+      {
+        "id": "water",
+        "title": "水系统是如何运转的",
+        "content": "瀑布只是托科伊韦河跨越地形落差的那一个点，并不是孤立的现象。上游存在一个完整的流域：它承接降雨，把水储存在土壤与森林中，再缓慢释放给河道。这解释了水量为何变化如此之大——连续降雨后，水会带着泥沙奔涌而下；而在少雨期，瀑布会分成几缕细流，露出底部的岩面。理解这层关系，正是选择到访时机的关键。"
+      },
+      {
+        "id": "biodiversity",
+        "title": "一处生物多样性热点",
+        "content": "奇洛埃的温带雨林是南美洲特有种比例最高的生态区之一。河道周边同时生活着树蕨、苔藓与地衣——它们依赖空气中持续的高湿度；还有依赖洁净冷水繁殖的河谷鸟类与两栖类。这种依赖关系说明：保护河岸与上游森林，与保护瀑布本身是同一件事。没有健康的流域，就没有清澈的跌水。"
+      },
+      {
+        "id": "season",
+        "title": "何时前往、能看到什么",
+        "content": "水量直接取决于当地降雨。5 月至 8 月降水量最大，瀑布下泄更有力量，森林的绿也最浓，但地面泥泞、白昼较短。春季与夏季步道更好走、日照更长，水量略低但同样清澈。无论哪个季节，早到都意味着更好的光线、更少的游客，以及更可能看到低垂在瀑布上的薄雾。"
       }
     ],
     "speciesGuide": {
@@ -238,27 +320,27 @@
       "subtitle": "这片温带雨林并不只是一道瀑布背景。它由常绿阔叶树、附生植物、苔藓与湿地鸟类共同构成，也正是这些生命维持了 Tocoihue 的湿润、清凉与水体清澈。",
       "items": [
         {
+          "id": "ulmo",
           "name": "Ulmo",
           "latin": "Eucryphia cordifolia",
-          "imagePrompt": "botanical field guide style photo of Eucryphia cordifolia tree in the temperate rainforest of Chiloé, mossy bark, humid atmosphere, soft natural light, realistic scientific illustration aesthetic",
           "description": "Ulmo 是奇洛埃常见的蜜源树种之一，树干常覆苔藓与地衣。它在湿润气候中生长良好，也是森林上层结构的重要组成。"
         },
         {
+          "id": "coigue",
           "name": "Coihue",
           "latin": "Nothofagus dombeyi",
-          "imagePrompt": "realistic field guide image of Nothofagus dombeyi in southern Chile temperate rainforest, tall evergreen beech tree, wet forest floor, scientific natural history photography",
           "description": "智利南假山毛榉（coihue）是南部温带森林的代表树种，形成高大林冠，稳定坡地土壤，并为河流流域提供遮阴与保水作用。"
         },
         {
+          "id": "helechos",
           "name": "Chiloé 蕨类群落",
           "latin": "Blechnum spp. / Hymenophyllum spp.",
-          "imagePrompt": "macro natural history image of Chiloé rainforest ferns and filmy ferns, dripping leaves, moss, cool green palette, realistic botanical documentary photography",
           "description": "林下的蕨类与薄膜蕨偏好持续高湿环境，它们帮助维持地表微气候，也是判断森林保存状况的重要视觉线索。"
         },
         {
+          "id": "tagua",
           "name": "南美灰头秧鸡",
           "latin": "Pardirallus sanguinolentus",
-          "imagePrompt": "realistic bird field guide portrait of Pardirallus sanguinolentus in wet grassland near temperate rainforest in Chiloé, soft overcast light, scientific wildlife photography",
           "description": "河谷与湿地边缘常吸引多种鸟类活动。南美灰头秧鸡等湿地鸟类提醒人们，这里的瀑布景观与周边水文生态系统密不可分。"
         }
       ]
@@ -344,12 +426,32 @@
     "legalTitle": "隐私与条款",
     "mapsLabel": "Google 地图 →",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "napTitle": "Cascadas de Tocoihue（达尔卡韦，奇洛埃岛）",
+    "addressLabel": "地址",
+    "addressValue": "智利湖大区达尔卡韦镇 Tocoihue 乡村地带",
+    "phoneLabel": "电话",
+    "imageRights": "本网站所展示的所有图片产权及版权均归原摄影者所有。",
     "officialLinksList": [
-      { "name": "智利国家旅游局（Sernatur）", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
-      { "name": "达尔卡韦市政府", "url": "https://www.munidalcahue.cl" },
-      { "name": "智利环境部 — 湖区办事处", "url": "https://mma.gob.cl/los-lagos/" },
-      { "name": "湖区大区政府", "url": "https://goreloslagos.cl/" },
-      { "name": "国家旅游服务局注册目录", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" }
+      {
+        "name": "智利国家旅游局（Sernatur）",
+        "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/"
+      },
+      {
+        "name": "达尔卡韦市政府",
+        "url": "https://www.munidalcahue.cl"
+      },
+      {
+        "name": "智利环境部 — 湖区办事处",
+        "url": "https://mma.gob.cl/los-lagos/"
+      },
+      {
+        "name": "湖区大区政府",
+        "url": "https://goreloslagos.cl/"
+      },
+      {
+        "name": "国家旅游服务局注册目录",
+        "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue"
+      }
     ],
     "disclaimer": "本网站是一个独立的非营利游客信息项目。我们与任何政府机构或官方组织均无隶属关系。"
   },
@@ -422,13 +524,51 @@
     "amenities": {
       "title": "周边服务设施",
       "items": [
-        { "icon": "🅿️", "label": "停车", "value": "保护区入口处" },
-        { "icon": "🚻", "label": "洗手间", "value": "接待处 / 主屋" },
-        { "icon": "🔌", "label": "加油/充电", "value": "达尔卡韦与卡斯特罗的加油站" },
-        { "icon": "♿", "label": "无障碍", "value": "碎石步道；观景台有坡度" }
+        {
+          "icon": "🅿️",
+          "label": "停车",
+          "value": "保护区入口处"
+        },
+        {
+          "icon": "🚻",
+          "label": "洗手间",
+          "value": "接待处 / 主屋"
+        },
+        {
+          "icon": "🔌",
+          "label": "加油/充电",
+          "value": "达尔卡韦与卡斯特罗的加油站"
+        },
+        {
+          "icon": "♿",
+          "label": "无障碍",
+          "value": "碎石步道；观景台有坡度"
+        }
       ]
     },
     "categories": [
+      {
+        "id": "access",
+        "title": "开放时间与怎么去",
+        "items": [
+          {
+            "q": "Tocoihue 瀑布的开放时间是怎样的？",
+            "a": "园区白天开放。旺季（12 月至次年 3 月）通常约为 10:00 至 20:00，建议最晚在闭园前一小时入园。旺季之外没有公布固定时间：闭园时间取决于日照和天气。由于是私人园区，遇强降雨、大风或河水上涨时可能关闭，建议当天通过电话或 WhatsApp 确认。"
+          },
+          {
+            "q": "从达尔卡韦怎么去 Tocoihue 瀑布？",
+            "a": "从达尔卡韦镇中心沿通往市镇内陆的 U-48 公路向 Tocoihue 方向行驶，继续约 20 公里。最后几公里是碎石路且没有连续路标：请留意标示入口的木牌，停车场就在入口旁。自驾约需 30 分钟，路面潮湿时更久。GPS 可用坐标 -42.3045792, -73.4376721 或 Plus Code MHW6+5W。"
+          },
+          {
+            "q": "没有车怎么过去？",
+            "a": "城际巴士可以到达达尔卡韦或卡斯特罗，但不会直达园区入口。从镇上需要换乘接驳车、当地出租车或参加预约的一日游。请注意乡村地带没有商店、ATM 和加油站，出发前请先解决燃油、现金和饮水。"
+          },
+          {
+            "q": "什么季节去最好？步行游览需要多久？",
+            "a": "春季（9 月至 11 月）体验最均衡：日照更长、步道状况更好、能见度佳，水量也还充沛。夏季开放时间最可预期，但游客最多，碎石路也更容易拥堵。冬季瀑布最壮观，但地面泥泞、日照更短。游览全程为林间步道步行，请准备合适的鞋子并按自己的节奏预留时间。"
+          }
+        ]
+      },
       {
         "id": "infra",
         "title": "交通与基础设施",
@@ -462,6 +602,10 @@
           {
             "q": "为什么这里的水看起来那么清澈？",
             "a": "因为它发源于保存良好的原生森林流域，植被起到过滤与涵养水分的作用。不过强降雨后水量上涨、水体也会略显浑浊；春季与夏季通常最为清澈。"
+          },
+          {
+            "q": "Tocoihue 瀑布有传说吗？",
+            "a": "这里流传的是口述传统，而非有文字定本的传说。流传最广的版本说，奇洛埃的“巫师”会利用这处瀑布“洗去”洗礼：想摆脱洗礼的人必须在水幕下停留十二小时到七天不等，视版本而定。这一信念又与维利切人的观念交叠——水是 newen（活的力量），每处跌水或泉眼都有栖身的 ngen（“主人”），因此涉水之地需以敬畏之心对待、进入前要先“请求许可”。说法各有版本，并无标准本。同一片区还保留着一座木教堂，是奇洛埃木教堂典型建造体系的实例。"
           }
         ]
       },
@@ -492,22 +636,591 @@
             "a": "很近的达尔卡韦拥有联合国教科文组织世界遗产教堂和著名的本地物产市场。再远一点是卡斯特罗及其水上木屋（palafitos），以及奇洛埃国家公园，适合想继续探索原生森林、鸟类与岛屿海岸的人。"
           }
         ]
+      },
+      {
+        "id": "services",
+        "title": "服务设施与后勤",
+        "items": [
+          {
+            "q": "Tocoihue 有吃饭或住宿的地方吗？",
+            "a": "Tocoihue 乡村地带内没有餐厅，也没有正式的旅游住宿：这里是一条自然游线，本身不提供餐饮。可选类型包括小吃店、咖啡馆、面包房、木屋（cabaña）、旅舍、露营地与酒店，主要集中在达尔卡韦和卡斯特罗。我们只说明服务类型，不推荐、不赞助，也不与任何具体商户存在合作。"
+          },
+          {
+            "q": "步道上有洗手间和饮用水吗？",
+            "a": "接待区设有基础卫生间，但步道沿线与观景台没有。河水与溪水未经过处理，未经净化不宜饮用，建议从达尔卡韦带水，按每人至少 1 升计算。"
+          },
+          {
+            "q": "可以刷卡吗？附近有 ATM 吗？",
+            "a": "ATM 位于达尔卡韦和卡斯特罗，乡村公路上没有。自然保护区的入园费用通常以现金支付，刷卡所需的信号也可能不稳定。建议备好小面额现金，不要依赖移动网络。"
+          },
+          {
+            "q": "这一带有手机信号和网络吗？",
+            "a": "移动信号覆盖不完整且时断时续，在穿过森林和沟谷的路段会更弱；步道内没有公共 Wi-Fi。出发前请下载离线地图，并把行程与预计返回时间告知他人。"
+          },
+          {
+            "q": "附近有加油站或充电桩吗？",
+            "a": "加油站在达尔卡韦和卡斯特罗。岛上电动车充电网络仍较为有限，主要集中在各市镇中心，建议进入乡村地带前先规划好充电。"
+          },
+          {
+            "q": "在哪里采购补给比较合适？",
+            "a": "在达尔卡韦或卡斯特罗：有中型超市、社区杂货店与集市。乡村公路上没有商业网点，请在上碎石路之前备好饮用水、干粮和其他物资。"
+          },
+          {
+            "q": "可以带宠物进入吗？",
+            "a": "请直接向保护区接待处咨询。在智利的自然保护区与保护地，出于卫生与野生动物保护考虑，宠物通常被限制进入或必须牵绳管控。请不要默认宠物可以进入。"
+          },
+          {
+            "q": "紧急情况拨打什么电话？",
+            "a": "智利全国紧急电话为 131（救护车）、132（消防）、133（警察）和 134（刑侦）。由于距离较远且为碎石路，救援到达较慢，请用坐标或 Plus Code MHW6+5W 说明你的位置。"
+          }
+        ]
       }
     ]
+  },
+  "sources": {
+    "title": "资料来源与参考",
+    "subtitle": "本指南汇总了来自官方机构、旅游登记目录与地图来源的公开可核验信息，帮助你以可靠的数据规划行程。",
+    "officialTourism": "如需官方更新与区域旅游信息，请访问智利官方旅游门户：",
+    "officialTourismLink": "智利 / 湖大区官方旅游门户",
+    "itemsTitle": "参考资料",
+    "imageRightsTitle": "图片版权",
+    "imageRights": "本网站所展示的所有图片产权及版权均归原摄影者所有。",
+    "lastReviewedLabel": "最近更新",
+    "lastReviewed": "2026 年 9 月",
+    "items": [
+      {
+        "name": "智利国家旅游局（Sernatur）官方门户",
+        "publisher": "智利国家旅游服务局",
+        "url": "https://chile.travel/"
+      },
+      {
+        "name": "达尔卡韦市政府",
+        "publisher": "达尔卡韦市政府",
+        "url": "https://www.munidalcahue.cl"
+      },
+      {
+        "name": "智利环境部 — 湖大区办事处",
+        "publisher": "智利环境部",
+        "url": "https://mma.gob.cl/los-lagos/"
+      },
+      {
+        "name": "湖大区政府",
+        "publisher": "湖大区政府",
+        "url": "https://goreloslagos.cl/"
+      },
+      {
+        "name": "国家旅游服务提供者注册目录",
+        "publisher": "Sernatur",
+        "url": "https://serviciosturisticos.sernatur.cl/"
+      },
+      {
+        "name": "天气预报模型数据",
+        "publisher": "Open-Meteo",
+        "url": "https://open-meteo.com/"
+      },
+      {
+        "name": "Google 地图上的 Cascadas de Tocoihue",
+        "publisher": "Google Maps",
+        "url": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+      }
+    ]
+  },
+  "weather": {
+    "eyebrow": "本地气象",
+    "title": "Tocoihue 瀑布实时天气与多日预报",
+    "subtitle": "Tocoihue 乡村地带是奇洛埃降雨最多的区域之一：天气变化很快，瀑布水量取决于最近的降雨。我们把预报翻译成可以直接执行的出行决定。",
+    "now": "当前实况",
+    "feelsLike": "体感温度",
+    "humidity": "相对湿度",
+    "wind": "风速",
+    "rainChance": "今日降水概率",
+    "highlightsTitle": "今日关键数据",
+    "uvIndex": "紫外线指数（最高）",
+    "windMax": "最大风速（预报）",
+    "sunrise": "日出",
+    "sunset": "日落",
+    "updatedLabel": "观测时间",
+    "forecastTitle": "未来 7 天预报",
+    "forecastNote": "降雨概率仅供参考：在奇洛埃，一天之内从细雨转为放晴十分常见。",
+    "today": "今天",
+    "unavailable": "数据暂时不可用",
+    "dataSource": "天气数据：Open-Meteo",
+    "adviceTitle": "今日出行建议",
+    "adviceSubtitle": "根据今天的预报自动生成，只显示真正适用的条目。",
+    "groups": {
+      "outfit": "出行穿搭",
+      "plan": "游玩安排",
+      "gear": "随身物品"
+    },
+    "riskTitle": "风险提醒",
+    "riskNote": "风险提醒由预报数据自动推导，不等同于官方气象预警。遇到极端天气时，请以园区现场工作人员的指引为准。",
+    "windScale": {
+      "calm": "微风",
+      "breeze": "风轻",
+      "moderate": "风较明显",
+      "strong": "风力偏大",
+      "gale": "大风"
+    },
+    "tips": {
+      "riskFlood": "预计有强降雨，河水可能短时间内暴涨：不要在河床、峡谷与步道低洼段停留。",
+      "riskThunder": "有雷电活动：不要在瀑布边、岩壁下或孤立大树下停留，请尽快返回接待区或车内。",
+      "riskGale": "大风天气：远离观景台边缘以及枯枝、倒木区域。",
+      "riskFog": "浓雾导致能见度很低：林间容易迷失方向，查卡奥海峡的渡轮与航班也可能延误。",
+      "riskIce": "低温并可能结冰：台阶、栈道与岩面湿滑，请放慢速度并抓稳扶手。",
+      "riskHeat": "气温偏高：缩短户外停留时间并持续补水，谨防中暑。",
+      "outfitCold": "气温偏低，注意防寒保暖，建议厚外套加多层穿搭。",
+      "outfitCool": "天气偏凉，建议穿外套或抓绒层。",
+      "outfitRange": "昼夜温差较大，建议备一件可随时增减的外套。",
+      "outfitHot": "气温偏高，建议轻薄透气衣物，并尽量避开正午外出。",
+      "outfitWarm": "白天温暖，短袖即可，早晚备一件薄外套。",
+      "outfitRain": "大概率会下雨：建议穿防水外层，并准备雨伞或雨衣。",
+      "outfitWind": "风力偏大：建议穿贴身的防风外层，避免宽松长裙与宽檐帽。",
+      "outfitMild": "天气温和，常规户外穿着即可，建议叠穿方便增减。",
+      "planFlood": "不要进入河床与峡谷区域，涉水与亲水活动请取消。",
+      "planThunder": "露天活动与观景台可能临时关闭：优先选择有林冠遮蔽的路线或室内安排。",
+      "planHeavyRain": "降雨较强：不建议长时间在户外活动，步道可能临时封闭。",
+      "planLightRain": "有小雨：步道与岩面湿滑，请放慢速度、走稳每一步。",
+      "planFog": "有雾时视野受限：不适合远眺观景，但仍然适合在林间漫步。",
+      "planGale": "高处与观景台风大：注意站稳并缩短停留时间。",
+      "planHot": "避开正午时段，把徒步安排在清晨或傍晚。",
+      "planCold": "气温偏低，缩短户外停留时间并注意保暖。",
+      "planClear": "天气晴好，适合户外游览；清晨光线最柔和，也最适合拍照。",
+      "planOvercast": "光线柔和、没有暴晒，适合长时间户外漫步与拍照。",
+      "planDefault": "天气总体适合游览，按常规节奏安排即可。"
+    },
+    "gear": {
+      "umbrella": "折叠伞",
+      "raincoat": "防水外套 / 雨衣",
+      "raincoatWind": "雨衣（风大，不建议长柄伞）",
+      "boots": "防滑防水鞋",
+      "sunscreen": "防晒霜",
+      "sunglasses": "墨镜",
+      "hat": "遮阳帽",
+      "jacket": "薄外套",
+      "warmCoat": "厚外套",
+      "scarf": "围巾",
+      "water": "充足饮用水",
+      "insectRepellent": "驱蚊液",
+      "mask": "口罩"
+    },
+    "conditions": {
+      "clear": "晴朗",
+      "mainlyClear": "晴间多云",
+      "partlyCloudy": "多云",
+      "overcast": "阴天",
+      "fog": "有雾",
+      "drizzle": "细雨",
+      "rain": "降雨",
+      "showers": "阵雨",
+      "snow": "降雪",
+      "thunderstorm": "雷暴"
+    }
+  },
+  "facilities": {
+    "eyebrow": "游客后勤",
+    "title": "Tocoihue 的服务设施、基础条件与行前准备",
+    "subtitle": "出发前最好先弄清楚：现场到底有什么、哪些必须到达尔卡韦或卡斯特罗解决。下面按服务类型梳理 Tocoihue 乡村地带可以预期的情况。",
+    "neutralityTitle": "中立说明。",
+    "neutralityNote": "本站是独立的非营利科普项目。我们只描述服务类型，不推荐、不赞助，也不与任何具体商户存在合作关系。营业时间、价格与库存请以现场为准。",
+    "levels": {
+      "onSite": "现场有",
+      "nearby": "在达尔卡韦 / 卡斯特罗",
+      "limited": "有限"
+    },
+    "items": [
+      {
+        "icon": "🚻",
+        "title": "卫生间与卫生设施",
+        "level": "onSite",
+        "text": "接待区设有基础卫生间，步道沿线没有。属于乡村场地的简易设施，旺季使用强度较大。",
+        "tips": [
+          "自带卫生纸与免洗消毒液，补充并不总是及时。",
+          "观景台附近没有卫生间，请在上行前先使用入口处的。"
+        ]
+      },
+      {
+        "icon": "💧",
+        "title": "饮用水",
+        "level": "limited",
+        "text": "河流与溪涧的水没有经过处理，未经净化不宜饮用。乡村公路上没有取水点，饮用水需从达尔卡韦带来。",
+        "tips": [
+          "徒步按每人至少 1 升水准备。",
+          "若取用泉水，请煮沸或净化后再饮用。"
+        ]
+      },
+      {
+        "icon": "🅿️",
+        "title": "停车场",
+        "level": "onSite",
+        "text": "停车场位于场地入口处，为未硬化、未划线的土石地面，车位数量有限，夏季与长周末尤为紧张。",
+        "tips": [
+          "车内不要留置贵重物品。",
+          "强降雨后地面泥泞，底盘很低的车辆需谨慎。"
+        ]
+      },
+      {
+        "icon": "🍽️",
+        "title": "餐饮",
+        "level": "nearby",
+        "text": "游线范围内没有餐厅或咖啡厅。本区域餐饮以本地类型为主，集中在达尔卡韦与卡斯特罗：小吃店、咖啡馆、面包房、集市以及奇洛埃地方菜餐厅。",
+        "tips": [
+          "中午徒步请自备干粮与饮水。",
+          "达尔卡韦的集市与市场是了解本地物产的好去处。"
+        ]
+      },
+      {
+        "icon": "🛏️",
+        "title": "住宿",
+        "level": "nearby",
+        "text": "Tocoihue 乡村地带没有正式的旅游住宿。可选类型为木屋（cabaña）、旅舍、露营地与酒店，主要集中在达尔卡韦、卡斯特罗及邻近村镇。",
+        "tips": [
+          "旺季（1—2 月）建议提前预订。",
+          "住在达尔卡韦可以缩短碎石路段的车程。"
+        ]
+      },
+      {
+        "icon": "🛒",
+        "title": "商超与采买",
+        "level": "nearby",
+        "text": "采购需经过达尔卡韦或卡斯特罗：中型超市、社区杂货店、集市与专业商铺。乡村公路上没有任何商业网点。",
+        "tips": [
+          "上碎石路之前先买好补给。",
+          "本地物产包括原生马铃薯、curanto、海产与农家蔬果。"
+        ]
+      },
+      {
+        "icon": "⛽",
+        "title": "加油与充电",
+        "level": "nearby",
+        "text": "加油站在达尔卡韦和卡斯特罗，乡村地带没有。岛上电动车充电网络仍较有限，主要集中在各市镇中心。",
+        "tips": [
+          "前往 Tocoihue 之前先在达尔卡韦加油。",
+          "电动车请在达尔卡韦或卡斯特罗规划充电。"
+        ]
+      },
+      {
+        "icon": "🏧",
+        "title": "现金与支付方式",
+        "level": "nearby",
+        "text": "ATM 位于达尔卡韦和卡斯特罗。在乡村地带与自然保护区入口，费用通常以现金支付，刷卡所需的信号可能不稳定。",
+        "tips": [
+          "备好小面额现金用于购票。",
+          "不要假设有移动网络可以刷卡或转账。"
+        ]
+      },
+      {
+        "icon": "📶",
+        "title": "手机信号与网络",
+        "level": "limited",
+        "text": "Tocoihue 乡村地带移动信号覆盖不完整、时断时续，在森林与沟谷路段更弱。步道与观景台没有公共 Wi-Fi。",
+        "tips": [
+          "出发前下载离线地图与路线。",
+          "把行程与预计返回时间告诉他人。"
+        ]
+      },
+      {
+        "icon": "🛟",
+        "title": "应急与安全",
+        "level": "limited",
+        "text": "受距离与碎石路影响，救援力量到达较慢。遇到紧急情况请拨打全国紧急电话，并用坐标或 Plus Code 说明位置。",
+        "tips": [
+          "救护 131 · 消防 132 · 警察 133 · 刑侦 134。",
+          "随身记下 Plus Code MHW6+5W 与入口坐标。"
+        ]
+      },
+      {
+        "icon": "♿",
+        "title": "无障碍通行",
+        "level": "limited",
+        "text": "游线未做无障碍改造：进场道路为碎石路，林间步道有树根、坡度和窄段。接待区是整个场地中相对平坦的部分。",
+        "tips": [
+          "行动不便的游客可在接待处询问当日路况。",
+          "不建议轮椅或婴儿车通行。"
+        ]
+      },
+      {
+        "icon": "🧭",
+        "title": "导览与接送",
+        "level": "nearby",
+        "text": "有从卡斯特罗和达尔卡韦出发的向导游览与接送类服务，需通过旅行社或本地经营者预订，园区内不提供。",
+        "tips": [
+          "确认是否包含从住宿点出发的接送。",
+          "可以询问导览是否包含惠利切文化讲解。"
+        ]
+      }
+    ],
+    "distancesTitle": "从入口出发的参考距离",
+    "distances": [
+      {
+        "place": "达尔卡韦（镇中心）",
+        "value": "约 20 公里 · 30 分钟"
+      },
+      {
+        "place": "卡斯特罗（省会级城镇）",
+        "value": "约 38 公里 · 45–55 分钟"
+      },
+      {
+        "place": "莫科普利机场（MHC）",
+        "value": "约 40 公里 · 45 分钟"
+      },
+      {
+        "place": "蒙特港（经查卡奥海峡）",
+        "value": "约 140 公里 · 2.5–3 小时"
+      }
+    ],
+    "distancesNote": "以上为从保护区入口出发、经乡村公路的参考距离与时长，会随碎石路况、降雨与季节变化。",
+    "maintenanceNote": "服务信息会定期复核，但乡村地区的可用性会随季节变化。出行前建议向园区本身或达尔卡韦市政府确认开放时间与票价。"
+  },
+  "timeline": {
+    "eyebrow": "历史脉络",
+    "title": "Tocoihue 与达尔卡韦地区的历史",
+    "subtitle": "瀑布没有“建成日期”：它是先于任何文字记录而存在的地理特征。要理解它，需要把视野放到奇洛埃群岛与曾在此生活的惠利切人的长时段历史中。",
+    "items": [
+      {
+        "era": "16 世纪以前",
+        "title": "一片有人居住的群岛",
+        "text": "奇洛埃居住着惠利切人与乔诺人（chono）社群，以酋邦形式组织，依赖森林、渔猎与采集贝类为生。达尔卡韦内陆的河流——包括形成瀑布的这一条——都属于他们日常使用的领地范围。"
+      },
+      {
+        "era": "1540 – 1600",
+        "title": "欧洲人到来与卡斯特罗建城",
+        "text": "自 16 世纪中叶起，西班牙远征队开始勘察这片群岛。1567 年卡斯特罗建城，成为奇洛埃的行政中心，也是殖民时期对岛屿领土实施管辖的起点。"
+      },
+      {
+        "era": "1608 – 1767",
+        "title": "传教与木构教堂",
+        "text": "耶稣会的“巡回传教”遍访各岛，催生了奇洛埃的木造教堂——以本地工艺建造，主要结构以木构件咬合而非铁钉连接。这套建造体系如今是群岛最具辨识度的遗产特征。"
+      },
+      {
+        "era": "1826",
+        "title": "正式并入智利共和国",
+        "text": "《坦陶科条约》签订后，奇洛埃正式并入智利。岛屿经济随之围绕船厂、木材采运与自给农业重新组织。"
+      },
+      {
+        "era": "19 至 20 世纪",
+        "title": "木材、柴薪与乡村景观",
+        "text": "在相当长的时期里，达尔卡韦内陆的原生林被用于柴薪、木炭与造船。与此同时，这一带的跌水——包括 Tocoihue——开始被镇上家庭当作周末出游的目的地。"
+      },
+      {
+        "era": "2000",
+        "title": "奇洛埃教堂列入世界遗产",
+        "text": "联合国教科文组织将“奇洛埃教堂群”列入《世界遗产名录》。这一认定推动了岛上的文化旅游，也让拥有 18 世纪木造教堂的达尔卡韦进入智利南部的遗产路线。"
+      },
+      {
+        "era": "当代",
+        "title": "对公众开放的自然保护区",
+        "text": "瀑布所在的地产如今作为对游客开放的自然保护区运营：设有标识步道、主瀑布观景台与基础接待服务，从而被纳入群岛的自然与遗产旅游供给之中。"
+      }
+    ],
+    "note": "以上年代对应的是奇洛埃历史中有据可查的节点，并非瀑布本身的具体事件——关于它的文字记载十分有限。列出这些节点，是为了把这片景观放进一个可核验的历史语境中。"
   },
   "recommendations": {
     "title": "探索奇洛埃更多精彩",
     "attractionsTitle": "附近景点",
     "toursTitle": "推荐游览与活动",
     "attractions": [
-      { "name": "达尔卡韦教堂（联合国教科文遗产）", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
-      { "name": "奇洛埃国家公园", "url": "https://www.munidalcahue.cl" },
-      { "name": "卡斯特罗水上木屋", "url": "https://goreloslagos.cl/" }
+      {
+        "name": "达尔卡韦教堂（联合国教科文遗产）",
+        "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/"
+      },
+      {
+        "name": "奇洛埃国家公园",
+        "url": "https://www.munidalcahue.cl"
+      },
+      {
+        "name": "卡斯特罗水上木屋",
+        "url": "https://goreloslagos.cl/"
+      }
     ],
     "tours": [
-      { "name": "从卡斯特罗出发的瀑布游览", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" },
-      { "name": "原生森林观鸟", "url": "https://mma.gob.cl/los-lagos/" },
-      { "name": "奇洛埃瀑布之路", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" }
+      {
+        "name": "从卡斯特罗出发的瀑布游览",
+        "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue"
+      },
+      {
+        "name": "原生森林观鸟",
+        "url": "https://mma.gob.cl/los-lagos/"
+      },
+      {
+        "name": "奇洛埃瀑布之路",
+        "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/"
+      }
+    ]
+  },
+  "schedule": {
+    "eyebrow": "开放时间与可达性",
+    "title": "Tocoihue 瀑布的开放时间、季节可达性与门票价格",
+    "subtitle": "园区是白天开放的私人自然保护区。固定开放时间只在旺季适用，并会因天气、河水水量或步道维护而变化：出发前请务必确认。",
+    "hoursTitle": "开放时间",
+    "hours": [
+      {
+        "label": "旺季（12 月 – 3 月）",
+        "value": "约 10:00 – 20:00，每天开放"
+      },
+      {
+        "label": "其余月份",
+        "value": "仅白天开放，闭园时间更早"
+      },
+      {
+        "label": "最晚入园",
+        "value": "建议在闭园前至少 1 小时入园"
+      }
+    ],
+    "hoursNote": "由于园区开放受天气制约，遇到强降雨、大风或河水上涨时可能临时关闭，且不另行通知。",
+    "seasonTitle": "季节性可达性",
+    "season": [
+      {
+        "label": "12 月 – 2 月（夏季）",
+        "value": "旺季，有固定开放时间，游客最多。建议 11:00 前抵达，避开碎石路段的会车拥堵。"
+      },
+      {
+        "label": "4 月 – 5 月（秋季）",
+        "value": "游客较少，森林仍然翠绿。降雨开始增多，步道变得湿滑。"
+      },
+      {
+        "label": "6 月 – 8 月（冬季）",
+        "value": "降雨最多的季节：瀑布水量最大最壮观，但地面泥泞、白昼短，遇大风天可能临时关闭。"
+      },
+      {
+        "label": "9 月 – 11 月（春季）",
+        "value": "步道最好走、日照变长、能见度好，水量开始回落。是步行体验最均衡的季节。"
+      }
+    ],
+    "seasonNote": "游览全程为林间步道步行，不是车行路线，也没有车道环路。",
+    "ticketsTitle": "门票参考价格",
+    "tickets": [
+      {
+        "label": "成人（12 岁及以上）",
+        "value": "约 3,000 智利比索／人"
+      },
+      {
+        "label": "老年人",
+        "value": "约 2,000 智利比索／人"
+      },
+      {
+        "label": "儿童（5–11 岁）",
+        "value": "约 1,000 智利比索／人"
+      },
+      {
+        "label": "使用洗手间",
+        "value": "另加约 500 智利比索"
+      }
+    ],
+    "ticketsNote": "价格来自近期游客反馈，仅供参考并可能调整，抵达时最好再次确认。建议携带小面额现金，因为乡村地带刷卡所需信号时断时续。",
+    "contactTitle": "出发前请确认",
+    "contactText": "由于这是私人园区且通行受天气影响，确认是否开放、确切开放时间与现行票价最可靠的方式，是拨打园区的公开电话或通过 WhatsApp 联系。",
+    "confirmNote": "如果从远处前来，请当天再确认一次：遇到大风或强降雨临时关闭是常见情况。",
+    "relatedTitle": "继续规划行程",
+    "related": [
+      {
+        "label": "从达尔卡韦怎么去 Tocoihue 瀑布",
+        "href": "#directions"
+      },
+      {
+        "label": "今日天气与未来 7 天预报",
+        "href": "#weather"
+      },
+      {
+        "label": "Tocoihue 与达尔卡韦的历史",
+        "href": "#history"
+      }
+    ]
+  },
+  "directions": {
+    "eyebrow": "怎么去",
+    "title": "从达尔卡韦怎么去 Tocoihue 瀑布",
+    "subtitle": "瀑布位于达尔卡韦内陆约 20 公里处，经 U-48 公路进入 Tocoihue 乡村地带。最后几公里是碎石路且没有连续路标，建议出发前先下载好离线地图。",
+    "routeTitle": "从达尔卡韦出发的逐步路线",
+    "route": [
+      {
+        "step": "从达尔卡韦镇中心出发",
+        "detail": "在达尔卡韦中心的市场与海滨一带，沿通往市镇内陆的公路向 Tocoihue 方向行驶（U-48 公路）。"
+      },
+      {
+        "step": "一路沿主路行驶",
+        "detail": "沿主路行驶约 20 公里。沿途会经过民居、围栏与草场；这一段没有任何商店和加油站。"
+      },
+      {
+        "step": "离开柏油路面",
+        "detail": "最后一段变为碎石路。请减速慢行，雨天尤其要注意：路面湿滑且弯道狭窄。"
+      },
+      {
+        "step": "找到有标牌的岔路口",
+        "detail": "园区入口设有木牌标示。如果到了没有标牌的岔路，请往回退几米：这个岔口很容易开过头。"
+      },
+      {
+        "step": "驶入停车场",
+        "detail": "停车场位于入口旁，为土质地面。从这里开始，游览全程只能沿林间步道步行。"
+      }
+    ],
+    "routeNote": "预计耗时：自驾从达尔卡韦镇中心约 约 30 分钟，路面潮湿时更久。没有常规公共交通直达入口。",
+    "gpsTitle": "GPS 坐标",
+    "gps": [
+      {
+        "label": "十进制坐标",
+        "value": "-42.3045792, -73.4376721"
+      },
+      {
+        "label": "Plus Code",
+        "value": "MHW6+5W"
+      },
+      {
+        "label": "精确点位",
+        "value": "在 Google 地图中打开"
+      }
+    ],
+    "gpsNote": "如果地图应用打不开，请直接输入 Plus Code MHW6+5W：即使移动信号时断时续也能定位。",
+    "mapTitle": "区域地图",
+    "mapNote": "地图显示达尔卡韦至园区入口之间的乡村范围。出发前请下载离线地图：碎石路段信号不稳定。",
+    "roadsTitle": "路况提醒",
+    "roads": [
+      "最后几公里为碎石路：不适合底盘过低的车、公路自行车与轮椅。",
+      "雨天有泥泞和积水；请慢速行驶，并避免夜间行车，因为道路没有照明。",
+      "这一带没有加油站、ATM 和商店：请在达尔卡韦先加油并取好现金。",
+      "乘巴士只能到镇上，无法抵达入口：需要换乘接驳车或当地出租车。"
+    ],
+    "relatedTitle": "出发之前",
+    "related": [
+      {
+        "label": "Tocoihue 瀑布的开放时间、季节与票价",
+        "href": "#schedule"
+      },
+      {
+        "label": "今日天气与未来 7 天预报",
+        "href": "#weather"
+      },
+      {
+        "label": "巴士、自驾、渡轮与航班对比",
+        "href": "#transport"
+      }
+    ]
+  },
+  "heritage": {
+    "eyebrow": "地名与文化",
+    "title": "Tocoihue 在马普切语中是什么意思，以及当地的传说",
+    "subtitle": "这里的地名来自奇洛埃地区使用的马普切语，描述的是自然环境。当地口述传统又叠加了一层关于河流与森林的故事。",
+    "nameTitle": "“科伊韦树之地”",
+    "nameText": "地名来自奇洛埃地区使用的马普切语。词根 koiwe 指的是 coihue（科伊韦／智利假山毛榉，Nothofagus dombeyi）——一种木质坚硬耐久、在河畔森林中占优势的原生树木；后缀 -hue 表示“地方”，因此最常见的译法是“科伊韦树之地”。智利部分地名学研究还提出把前半部分读作 thog（“茂密”），解释为“茂密的假山毛榉林”。同一个后缀也出现在达尔卡韦（Dalcahue）中，意为“达尔卡船之地”，达尔卡是过去在群岛之间航行所用的木船。",
+    "nameNote": "这类地名记录的是被占据之前这片土地上原有的东西：环绕河流的科伊韦树林，正是此地得名的由来。Tocoihue 并非只有一道瀑布：托科伊韦河在此跌落形成三处跌水，主瀑落差可达约 60 米，落入一片被常绿林环抱的圆形深潭。同一片区还保存着一座木结构教堂，是奇洛埃木教堂建筑体系的典型实例。",
+    "legendTitle": "传说：能“洗去洗礼”的瀑布",
+    "legendText": "奇洛埃素来多传说，而关于这处瀑布流传最广的一则，主角是群岛上的“巫师”（brujos）：据说瀑布的水幕能“洗去”天主教洗礼，凡想摆脱洗礼的人，必须在水流下长时间冲刷——按版本不同，从十二小时、一整天甚至到七天——直到变“干净”。这一信念与维利切人的水观念交叠：水不是惰性资源，而是 newen（活的力量），每处跌水或泉眼都有栖居其中的 ngen（“主人”）。因此涉水之地需以敬畏之心对待：进入前要先“请求许可”，并保持安静——河流是有主人的领地。",
+    "legendNote": "我们把这段传说作为当地口述传统呈现，而非既成文献事实：说法各有版本，也没有固定的书面记录。若想听完整版本，最好向当地居民或园区接待处请教。",
+    "respectTitle": "如何有尊重地游览",
+    "respectText": "这里是维利切人的祖居地，许多故事对今天的社区仍有意义。请把垃圾带走，不要在岩面上刻画留名，不要留下不符合当地传统的祭品；若遇到当地人举行仪式活动，请不要未经允许拍摄录像。",
+    "relatedTitle": "继续探索",
+    "related": [
+      {
+        "label": "Tocoihue 与达尔卡韦的历史",
+        "href": "#history"
+      },
+      {
+        "label": "Tocoihue 瀑布森林的动植物",
+        "href": "#nature"
+      },
+      {
+        "label": "Tocoihue 瀑布照片图库",
+        "href": "#gallery"
+      }
     ]
   }
 }

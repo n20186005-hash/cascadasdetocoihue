@@ -1,19 +1,25 @@
 {
   "meta": {
-    "title": "Cascadas de Tocoihue | Dalcahue, Chiloé, Chile",
-    "description": "The complete guide to Cascadas de Tocoihue: history, its native forest setting on Chiloé, photos, visitor reviews, and how to reach this waterfall in the Dalcahue commune, Los Lagos Region."
+    "title": "Tocoihue Waterfalls, Chiloé: Hours, How to Get There & Visit Guide",
+    "description": "Plan your visit to the Tocoihue Waterfalls in Dalcahue, Chiloé. Opening hours, step-by-step directions, GPS coordinates, local legend and ticket prices."
   },
   "header": {
     "siteName": "Cascadas de Tocoihue",
     "home": "Home",
     "visit": "Visit",
-    "transport": "Getting Here",
+    "transport": "Transport",
     "history": "History",
     "gallery": "Gallery",
     "reviews": "Reviews",
     "faq": "FAQ",
     "map": "Map",
-    "backToHome": "Back to Home"
+    "backToHome": "Back to Home",
+    "napLine": "Dalcahue · Chiloé · Los Lagos Region · Chile",
+    "weather": "Weather",
+    "services": "Services",
+    "schedule": "Hours",
+    "directions": "Directions",
+    "heritage": "Name & legend"
   },
   "common": {
     "changeLanguage": "Switch language",
@@ -22,11 +28,12 @@
   "hero": {
     "eyebrow": "Chiloe Temperate Rainforest Reserve",
     "title": "Cascadas de Tocoihue: Into Chiloe's Native Rainforest and Huilliche Legendscape",
+    "h1Name": "Cascadas de Tocoihue (Dalcahue)",
     "subtitle": "Set on ancestral Huilliche territory a short drive from Dalcahue, this waterfall combines an easy forest walk, basalt geology and cultural interpretation in one of Chiloe's most rewarding nature visits.",
-    "rating": "4.7(6,071)",
-    "reviewCount": "6,071 reviews",
-    "hours": "Typically open by day, ~09:00–18:00 (summer)",
-    "locationNote": "About 18 km east of Dalcahue via the U-48 gravel road",
+    "rating": "4.7(6,081)",
+    "reviewCount": "6,081 reviews",
+    "hours": "Typically open by day, ~10:00–20:00 (summer)",
+    "locationNote": "About 20 km east of Dalcahue via the U-48 gravel road",
     "primaryCta": {
       "label": "Plan Your Visit",
       "href": "#transport",
@@ -45,12 +52,81 @@
       "roadText": "The gravel road to Tocoihue is usually passable, but after heavy rain it is wise to confirm same-day conditions in Dalcahue."
     },
     "factCards": [
-      { "label": "Trail Length", "value": "About 600 m one way" },
-      { "label": "Difficulty", "value": "Easy, family-friendly" },
-      { "label": "Visit Time", "value": "1.5 to 2 hours" }
+      {
+        "label": "Trail Length",
+        "value": "About 600 m one way"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Easy, family-friendly"
+      },
+      {
+        "label": "Visit Time",
+        "value": "1.5 to 2 hours"
+      }
     ],
     "openMaps": "View Location",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
+  },
+  "entity": {
+    "breadcrumbLabel": "Breadcrumb",
+    "about": {
+      "heading": "About Cascadas de Tocoihue",
+      "lead": "Welcome to the <strong>Cascadas de Tocoihue</strong>, widely recognized as the central <strong>Tocoihue</strong>. Located in the heart of <strong>Dalcahue</strong>, <strong>Los Lagos Region</strong>, <strong>Chile</strong>, this destination serves as a primary hub for travelers visiting the Isla Grande de Chiloé.",
+      "factsLabel": "Place profile",
+      "facts": [
+        {
+          "label": "Official name",
+          "value": "Cascadas de Tocoihue"
+        },
+        {
+          "label": "Also known as",
+          "value": "Tocoihue · Tocoihue Waterfalls"
+        },
+        {
+          "label": "Category",
+          "value": "Nature reserve / tourist attraction"
+        },
+        {
+          "label": "Management",
+          "value": "Public-use nature reserve"
+        }
+      ]
+    },
+    "location": {
+      "heading": "Location & How to Visit Tocoihue in Dalcahue",
+      "text": "The Cascadas de Tocoihue are located in the rural sector of Tocoihue, Dalcahue commune, Los Lagos Region, Chile, about 20 km from town via the U-48 road. The geographic hierarchy of the place is Cascadas de Tocoihue → Dalcahue → Los Lagos → Chile.",
+      "addressLabel": "Address",
+      "phoneLabel": "Phone",
+      "coordinatesLabel": "Coordinates",
+      "plusCodeLabel": "Plus Code",
+      "mapsCta": "View route on Google Maps"
+    },
+    "landmarks": {
+      "heading": "Landmarks & Attractions Around Tocoihue",
+      "text": "When visiting the <strong>Cascadas de Tocoihue</strong>, travelers can easily explore surrounding historical landmarks and points of interest, including the <strong>Dalcahue Church</strong> and <strong>Chiloé National Park</strong>.",
+      "items": [
+        {
+          "name": "Dalcahue Church (UNESCO Heritage)",
+          "description": "An 18th-century wooden church, part of the Churches of Chiloé inscribed as a UNESCO World Heritage Site.",
+          "url": "https://www.munidalcahue.cl"
+        },
+        {
+          "name": "Chiloé National Park",
+          "description": "Native forest, dunes and Pacific coastline, a short drive towards the west of the island.",
+          "url": "https://www.munidalcahue.cl"
+        },
+        {
+          "name": "Castro's palafitos (stilt houses)",
+          "description": "Colourful houses on stilts along the waterfront of Castro, about 20 minutes from Dalcahue.",
+          "url": "https://goreloslagos.cl/"
+        }
+      ]
+    },
+    "history": {
+      "heading": "History & Significance of Cascadas de Tocoihue",
+      "text": "The name Tocoihue points to the Huilliche Mapuche root of Chiloé's territory, and the river that names the waterfalls rises in the hills of the Dalcahue interior. For centuries it was part of daily life for Huilliche communities, until it became one of the most valued nature outings in Chiloé."
+    }
   },
   "intro": {
     "title": "Discover the Cascadas de Tocoihue",
@@ -58,8 +134,8 @@
     "visitGuide": {
       "title": "Visitor Guide",
       "items": [
-        "Access is by daylight; in summer it is usually open ~09:00–18:00, confirm before you go.",
-        "Located in the rural sector of Tocoihue, Dalcahue commune, about 18 km from town.",
+        "Access is by daylight; in summer it is usually open ~10:00–20:00, confirm before you go.",
+        "Located in the rural sector of Tocoihue, Dalcahue commune, about 20 km from town.",
         "Gravel road and dirt trails; wear suitable shoes and allow time to walk.",
         "Entry to the reserve has a modest fee paid on arrival; confirm the amount on site."
       ]
@@ -67,9 +143,18 @@
     "hikingMetrics": {
       "title": "Trail Snapshot",
       "items": [
-        { "label": "Trail Length", "value": "About 600 m one way" },
-        { "label": "Difficulty", "value": "Easy / family-friendly" },
-        { "label": "Visit Duration", "value": "1.5 to 2 hours" }
+        {
+          "label": "Trail Length",
+          "value": "About 600 m one way"
+        },
+        {
+          "label": "Difficulty",
+          "value": "Easy / family-friendly"
+        },
+        {
+          "label": "Visit Duration",
+          "value": "1.5 to 2 hours"
+        }
       ]
     },
     "alsoKnownAs": {
@@ -83,10 +168,10 @@
     }
   },
   "transportSection": {
-    "title": "How to Reach the Cascadas de Tocoihue",
+    "title": "Ways to reach the falls: bus, car, ferry and plane",
     "subtitle": "From the international flight to the final stretch of gravel through rural Dalcahue, here are the most common ways to get to the Cascadas de Tocoihue on the Isla Grande de Chiloé.",
     "overviewTitle": "Start with where you are coming from",
-    "overviewText": "If you are coming from outside Chiloé, the usual pattern is to fly or take a bus to Puerto Montt, cross the Chacao Channel onto the island, then continue by road to Dalcahue. From there the waterfalls are about 18 km along a rural road. For most visitors the final stretch is by own car, taxi or tour, because public transport does not reach the reserve gate.",
+    "overviewText": "If you are coming from outside Chiloé, the usual pattern is to fly or take a bus to Puerto Montt, cross the Chacao Channel onto the island, then continue by road to Dalcahue. From there the waterfalls are about 20 km along a rural road. For most visitors the final stretch is by own car, taxi or tour, because public transport does not reach the reserve gate.",
     "arrivalTitle": "Know this before you set out",
     "arrivalItems": [
       "The reserve is in the rural sector of Tocoihue; the last stretch is gravel and gets muddy in the rain.",
@@ -127,7 +212,7 @@
       {
         "label": "Option 04",
         "title": "Taxi / Private Transfer",
-        "description": "From Dalcahue or Castro, a taxi or private tour is the most comfortable way to cover the ~18 km of rural road to the reserve.",
+        "description": "From Dalcahue or Castro, a taxi or private tour is the most comfortable way to cover the ~20 km of rural road to the reserve.",
         "details": [
           "Ideal if you have no car and want to avoid changing transport on the final stretch.",
           "Many tours include a guide and pick you up at your accommodation in Castro or Dalcahue.",
@@ -147,7 +232,7 @@
       {
         "label": "Option 06",
         "title": "Cycling / Walking",
-        "description": "From Dalcahue, cyclists can tackle the rural road, though the ~18 km of gravel demands good fitness and a suitable bike.",
+        "description": "From Dalcahue, cyclists can tackle the rural road, though the ~20 km of gravel demands good fitness and a suitable bike.",
         "details": [
           "The road is quiet but unpaved; it rains often in Chiloé, so the route gets muddy.",
           "On foot it is only advisable if you stay in the rural area near Tocoihue.",
@@ -170,7 +255,7 @@
     ],
     "ticketReference": {
       "title": "Typical Entry Fee",
-      "range": "Usually CLP 2,000 - 4,000",
+      "range": "Usually CLP 1,000 - 3,000",
       "note": "Amounts may vary by season and site management; cash is often the safest option."
     },
     "mapsCta": "View Map & Route",
@@ -212,6 +297,21 @@
         "id": "significance",
         "title": "A symbol of natural Chiloé",
         "content": "Today the Cascadas de Tocoihue are one of the most loved nature outings near Dalcahue and a landmark of Chiloé's Route of the Waterfalls. Far from the bustle of big cities, they offer a close and accessible experience of the island's temperate forest, with the added value of standing on Huilliche territory. For anyone touring Chiloé in search of its nature and its stories, Tocoihue is an almost mandatory stop."
+      },
+      {
+        "id": "water",
+        "title": "How the water system works",
+        "content": "The waterfall is simply the point where the Tocoihue River drops over a step in the terrain; it is not a standalone phenomenon. Upstream there is a whole catchment that captures rainfall, stores it in the soil and the forest, and releases it gradually to the channel. That is why the flow varies so much: after several days of rain the water comes down turbid and powerful, while in dry spells the fall splits into threads and exposes the rock below. Understanding that relationship is the key to choosing when to visit."
+      },
+      {
+        "id": "biodiversity",
+        "title": "A biodiversity hotspot",
+        "content": "Chiloé's temperate rainforest is one of the ecoregions with the highest proportion of endemic species in South America. Around the channel live tree ferns, mosses and lichens that depend on constantly humid air, alongside river-edge birds and amphibians that need clean, cold water to breed. That dependence explains why protecting the bank and the forest upstream also protects the waterfall itself: without a healthy catchment, there is no clear fall."
+      },
+      {
+        "id": "season",
+        "title": "When to visit and what to expect",
+        "content": "The flow depends directly on local rainfall. Between May and August the fall carries the most energy and the forest green is at its deepest, though the ground turns muddy and the days are short. In spring and summer the trail is more comfortable and daylight lasts longer, with somewhat lower but equally clear water. Whatever the season, arriving early means better light, fewer visitors and a better chance of seeing low mist over the falls."
       }
     ],
     "speciesGuide": {
@@ -222,26 +322,26 @@
         {
           "name": "Ulmo",
           "latin": "Eucryphia cordifolia",
-          "imagePrompt": "botanical field guide style photo of Eucryphia cordifolia tree in the temperate rainforest of Chiloé, mossy bark, humid atmosphere, soft natural light, realistic scientific illustration aesthetic",
-          "description": "A characteristic evergreen tree of southern Chilean rainforests, often associated with mossy bark and humid forest structure."
+          "description": "A characteristic evergreen tree of southern Chilean rainforests, often associated with mossy bark and humid forest structure.",
+          "id": "ulmo"
         },
         {
           "name": "Coihue",
           "latin": "Nothofagus dombeyi",
-          "imagePrompt": "realistic field guide image of Nothofagus dombeyi in southern Chile temperate rainforest, tall evergreen beech tree, wet forest floor, scientific natural history photography",
-          "description": "A dominant canopy tree that helps stabilise slopes and shade the watershed."
+          "description": "A dominant canopy tree that helps stabilise slopes and shade the watershed.",
+          "id": "coigue"
         },
         {
           "name": "Rainforest Ferns",
           "latin": "Blechnum spp. / Hymenophyllum spp.",
-          "imagePrompt": "macro natural history image of Chiloé rainforest ferns and filmy ferns, dripping leaves, moss, cool green palette, realistic botanical documentary photography",
-          "description": "Ferns and filmy ferns indicate persistent humidity and a well-preserved forest understory."
+          "description": "Ferns and filmy ferns indicate persistent humidity and a well-preserved forest understory.",
+          "id": "helechos"
         },
         {
           "name": "South American Rail",
           "latin": "Pardirallus sanguinolentus",
-          "imagePrompt": "realistic bird field guide portrait of Pardirallus sanguinolentus in wet grassland near temperate rainforest in Chiloé, soft overcast light, scientific wildlife photography",
-          "description": "Wetland birds in the valley remind visitors that the waterfall is part of a broader hydrological ecosystem."
+          "description": "Wetland birds in the valley remind visitors that the waterfall is part of a broader hydrological ecosystem.",
+          "id": "tagua"
         }
       ]
     }
@@ -326,12 +426,32 @@
     "legalTitle": "Privacy & Terms",
     "mapsLabel": "Google Maps →",
     "mapsUrl": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA",
+    "napTitle": "Cascadas de Tocoihue (Dalcahue, Chiloé)",
+    "addressLabel": "Address",
+    "addressValue": "Rural sector Tocoihue, Dalcahue, Los Lagos Region, Chile",
+    "phoneLabel": "Phone",
+    "imageRights": "All ownership and copyright of the images on this website belong to their original photographers.",
     "officialLinksList": [
-      { "name": "Tourism Chile (Sernatur)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
-      { "name": "Municipality of Dalcahue", "url": "https://www.munidalcahue.cl" },
-      { "name": "Ministry of the Environment — Los Lagos", "url": "https://mma.gob.cl/los-lagos/" },
-      { "name": "Los Lagos Regional Government", "url": "https://goreloslagos.cl/" },
-      { "name": "Tourism Services Registry (Sernatur)", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" }
+      {
+        "name": "Tourism Chile (Sernatur)",
+        "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/"
+      },
+      {
+        "name": "Municipality of Dalcahue",
+        "url": "https://www.munidalcahue.cl"
+      },
+      {
+        "name": "Ministry of the Environment — Los Lagos",
+        "url": "https://mma.gob.cl/los-lagos/"
+      },
+      {
+        "name": "Los Lagos Regional Government",
+        "url": "https://goreloslagos.cl/"
+      },
+      {
+        "name": "Tourism Services Registry (Sernatur)",
+        "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue"
+      }
     ],
     "disclaimer": "This is an independent, non-profit visitor information project. We are not affiliated with any government body or official institution."
   },
@@ -404,13 +524,51 @@
     "amenities": {
       "title": "Facilities nearby",
       "items": [
-        { "icon": "🅿️", "label": "Parking", "value": "At the reserve entrance" },
-        { "icon": "🚻", "label": "Restrooms", "value": "At reception / main house" },
-        { "icon": "🔌", "label": "Fuel / EV", "value": "Stations in Dalcahue & Castro" },
-        { "icon": "♿", "label": "Accessibility", "value": "Gravel path; sloped viewpoints" }
+        {
+          "icon": "🅿️",
+          "label": "Parking",
+          "value": "At the reserve entrance"
+        },
+        {
+          "icon": "🚻",
+          "label": "Restrooms",
+          "value": "At reception / main house"
+        },
+        {
+          "icon": "🔌",
+          "label": "Fuel / EV",
+          "value": "Stations in Dalcahue & Castro"
+        },
+        {
+          "icon": "♿",
+          "label": "Accessibility",
+          "value": "Gravel path; sloped viewpoints"
+        }
       ]
     },
     "categories": [
+      {
+        "id": "access",
+        "title": "Hours and directions",
+        "items": [
+          {
+            "q": "What are the opening hours of the Tocoihue Waterfalls?",
+            "a": "The reserve opens during daylight. In high season (December to March) the usual hours are roughly 10:00 to 20:00, with last entry recommended at least an hour before closing. Outside that season there is no published fixed timetable: closing depends on daylight and the weather. As a private reserve, access can close in heavy rain, strong wind or when the river rises, so confirm on the day by phone or WhatsApp."
+          },
+          {
+            "q": "How do I get to the Tocoihue Waterfalls from Dalcahue?",
+            "a": "From central Dalcahue take the road inland along route U-48 towards the Tocoihue sector and continue for about 20 km. The last kilometres are gravel with no continuous signage: look for the wooden signs marking the entrance, where the parking area is. By car it takes around 30 minutes, longer when the road is wet. For GPS use the coordinates -42.3045792, -73.4376721 or the Plus Code MHW6+5W."
+          },
+          {
+            "q": "How do I get there without a car?",
+            "a": "Intercity buses reach Dalcahue or Castro but do not go up to the entrance. From the town you need to combine a transfer, a local taxi or a booked excursion. Bear in mind there are no shops, cash machines or fuel in the rural sector, so sort out fuel, cash and water before you set off."
+          },
+          {
+            "q": "What is the best season to visit and how long does the walk take?",
+            "a": "Spring (September to November) offers the most comfortable balance: more daylight, a trail in better condition and good visibility, with the flow still generous. Summer has the most predictable hours but more visitors and more congestion on the gravel road. In winter the falls are at their most powerful, but there is mud and less daylight. The visit is always on foot along a forest trail, so allow for suitable footwear and time to match your pace."
+          }
+        ]
+      },
       {
         "id": "infra",
         "title": "Transport & Facilities",
@@ -444,6 +602,10 @@
           {
             "q": "Why does the water look so clear?",
             "a": "Because it rises in well-preserved native forest basins, where vegetation filters and retains moisture. Still, after heavy rain the flow rises and the water clouds a little; in spring and summer it is usually at its clearest."
+          },
+          {
+            "q": "Is there a legend about the Tocoihue waterfalls?",
+            "a": "There is an oral tradition rather than a story fixed in writing. The version most often told says the brujos of Chiloé used the falls to “erase” baptism: anyone wanting to be rid of it had to stay under the curtain of water for anywhere from twelve hours to seven days, depending on the version. That belief overlaps with the Huilliche worldview, in which water is a newen — a living force — and every waterfall or spring has a ngen, a “keeper”; that is why water places are treated with respect and permission is asked before entering. Versions vary and there is no canonical one. The same sector is also home to a wooden church, an example of the building system typical of the churches of Chiloé."
           }
         ]
       },
@@ -474,6 +636,92 @@
             "a": "Very close is Dalcahue, with its UNESCO heritage church and its famous market of local produce. A bit further, Castro and its stilt houses (palafitos), and the Chiloé National Park for anyone who wants to keep exploring native forest, birds and the island coast."
           }
         ]
+      },
+      {
+        "id": "services",
+        "title": "Services & logistics",
+        "items": [
+          {
+            "q": "Can I eat or stay overnight in Tocoihue?",
+            "a": "There are no restaurants and no formal tourist accommodation inside the rural sector of Tocoihue: this is a nature outing and it has no food service of its own. The available options are of the type local eatery, café, bakery, cabin, guesthouse, campsite and hotel, and they are concentrated in Dalcahue and Castro. We describe types of service only: we do not endorse, sponsor or have any agreement with specific businesses."
+          },
+          {
+            "q": "Are there toilets and drinking water on the trail?",
+            "a": "There are basic toilets at the reserve reception area, but not along the trail or at the viewpoint. The river and stream water is untreated and not safe to drink without purification, so carry water from Dalcahue: allow at least one litre per person."
+          },
+          {
+            "q": "Can I pay by card? Are there ATMs nearby?",
+            "a": "ATMs are in Dalcahue and Castro, not on the rural road. At nature reserve entrances the fee is usually paid in cash, and the signal needed for card payments can fail. Carry cash in small notes and do not rely on mobile data."
+          },
+          {
+            "q": "Is there mobile signal and internet in the area?",
+            "a": "Mobile coverage is partial and intermittent, and it weakens in the forest and ravine sections; there is no public wifi on the trail. Download offline maps before you set out and tell someone your itinerary and expected return time."
+          },
+          {
+            "q": "Are there petrol stations or EV chargers nearby?",
+            "a": "Fuel stations are in Dalcahue and Castro. The island’s network of EV chargers is still limited and concentrated in the communal centres, so plan your charging before heading into the rural sector."
+          },
+          {
+            "q": "Where should I buy supplies?",
+            "a": "In Dalcahue or Castro: mid-sized supermarkets, neighbourhood stores and markets. There are no shops on the rural road, so buy water, snacks and anything else you need before you turn onto the gravel road."
+          },
+          {
+            "q": "Can I bring pets?",
+            "a": "You must ask at the reserve reception. In Chilean nature reserves and conservation areas, pets are commonly restricted or required to be leashed and controlled, for sanitary reasons and to protect wildlife. Do not assume they are allowed."
+          },
+          {
+            "q": "What number do I call in an emergency?",
+            "a": "Chile’s national emergency numbers are 131 (ambulance), 132 (fire brigade), 133 (police) and 134 (investigative police). Because of the distance and the gravel road, response is slow, so give your location using coordinates or the Plus Code MHW6+5W."
+          }
+        ]
+      }
+    ]
+  },
+  "sources": {
+    "title": "Sources & References",
+    "subtitle": "This guide brings together public, verifiable information from official bodies, tourism registries and mapping sources, so you can plan your visit with reliable data.",
+    "officialTourism": "For official updates and regional tourism information, visit Chile's official tourism portal:",
+    "officialTourismLink": "Chile / Los Lagos Region Official Tourism Portal",
+    "itemsTitle": "Sources consulted",
+    "imageRightsTitle": "Image rights",
+    "imageRights": "All ownership and copyright of the images displayed on this website belong to their original photographers.",
+    "lastReviewedLabel": "Last reviewed",
+    "lastReviewed": "September 2026",
+    "items": [
+      {
+        "name": "Tourism Chile (Sernatur) — official portal",
+        "publisher": "National Tourism Service of Chile",
+        "url": "https://chile.travel/"
+      },
+      {
+        "name": "Municipality of Dalcahue",
+        "publisher": "Ilustre Municipalidad de Dalcahue",
+        "url": "https://www.munidalcahue.cl"
+      },
+      {
+        "name": "Ministry of the Environment — Los Lagos Region",
+        "publisher": "Ministry of the Environment of Chile",
+        "url": "https://mma.gob.cl/los-lagos/"
+      },
+      {
+        "name": "Los Lagos Regional Government",
+        "publisher": "Gobierno Regional de Los Lagos",
+        "url": "https://goreloslagos.cl/"
+      },
+      {
+        "name": "National Registry of Tourism Service Providers",
+        "publisher": "Sernatur",
+        "url": "https://serviciosturisticos.sernatur.cl/"
+      },
+      {
+        "name": "Weather forecast model data",
+        "publisher": "Open-Meteo",
+        "url": "https://open-meteo.com/"
+      },
+      {
+        "name": "Cascadas de Tocoihue on Google Maps",
+        "publisher": "Google Maps",
+        "url": "https://maps.app.goo.gl/Ag8uwDVGm1rjUaeQA"
       }
     ]
   },
@@ -482,14 +730,497 @@
     "attractionsTitle": "Nearby Attractions",
     "toursTitle": "Recommended Tours & Activities",
     "attractions": [
-      { "name": "Dalcahue Church (UNESCO Heritage)", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" },
-      { "name": "Chiloé National Park", "url": "https://www.munidalcahue.cl" },
-      { "name": "Castro and its palafitos", "url": "https://goreloslagos.cl/" }
+      {
+        "name": "Dalcahue Church (UNESCO Heritage)",
+        "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/"
+      },
+      {
+        "name": "Chiloé National Park",
+        "url": "https://www.munidalcahue.cl"
+      },
+      {
+        "name": "Castro and its palafitos",
+        "url": "https://goreloslagos.cl/"
+      }
     ],
     "tours": [
-      { "name": "Waterfall excursion from Castro", "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue" },
-      { "name": "Birdwatching in native forest", "url": "https://mma.gob.cl/los-lagos/" },
-      { "name": "Chiloé Route of the Waterfalls", "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/" }
+      {
+        "name": "Waterfall excursion from Castro",
+        "url": "https://serviciosturisticos.sernatur.cl/636-cabanas-canal-dalcahue"
+      },
+      {
+        "name": "Birdwatching in native forest",
+        "url": "https://mma.gob.cl/los-lagos/"
+      },
+      {
+        "name": "Chiloé Route of the Waterfalls",
+        "url": "https://chile.travel/blog/la-isla-de-sudamerica-que-enamora-por-su-naturaleza-y-sus-leyendas/"
+      }
+    ]
+  },
+  "weather": {
+    "eyebrow": "Local weather",
+    "title": "Current conditions and forecast at Cascadas de Tocoihue",
+    "subtitle": "The rural sector of Tocoihue is one of the wettest corners of Chiloé: weather turns quickly and the flow of the falls depends on recent rain. We translate the forecast into decisions you can act on.",
+    "now": "Right now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "rainChance": "Chance of rain today",
+    "highlightsTitle": "Today at a glance",
+    "uvIndex": "Max UV index",
+    "windMax": "Strongest wind forecast",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "updatedLabel": "Observed at",
+    "forecastTitle": "Next 7 days",
+    "forecastNote": "Rain probabilities are indicative only: in Chiloé a day can go from drizzle to clear skies within a few hours.",
+    "today": "Today",
+    "unavailable": "Data temporarily unavailable",
+    "dataSource": "Weather data: Open-Meteo",
+    "adviceTitle": "What this means for your visit",
+    "adviceSubtitle": "Advice generated from today's forecast. Only the points that apply are shown.",
+    "groups": {
+      "outfit": "What to wear",
+      "plan": "How to plan the day",
+      "gear": "What to pack"
+    },
+    "riskTitle": "Safety notices",
+    "riskNote": "Notices are derived from forecast data and are not an official weather warning. In extreme conditions, always follow the instructions of on-site staff.",
+    "windScale": {
+      "calm": "light breeze",
+      "breeze": "gentle wind",
+      "moderate": "noticeable wind",
+      "strong": "strong wind",
+      "gale": "gale"
+    },
+    "tips": {
+      "riskFlood": "Heavy rain is expected and the river can rise quickly: do not stay in the riverbed, the ravine or the low sections of the trail.",
+      "riskThunder": "There is lightning activity: do not stay beside the falls, under the rock wall or under isolated trees. Return to reception or your vehicle.",
+      "riskGale": "Gale-force wind: keep away from the viewpoint edge and from loose branches or fallen trees.",
+      "riskFog": "Dense fog with very poor visibility: it is easy to lose your bearings in the forest, and the Chacao crossing or flights may be delayed.",
+      "riskIce": "Cold with a risk of ice: steps, boardwalks and rock surfaces are slippery. Move slowly and hold on.",
+      "riskHeat": "High temperature: shorten time outdoors and drink water regularly to avoid heat exhaustion.",
+      "outfitCold": "It is cold: dress warmly with a thick coat and several layers.",
+      "outfitCool": "It is cool: bring a jacket or a fleece layer.",
+      "outfitRange": "Big difference between day and night temperatures: bring a jacket you can put on and take off.",
+      "outfitHot": "High temperature: light, breathable clothing, and avoid going out at midday.",
+      "outfitWarm": "A warm day: short sleeves are enough, with a light jacket for the morning and evening.",
+      "outfitRain": "Rain is likely: wear a waterproof outer layer and bring an umbrella or rain cape.",
+      "outfitWind": "Strong wind: choose a fitted windproof layer and avoid loose skirts or wide-brimmed hats.",
+      "outfitMild": "Mild weather: normal outdoor clothing, ideally in layers so you can adjust.",
+      "planFlood": "Do not enter the riverbed or the ravine, and cancel any activity in the water.",
+      "planThunder": "Outdoor activities and the viewpoint may close: favour routes with forest cover or indoor options.",
+      "planHeavyRain": "Heavy rain: it is not advisable to stay outdoors for long, and the trail may close temporarily.",
+      "planLightRain": "Light rain: the trail and the rock become slippery, so walk slowly and place each step firmly.",
+      "planFog": "Fog limits the view: not a day for panoramas, but still a good day for walking in the forest.",
+      "planGale": "On the high sections and the viewpoint the wind is strong: keep your balance and cut the visit short.",
+      "planHot": "Avoid midday and plan the walk for early morning or late afternoon.",
+      "planCold": "When it is cold, shorten your time outdoors and dress warmly.",
+      "planClear": "Good weather: ideal for being outdoors. Morning light is the softest for photography.",
+      "planOvercast": "Soft, sunless light: very comfortable for a longer walk and for photography.",
+      "planDefault": "Conditions are generally fine: a normal visiting pace works well."
+    },
+    "gear": {
+      "umbrella": "Folding umbrella",
+      "raincoat": "Waterproof jacket",
+      "raincoatWind": "Rain cape (in wind, skip the long umbrella)",
+      "boots": "Waterproof, grippy shoes",
+      "sunscreen": "Sunscreen",
+      "sunglasses": "Sunglasses",
+      "hat": "Sun hat or cap",
+      "jacket": "Light jacket",
+      "warmCoat": "Thick coat",
+      "scarf": "Scarf",
+      "water": "Plenty of water",
+      "insectRepellent": "Insect repellent",
+      "mask": "Face mask"
+    },
+    "conditions": {
+      "clear": "Clear",
+      "mainlyClear": "Mostly clear",
+      "partlyCloudy": "Partly cloudy",
+      "overcast": "Overcast",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "showers": "Showers",
+      "snow": "Snow",
+      "thunderstorm": "Thunderstorm"
+    }
+  },
+  "facilities": {
+    "eyebrow": "Visitor logistics",
+    "title": "Services, facilities and what to bring to Tocoihue",
+    "subtitle": "Before setting out it helps to know what actually exists on site and what you need to sort out in Dalcahue or Castro. Here is what to expect, by type of service, in the rural sector of Tocoihue.",
+    "neutralityTitle": "Neutral listing.",
+    "neutralityNote": "We are an independent, non-profit information project. We describe types of service only and do not endorse, sponsor or hold any agreement with specific businesses. Confirm opening hours, prices and availability on site.",
+    "levels": {
+      "onSite": "On site",
+      "nearby": "In Dalcahue / Castro",
+      "limited": "Limited"
+    },
+    "items": [
+      {
+        "icon": "🚻",
+        "title": "Toilets and washrooms",
+        "level": "onSite",
+        "text": "There are basic toilets at the reception area of the reserve, but none along the trail. These are rustic facilities, typical of a rural property, and heavily used in high season.",
+        "tips": [
+          "Bring toilet paper and hand sanitiser: they are not always restocked.",
+          "There are no toilets by the viewpoint; use the ones at reception before heading up."
+        ]
+      },
+      {
+        "icon": "💧",
+        "title": "Drinking water",
+        "level": "limited",
+        "text": "The water in the river and streams is untreated and not safe to drink without purification. There are no refill points along the rural road, so carry water from Dalcahue.",
+        "tips": [
+          "Allow at least 1 litre per person for the walk.",
+          "If you take water from a spring, boil or treat it before drinking."
+        ]
+      },
+      {
+        "icon": "🅿️",
+        "title": "Parking",
+        "level": "onSite",
+        "text": "Parking is at the entrance to the property on an unpaved, unmarked surface. Capacity is limited, especially in summer and on long weekends.",
+        "tips": [
+          "Do not leave valuables visible inside the vehicle.",
+          "After heavy rain the surface turns to mud: avoid very low-clearance cars."
+        ]
+      },
+      {
+        "icon": "🍽️",
+        "title": "Food and drink",
+        "level": "nearby",
+        "text": "There is no restaurant or café within the walking route. Food in the area is of the local kind and concentrated in Dalcahue and Castro: small eateries, cafés, bakeries, markets and Chiloé cuisine restaurants.",
+        "tips": [
+          "Bring a snack and water if you plan to walk around midday.",
+          "Dalcahue's market and fairs are a good reference point for local produce."
+        ]
+      },
+      {
+        "icon": "🛏️",
+        "title": "Accommodation",
+        "level": "nearby",
+        "text": "There is no formal tourist accommodation in the rural sector of Tocoihue. Options are of the cabin, guesthouse, campsite and hotel type, concentrated in Dalcahue, Castro and neighbouring villages.",
+        "tips": [
+          "In high season (January–February) it is worth booking ahead.",
+          "Staying in Dalcahue shortens the gravel-road stretch to the entrance."
+        ]
+      },
+      {
+        "icon": "🛒",
+        "title": "Shops and supermarkets",
+        "level": "nearby",
+        "text": "To stock up you need to pass through Dalcahue or Castro: mid-sized supermarkets, neighbourhood stores, markets and specialist shops. There is no commerce at all on the rural road.",
+        "tips": [
+          "Buy your supplies before you turn onto the gravel road.",
+          "Local produce includes native potatoes, curanto, seafood and garden vegetables."
+        ]
+      },
+      {
+        "icon": "⛽",
+        "title": "Fuel and EV charging",
+        "level": "nearby",
+        "text": "Fuel stations are in Dalcahue and Castro, not in the rural sector. The island’s EV charging network is still sparse and concentrated in the communal centres.",
+        "tips": [
+          "Refuel in Dalcahue before heading up to Tocoihue.",
+          "In an electric vehicle, plan your charge in Dalcahue or Castro."
+        ]
+      },
+      {
+        "icon": "🏧",
+        "title": "Cash and payment methods",
+        "level": "nearby",
+        "text": "ATMs are in Dalcahue and Castro. In rural areas and at nature reserve entrances, payment is usually in cash, and the signal needed for card payments can fail.",
+        "tips": [
+          "Carry cash in small notes for the entrance fee.",
+          "Do not assume there will be mobile data for card or transfer payments."
+        ]
+      },
+      {
+        "icon": "📶",
+        "title": "Mobile signal and internet",
+        "level": "limited",
+        "text": "Mobile coverage in the rural sector of Tocoihue is partial and intermittent, and it degrades through forest and ravine sections. There is no public wifi on the trail or at the viewpoint.",
+        "tips": [
+          "Download offline maps and the route before setting out.",
+          "Tell someone your itinerary and expected return time."
+        ]
+      },
+      {
+        "icon": "🛟",
+        "title": "Emergencies and safety",
+        "level": "limited",
+        "text": "Because of the distance and the gravel road, emergency services take a long time to arrive. In an emergency, call the national numbers and give your location using coordinates or a Plus Code.",
+        "tips": [
+          "Ambulance 131 · Fire brigade 132 · Police 133 · Investigative police 134.",
+          "Keep the Plus Code MHW6+5W and the entrance coordinates to hand."
+        ]
+      },
+      {
+        "icon": "♿",
+        "title": "Accessibility",
+        "level": "limited",
+        "text": "The route is not adapted: the access road is gravel and the forest trail has roots, slopes and narrow sections. The reception area is the flattest part of the property.",
+        "tips": [
+          "Visitors with reduced mobility can ask at reception about conditions on the day.",
+          "Not recommended for wheelchairs or pushchairs."
+        ]
+      },
+      {
+        "icon": "🧭",
+        "title": "Guided visits and transfers",
+        "level": "nearby",
+        "text": "Guided excursion and tourist transfer services operate from Castro and Dalcahue. They are booked through agencies and local operators, not inside the reserve.",
+        "tips": [
+          "Check whether the service includes a transfer from your accommodation.",
+          "Ask whether the guide includes Huilliche cultural interpretation."
+        ]
+      }
+    ],
+    "distancesTitle": "Approximate distances from the entrance",
+    "distances": [
+      {
+        "place": "Dalcahue (town centre)",
+        "value": "≈ 20 km · 30 min"
+      },
+      {
+        "place": "Castro (provincial capital)",
+        "value": "≈ 38 km · 45–55 min"
+      },
+      {
+        "place": "Mocopulli Airport (MHC)",
+        "value": "≈ 40 km · 45 min"
+      },
+      {
+        "place": "Puerto Montt (via the Chacao crossing)",
+        "value": "≈ 140 km · 2.5–3 h"
+      }
+    ],
+    "distancesNote": "Indicative distances and times calculated from the reserve entrance along rural roads. They vary with the state of the gravel, rainfall and the season.",
+    "maintenanceNote": "Service information is reviewed periodically, but in rural areas availability changes with the season. We recommend confirming opening hours and fees at the reserve itself or with the Municipality of Dalcahue before travelling."
+  },
+  "timeline": {
+    "eyebrow": "Historical background",
+    "title": "History of the Tocoihue and Dalcahue area",
+    "subtitle": "The waterfall has no founding date: it is a geographic feature that predates any written record. To understand it you have to look at the long history of the Chiloé archipelago and of the Huilliche people who inhabited this territory.",
+    "items": [
+      {
+        "era": "Before the 16th century",
+        "title": "An inhabited archipelago",
+        "text": "Chiloé was home to Huilliche and Chono communities organised in chiefdoms that depended on the forest, fishing and shellfish gathering. The rivers of the Dalcahue interior — including the one that forms the falls — were part of that everyday territory."
+      },
+      {
+        "era": "1540 – 1600",
+        "title": "European arrival and the founding of Castro",
+        "text": "Spanish expeditions surveyed the archipelago from the mid-16th century. Castro was founded in 1567 and became the administrative centre of Chiloé and the starting point for colonial control of the island territory."
+      },
+      {
+        "era": "1608 – 1767",
+        "title": "Missions and wooden churches",
+        "text": "The Jesuit circular mission travelled the islands and gave rise to the wooden churches of Chiloé, built with local techniques and timber joints rather than nails. That building system is today the archipelago’s most recognisable heritage feature."
+      },
+      {
+        "era": "1826",
+        "title": "Incorporation into the Republic of Chile",
+        "text": "After the Treaty of Tantauco, Chiloé was definitively incorporated into Chile. The island economy was reorganised around shipyards, timber extraction and subsistence farming."
+      },
+      {
+        "era": "19th and 20th centuries",
+        "title": "Timber, firewood and the rural landscape",
+        "text": "For decades the native forest of the Dalcahue interior was used for firewood, charcoal and shipbuilding. At the same time, the waterfalls of the area — Tocoihue among them — began to be visited as a Sunday outing by local families."
+      },
+      {
+        "era": "2000",
+        "title": "The Churches of Chiloé become World Heritage",
+        "text": "UNESCO inscribed the Churches of Chiloé on the World Heritage List. The recognition boosted cultural tourism on the island and placed Dalcahue — with its 18th-century church — on the heritage routes of southern Chile."
+      },
+      {
+        "era": "Today",
+        "title": "A nature reserve open to visitors",
+        "text": "The property where the waterfalls stand now operates as a nature reserve with visitor access: marked trails, a viewpoint over the main fall and basic reception services. The site is thus part of the archipelago’s nature and heritage offering."
+      }
+    ],
+    "note": "These dates correspond to documented milestones in the history of Chiloé rather than to specific events at the waterfall, whose written record is sparse. They are included to place the landscape in a verifiable context."
+  },
+  "schedule": {
+    "eyebrow": "Hours and access",
+    "title": "Opening hours, season and ticket prices at the Tocoihue Waterfalls",
+    "subtitle": "The property is a private nature reserve that opens during daylight. Fixed hours apply in high season and can change with weather, river flow or trail maintenance: always confirm before travelling.",
+    "hoursTitle": "Opening hours",
+    "hours": [
+      {
+        "label": "High season (December – March)",
+        "value": "≈ 10:00 – 20:00, every day"
+      },
+      {
+        "label": "Rest of the year",
+        "value": "Daylight only; closing is earlier"
+      },
+      {
+        "label": "Last entry",
+        "value": "At least 1 hour before closing is recommended"
+      }
+    ],
+    "hoursNote": "Because the reserve depends on the weather, access can close without notice in heavy rain, strong wind or when the river rises.",
+    "seasonTitle": "Accessibility by season",
+    "season": [
+      {
+        "label": "December – March (summer)",
+        "value": "High season, fixed hours and the busiest period. Arrive before 11:00 to avoid congestion on the gravel road."
+      },
+      {
+        "label": "April – May (autumn)",
+        "value": "Fewer visitors and the forest is still green. Rain begins to increase and the trail turns slippery."
+      },
+      {
+        "label": "June – August (winter)",
+        "value": "The wettest month: the falls run at their most powerful, but there is mud, less daylight and occasional storm closures."
+      },
+      {
+        "label": "September – November (spring)",
+        "value": "The most comfortable trail, more daylight and good visibility, with the flow starting to drop. The most balanced season for walking."
+      }
+    ],
+    "seasonNote": "The visit is always on foot along a forest trail; it is not a drive-through or a car circuit.",
+    "ticketsTitle": "Indicative ticket prices",
+    "tickets": [
+      {
+        "label": "Adults (12 and over)",
+        "value": "≈ CLP 3,000 per person"
+      },
+      {
+        "label": "Seniors",
+        "value": "≈ CLP 2,000 per person"
+      },
+      {
+        "label": "Children (5–11)",
+        "value": "≈ CLP 1,000 per person"
+      },
+      {
+        "label": "Use of the restroom",
+        "value": "≈ CLP 500 extra"
+      }
+    ],
+    "ticketsNote": "Indicative prices reported by recent visitors: they may change and are best confirmed on arrival. Carry cash in small notes, as the signal needed for card payments is intermittent in this rural area.",
+    "contactTitle": "Before you travel",
+    "contactText": "Because this is a private property whose access depends on the weather, the safest way to confirm opening, exact hours and current prices is to call or message the published number on WhatsApp.",
+    "confirmNote": "If you are coming from far away, confirm on the day itself: temporary closures for wind or heavy rain are common.",
+    "relatedTitle": "Keep planning",
+    "related": [
+      {
+        "label": "How to get to the Tocoihue waterfalls from Dalcahue",
+        "href": "#directions"
+      },
+      {
+        "label": "Today's weather and the 7-day forecast",
+        "href": "#weather"
+      },
+      {
+        "label": "History of Tocoihue and Dalcahue",
+        "href": "#history"
+      }
+    ]
+  },
+  "directions": {
+    "eyebrow": "Directions",
+    "title": "How to get to the Tocoihue Waterfalls from Dalcahue",
+    "subtitle": "The falls are about 20 km inland from Dalcahue along route U-48, in the rural sector of Tocoihue. The final kilometres are gravel with no continuous signage, so set off with the map already downloaded.",
+    "routeTitle": "Step-by-step route from Dalcahue",
+    "route": [
+      {
+        "step": "Start in central Dalcahue",
+        "detail": "From the centre of Dalcahue, around the market and the waterfront, take the road inland towards the Tocoihue sector (route U-48)."
+      },
+      {
+        "step": "Stay on the main road",
+        "detail": "Keep to the main road for about 20 km. You will pass rural properties, fences and fields; there are no shops or fuel stations on this stretch."
+      },
+      {
+        "step": "Leave the asphalt behind",
+        "detail": "On the last section the road turns to gravel. Slow down, especially in the rain: the surface gets slippery and there are narrow bends."
+      },
+      {
+        "step": "Find the signposted turn",
+        "detail": "The entrance is announced with wooden signs. If you reach a fork with no signage, back up a few metres: the turn is easy to drive past."
+      },
+      {
+        "step": "Park at the entrance",
+        "detail": "Parking sits beside the access on an unpaved surface. From there the visit continues on foot along the forest trail only."
+      }
+    ],
+    "routeNote": "Estimated time: about 30 minutes from central Dalcahue by car, longer when the road is wet. There is no regular public transport to the entrance.",
+    "gpsTitle": "GPS coordinates",
+    "gps": [
+      {
+        "label": "Decimal coordinates",
+        "value": "-42.3045792, -73.4376721"
+      },
+      {
+        "label": "Plus Code",
+        "value": "MHW6+5W"
+      },
+      {
+        "label": "Exact point",
+        "value": "Open in Google Maps"
+      }
+    ],
+    "gpsNote": "If your map app fails to load, type the Plus Code MHW6+5W: it works even when mobile coverage is intermittent.",
+    "mapTitle": "Map of the area",
+    "mapNote": "The map shows the rural area between Dalcahue and the entrance. Download the area for offline use before leaving: signal is patchy on the gravel road.",
+    "roadsTitle": "Road warnings",
+    "roads": [
+      "The final kilometres are gravel: not suitable for very low cars, road bikes or wheelchairs.",
+      "In rain there is mud and standing water; drive slowly and avoid travelling at night, as the road has no lighting.",
+      "There is no fuel, cash machine or shop in the area: fill up and withdraw cash in Dalcahue.",
+      "By bus you reach the town but not the entrance: you will need a transfer or a local taxi."
+    ],
+    "relatedTitle": "Before you set off",
+    "related": [
+      {
+        "label": "Opening hours, season and ticket prices at the Tocoihue waterfalls",
+        "href": "#schedule"
+      },
+      {
+        "label": "Today's weather and the 7-day forecast",
+        "href": "#weather"
+      },
+      {
+        "label": "Compare bus, car, ferry and plane",
+        "href": "#transport"
+      }
+    ]
+  },
+  "heritage": {
+    "eyebrow": "Name and culture",
+    "title": "What Tocoihue means in Mapudungun and the legend told about the falls",
+    "subtitle": "The name of the place comes from the Mapudungun spoken in Chiloé and describes the surroundings. The oral tradition of the area adds a layer of stories about the river and the forest.",
+    "nameTitle": "“Place of coihues”",
+    "nameText": "The name comes from the Mapudungun spoken in Chiloé. The root koiwe is the coihue or roble (Nothofagus dombeyi), the native tree with hard-wearing timber that dominates the forest along the river, and the suffix -hue marks a place; hence the most common translation, “place of coihues”. Some studies of Chilean toponymy also read the first syllable as thog, “dense”, giving “dense roble grove”. The same suffix appears in Dalcahue, “place of dalcas”, the wooden boats once used to navigate between the islands of the archipelago.",
+    "nameNote": "Toponyms like this describe what was in the territory before occupation: the coihue forest around the river is what gave the sector its name. Tocoihue is not a single drop: the Tocoihue river plunges over three falls, with a main drop of up to about 60 m that lands in a circular basin surrounded by evergreen forest. The same sector is also home to a wooden church, an example of the building system that characterises the churches of Chiloé.",
+    "legendTitle": "The legend: the waterfall that “erased” baptism",
+    "legendText": "Chiloé is a land of stories, and the one most often told about these falls stars the archipelago’s brujos, or sorcerers: it was said that the curtain of water “erased” Catholic baptism, and that anyone wanting to be rid of it had to stay under the torrent for a long time — twelve hours, a full day, even seven days, depending on the version — until they were clean. That belief overlaps with the Huilliche worldview, in which water is not an inert resource but a newen, a living force, and every waterfall or spring has a ngen, a “keeper” that inhabits it. Water places are therefore treated with respect, permission is asked before entering and silence is kept: the river is territory with an owner.",
+    "legendNote": "We present these stories as oral tradition from the area rather than as documented fact: versions differ and none is fixed in writing. To hear the full version, the best approach is to ask local residents or the staff at reception.",
+    "respectTitle": "Visiting with respect",
+    "respectText": "This is ancestral Huilliche territory and many of these stories still matter to present-day communities. Take your litter out, do not scratch or mark the rock, do not leave offerings that do not belong to local tradition, and avoid filming or photographing without permission when local people are holding ceremonial activities.",
+    "relatedTitle": "Keep exploring",
+    "related": [
+      {
+        "label": "History of Tocoihue and Dalcahue",
+        "href": "#history"
+      },
+      {
+        "label": "Flora and fauna of the Tocoihue waterfalls forest",
+        "href": "#nature"
+      },
+      {
+        "label": "Photo gallery of the Tocoihue waterfalls",
+        "href": "#gallery"
+      }
     ]
   }
 }

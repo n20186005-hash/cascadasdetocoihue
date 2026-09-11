@@ -1,0 +1,42 @@
+{
+  "name": "Cascadas de Tocoihue — Guía de visita",
+  "short_name": "Tocoihue",
+  "description": "Guía de visita de las Cascadas de Tocoihue en Dalcahue, Chiloé, Chile: ubicación, mapa, cómo llegar, historia y consejos prácticos.",
+  "id": "/",
+  "start_url": "/es",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "any",
+  "background_color": "#0f2015",
+  "theme_color": "#0f2015",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["travel", "navigation", "education", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,15 +1,35 @@
 ---
+import { Picture } from 'astro:assets';
 import { getI18n } from '../i18n/ui';
+import { attraction } from '../config/attraction';
+import { heroImage } from '../data/media';
+
 const { messages } = getI18n(Astro.url);
 const h = messages.hero;
 const primaryCta = h.primaryCta ?? { label: h.openMaps, href: h.mapsUrl, external: true };
 const secondaryCta = h.secondaryCta ?? null;
 const advisory = h.advisory ?? null;
 const factCards = h.factCards ?? [];
+
+// Entity semantic alt text for the main visual (hero image).
+const heroAlt = `${attraction.fullName} — ${attraction.city}, ${attraction.stateProvince}, ${attraction.country}`;
 ---
 
 <section class="relative min-h-[86vh] sm:min-h-[96vh] flex items-center overflow-hidden">
-  <div class="absolute inset-0" style={`background-image: linear-gradient(rgba(15,32,21,0.64), rgba(15,32,21,0.58)), url('/gallery/cascadas-de-tocoihue-01.jpg'); background-size: cover; background-position: center;`}></div>
+  <!-- LCP element: served through astro:assets (AVIF/WebP + srcset) instead of a
+       fixed public path, so the hero is always a real, optimised file. -->
+  <Picture
+    src={heroImage}
+    formats={['avif', 'webp']}
+    widths={[640, 960, 1280, 1920]}
+    sizes="100vw"
+    alt={heroAlt}
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <div class="absolute inset-0" style="background: linear-gradient(rgba(15,32,21,0.64), rgba(15,32,21,0.58));"></div>
   <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(8, 18, 13, 0.15) 0%, rgba(8, 18, 13, 0.52) 100%);"></div>
 
   <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 py-18 sm:py-24">
@@ -27,8 +47,10 @@ const factCards = h.factCards ?? [];
         </div>
       )}
 
-      <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] mb-5">
-        {h.title}
+      <!-- H1: unique on the page, states the official full name + city -->
+      <h1 class="font-display text-white leading-[1.05] mb-5">
+        <span class="block text-4xl sm:text-5xl lg:text-6xl font-bold">{h.h1Name}</span>
+        <span class="block text-xl sm:text-3xl lg:text-4xl font-semibold mt-3 text-white/95">{h.title}</span>
       </h1>
       <p class="text-base sm:text-xl text-white/90 mb-5 max-w-2xl leading-relaxed">
         {h.subtitle}

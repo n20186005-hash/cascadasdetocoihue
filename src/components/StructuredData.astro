@@ -1,0 +1,61 @@
+---
+import { getImage } from 'astro:assets';
+import { getI18n } from '../i18n/ui';
+import { galleryImages } from '../data/media';
+import {
+  buildAttractionJsonLd,
+  buildBreadcrumbJsonLd,
+  buildWebSiteJsonLd,
+  buildFaqJsonLd,
+  buildTouristDestinationJsonLd,
+  SITE_URL,
+} from '../config/attraction';
+
+const { lang, messages } = getI18n(Astro.url);
+const pageUrl = `${SITE_URL}/${lang}`;
+
+const attractionLd = buildAttractionJsonLd(lang, pageUrl);
+const destinationLd = buildTouristDestinationJsonLd(lang, pageUrl);
+const webSiteLd = buildWebSiteJsonLd(lang);
+const breadcrumbLd = buildBreadcrumbJsonLd(lang, messages.header?.home ?? 'Inicio');
+
+const faqItems = (messages.faq?.categories ?? [])
+  .flatMap((category: any) => category.items ?? [])
+  .map((item: any) => ({ q: item.q, a: item.a }));
+const faqLd = buildFaqJsonLd(faqItems);
+
+/**
+ * Real gallery URLs for the image graph.
+ *
+ * Resolved through astro:assets so every entry points at a file that actually
+ * exists after the build (the source photos live in src/assets, not in public).
+ * A subset is enough for rich results and keeps the build from emitting dozens
+ * of extra derivatives.
+ */
+const captions: string[] = messages.gallery?.captions ?? [];
+const photoAlt: string = messages.gallery?.photoAlt ?? attractionLd.name;
+
+const galleryLd = await Promise.all(
+  galleryImages.slice(0, 8).map(async (image, index) => {
+    const optimized = await getImage({ src: image, width: 1200, format: 'webp' });
+    return {
+      '@type': 'ImageObject',
+      contentUrl: `${SITE_URL}${optimized.src}`,
+      width: optimized.attributes.width,
+      height: optimized.attributes.height,
+      caption: captions[index] ?? photoAlt,
+      creator: { '@type': 'Organization', name: attractionLd.name },
+    };
+  })
+);
+
+// Point the attraction at every image we can prove exists.
+attractionLd.image = [attractionLd.image[0], ...galleryLd.map((image) => image.contentUrl)];
+attractionLd.subjectOf = galleryLd;
+
+const blocks = [attractionLd, destinationLd, webSiteLd, breadcrumbLd, faqLd];
+---
+
+{blocks.map((block) => (
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(block)} />
+))}

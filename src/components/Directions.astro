@@ -1,0 +1,136 @@
+---
+import { getI18n } from '../i18n/ui';
+import { attraction } from '../config/attraction';
+
+const { lang, messages } = getI18n(Astro.url);
+const d = messages.directions;
+const route = d.route ?? [];
+const gps = d.gps ?? [];
+const roads = d.roads ?? [];
+const related = d.related ?? [];
+---
+
+<section id="directions" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-3xl mb-12">
+      <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--text-muted);">{d.eyebrow}</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">{d.title}</h2>
+      <p class="text-lg leading-relaxed" style="color: var(--text-secondary);">{d.subtitle}</p>
+    </div>
+
+    <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-start">
+      <!-- Turn-by-turn route from Dalcahue -->
+      <div>
+        <h3 class="font-display text-2xl font-semibold mb-6" style="color: var(--text-primary);">{d.routeTitle}</h3>
+        <ol class="space-y-5">
+          {route.map((item, index) => (
+            <li class="flex gap-4">
+              <span
+                class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm text-white"
+                style="background: var(--accent);"
+              >
+                {index + 1}
+              </span>
+              <div>
+                <p class="font-semibold mb-1" style="color: var(--text-primary);">{item.step}</p>
+                <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{item.detail}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+        <p
+          class="text-sm leading-relaxed mt-6 rounded-2xl p-4 border"
+          style="background: var(--bg-primary); border-color: var(--border-color); color: var(--text-muted);"
+        >
+          {d.routeNote}
+        </p>
+      </div>
+
+      <!-- GPS coordinates + road warnings -->
+      <div class="space-y-6">
+        <div
+          class="rounded-2xl p-6 border"
+          style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+        >
+          <h3 class="font-display text-xl font-semibold mb-5" style="color: var(--text-primary);">{d.gpsTitle}</h3>
+          <dl class="space-y-3">
+            {gps.map((row, index) => (
+              <div class="flex flex-col gap-1 border-b pb-3 last:border-b-0 last:pb-0" style="border-color: var(--border-color);">
+                <dt class="text-xs uppercase tracking-[0.14em]" style="color: var(--text-muted);">{row.label}</dt>
+                <dd class="text-sm font-semibold break-all" style="color: var(--text-primary);">
+                  {index === gps.length - 1 ? (
+                    <a
+                      href={attraction.mapsShareUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="underline underline-offset-4"
+                      style="color: var(--accent);"
+                    >
+                      {row.value}
+                    </a>
+                  ) : (
+                    row.value
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
+          <p class="text-xs leading-relaxed mt-5" style="color: var(--text-muted);">{d.gpsNote}</p>
+        </div>
+
+        <div
+          class="rounded-2xl p-6 border"
+          style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+        >
+          <h3 class="font-display text-xl font-semibold mb-4" style="color: var(--text-primary);">{d.roadsTitle}</h3>
+          <ul class="space-y-3">
+            {roads.map((warning) => (
+              <li class="flex gap-3 text-sm leading-relaxed" style="color: var(--text-secondary);">
+                <span aria-hidden="true" class="shrink-0" style="color: var(--accent);">&#9656;</span>
+                <span>{warning}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Maps embed of the rural sector (canonical #map anchor) -->
+    <div id="map" class="mt-12 rounded-2xl overflow-hidden border" style="border-color: var(--border-color);">
+      <div class="p-6" style="background: var(--bg-primary);">
+        <h3 class="font-display text-xl font-semibold mb-2" style="color: var(--text-primary);">{d.mapTitle}</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-muted);">{d.mapNote}</p>
+      </div>
+      <iframe
+        src={attraction.mapsEmbedSrc}
+        title={d.mapTitle}
+        width="100%"
+        height="360"
+        style="border:0; display:block;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Exact-match internal links -->
+    {related.length > 0 && (
+      <nav aria-label={d.relatedTitle} class="mt-12 border-t pt-6" style="border-color: var(--border-color);">
+        <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--text-muted);">{d.relatedTitle}</p>
+        <ul class="flex flex-wrap gap-3">
+          {related.map((link) => (
+            <li>
+              <a
+                href={`/${lang}${link.href}`}
+                class="inline-flex items-center rounded-full border px-4 py-2 text-sm hover:opacity-80"
+                style="border-color: var(--border-color); color: var(--accent);"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+  </div>
+</section>

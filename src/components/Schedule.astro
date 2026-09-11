@@ -1,0 +1,122 @@
+---
+import { getI18n } from '../i18n/ui';
+import { attraction } from '../config/attraction';
+
+const { lang, messages } = getI18n(Astro.url);
+const s = messages.schedule;
+const hours = s.hours ?? [];
+const season = s.season ?? [];
+const tickets = s.tickets ?? [];
+const related = s.related ?? [];
+---
+
+<section id="schedule" class="section-padding" style="background: var(--bg-primary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-3xl mb-12">
+      <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--text-muted);">{s.eyebrow}</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">{s.title}</h2>
+      <p class="text-lg leading-relaxed" style="color: var(--text-secondary);">{s.subtitle}</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6">
+      <!-- Opening hours -->
+      <div
+        class="rounded-2xl p-6 border h-full"
+        style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+      >
+        <h3 class="font-display text-xl font-semibold mb-5" style="color: var(--text-primary);">{s.hoursTitle}</h3>
+        <dl class="space-y-3">
+          {hours.map((row) => (
+            <div
+              class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 border-b pb-3 last:border-b-0 last:pb-0"
+              style="border-color: var(--border-color);"
+            >
+              <dt class="text-sm" style="color: var(--text-muted);">{row.label}</dt>
+              <dd class="text-sm font-semibold sm:text-right" style="color: var(--text-primary);">{row.value}</dd>
+            </div>
+          ))}
+        </dl>
+        <p class="text-xs leading-relaxed mt-5" style="color: var(--text-muted);">{s.hoursNote}</p>
+      </div>
+
+      <!-- Ticket prices -->
+      <div
+        class="rounded-2xl p-6 border h-full"
+        style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+      >
+        <h3 class="font-display text-xl font-semibold mb-5" style="color: var(--text-primary);">{s.ticketsTitle}</h3>
+        <dl class="space-y-3">
+          {tickets.map((row) => (
+            <div
+              class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 border-b pb-3 last:border-b-0 last:pb-0"
+              style="border-color: var(--border-color);"
+            >
+              <dt class="text-sm" style="color: var(--text-muted);">{row.label}</dt>
+              <dd class="text-sm font-semibold sm:text-right" style="color: var(--text-primary);">{row.value}</dd>
+            </div>
+          ))}
+        </dl>
+        <p class="text-xs leading-relaxed mt-5" style="color: var(--text-muted);">{s.ticketsNote}</p>
+      </div>
+    </div>
+
+    <!-- Season-by-season accessibility -->
+    <div class="mt-12">
+      <h3 class="font-display text-2xl font-semibold mb-6" style="color: var(--text-primary);">{s.seasonTitle}</h3>
+      <div class="grid sm:grid-cols-2 gap-5">
+        {season.map((item) => (
+          <div class="rounded-2xl p-5 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
+            <p class="font-semibold mb-2" style="color: var(--text-primary);">{item.label}</p>
+            <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{item.value}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-sm leading-relaxed mt-5" style="color: var(--text-muted);">{s.seasonNote}</p>
+    </div>
+
+    <!-- Confirm before travelling -->
+    <div class="mt-12 rounded-2xl p-6 sm:p-8 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
+      <h3 class="font-display text-xl font-semibold mb-3" style="color: var(--text-primary);">{s.contactTitle}</h3>
+      <p class="text-sm sm:text-base leading-relaxed mb-5" style="color: var(--text-secondary);">{s.contactText}</p>
+      <div class="flex flex-wrap items-center gap-3">
+        <a
+          href={`tel:${attraction.telephone}`}
+          class="inline-flex justify-center px-6 py-3 rounded-full font-semibold text-white"
+          style="background: var(--accent);"
+        >
+          {attraction.telephoneDisplay}
+        </a>
+        <a
+          href={attraction.mapsShareUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex justify-center px-6 py-3 rounded-full font-semibold border"
+          style="border-color: var(--border-color); color: var(--text-primary);"
+        >
+          {messages.entity?.location?.mapsCta ?? 'Google Maps'}
+        </a>
+      </div>
+      <p class="text-xs leading-relaxed mt-4" style="color: var(--text-muted);">{s.confirmNote}</p>
+    </div>
+
+    <!-- Exact-match internal links -->
+    {related.length > 0 && (
+      <nav aria-label={s.relatedTitle} class="mt-12 border-t pt-6" style="border-color: var(--border-color);">
+        <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--text-muted);">{s.relatedTitle}</p>
+        <ul class="flex flex-wrap gap-3">
+          {related.map((link) => (
+            <li>
+              <a
+                href={`/${lang}${link.href}`}
+                class="inline-flex items-center rounded-full border px-4 py-2 text-sm hover:opacity-80"
+                style="border-color: var(--border-color); color: var(--accent);"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+  </div>
+</section>

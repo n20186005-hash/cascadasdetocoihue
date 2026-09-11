@@ -1,0 +1,65 @@
+---
+import { getI18n } from '../i18n/ui';
+
+const { lang, messages } = getI18n(Astro.url);
+const h = messages.heritage;
+const related = h.related ?? [];
+---
+
+<section id="heritage" class="section-padding" style="background: var(--bg-primary);">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="max-w-3xl mb-12">
+      <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--text-muted);">{h.eyebrow}</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">{h.title}</h2>
+      <p class="text-lg leading-relaxed" style="color: var(--text-secondary);">{h.subtitle}</p>
+    </div>
+
+    <div class="space-y-8">
+      <!-- Mapudungun etymology -->
+      <article
+        class="rounded-2xl p-6 sm:p-8 border"
+        style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+      >
+        <h3 class="font-display text-2xl font-semibold mb-4" style="color: var(--text-primary);">{h.nameTitle}</h3>
+        <p class="text-base sm:text-lg leading-relaxed mb-4" style="color: var(--text-secondary);">{h.nameText}</p>
+        <p class="text-sm leading-relaxed" style="color: var(--text-muted);">{h.nameNote}</p>
+      </article>
+
+      <!-- Local legend / oral tradition -->
+      <article class="rounded-2xl p-6 sm:p-8 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
+        <h3 class="font-display text-2xl font-semibold mb-4" style="color: var(--text-primary);">{h.legendTitle}</h3>
+        <p class="text-base sm:text-lg leading-relaxed mb-4" style="color: var(--text-secondary);">{h.legendText}</p>
+        <p class="text-sm leading-relaxed" style="color: var(--text-muted);">{h.legendNote}</p>
+      </article>
+
+      <!-- Visiting with respect -->
+      <div
+        class="rounded-2xl p-6 border"
+        style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);"
+      >
+        <h3 class="font-display text-xl font-semibold mb-3" style="color: var(--text-primary);">{h.respectTitle}</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{h.respectText}</p>
+      </div>
+    </div>
+
+    <!-- Exact-match internal links -->
+    {related.length > 0 && (
+      <nav aria-label={h.relatedTitle} class="mt-12 border-t pt-6" style="border-color: var(--border-color);">
+        <p class="text-xs uppercase tracking-[0.18em] mb-3" style="color: var(--text-muted);">{h.relatedTitle}</p>
+        <ul class="flex flex-wrap gap-3">
+          {related.map((link) => (
+            <li>
+              <a
+                href={`/${lang}${link.href}`}
+                class="inline-flex items-center rounded-full border px-4 py-2 text-sm hover:opacity-80"
+                style="border-color: var(--border-color); color: var(--accent);"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )}
+  </div>
+</section>

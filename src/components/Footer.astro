@@ -1,5 +1,7 @@
 ---
 import { getI18n } from '../i18n/ui';
+import { attraction } from '../config/attraction';
+
 const { lang, messages } = getI18n(Astro.url);
 const f = messages.footer;
 const links = f.officialLinksList;
@@ -12,6 +14,19 @@ const legalTitle = f.legalTitle ?? f.officialResourcesTitle;
       <div>
         <h3 class="font-display text-xl font-semibold mb-3" style="color: var(--text-primary);" set:html={f.siteName}></h3>
         <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{f.rights}</p>
+
+        <!-- NAP consistency: official Name / Address / Phone, identical to the Google listing -->
+        <address class="not-italic mt-5 space-y-1 text-sm" style="color: var(--text-secondary);">
+          <p class="font-semibold" style="color: var(--text-primary);">{f.napTitle}</p>
+          <p>
+            <span style="color: var(--text-muted);">{f.addressLabel}:</span>
+            {f.addressValue}
+          </p>
+          <p>
+            <span style="color: var(--text-muted);">{f.phoneLabel}:</span>
+            <a href={`tel:${attraction.telephone}`} class="hover:opacity-70" style="color: var(--accent);">{attraction.telephoneDisplay}</a>
+          </p>
+        </address>
       </div>
 
       <div>
@@ -44,6 +59,9 @@ const legalTitle = f.legalTitle ?? f.officialResourcesTitle;
 
     <div class="mt-10 pt-6 border-t text-xs" style="border-color: var(--border-color); color: var(--text-muted);">
       <p class="leading-relaxed" set:html={f.disclaimer}></p>
+      {f.imageRights && (
+        <p class="leading-relaxed mt-2">{f.imageRights}</p>
+      )}
     </div>
   </div>
 </footer>

@@ -1,0 +1,573 @@
+---
+import { getI18n } from '../i18n/ui';
+import {
+  ADVICE_RULES,
+  buildFacts,
+  buildWeatherUrl,
+  evaluateAdvice,
+  getWeather,
+  windScaleId,
+} from '../lib/weather';
+
+const { lang, messages } = getI18n(Astro.url);
+const w = messages.weather;
+const data = await getWeather();
+
+const localeMap: Record<string, string> = { es: 'es-CL', en: 'en-GB', zh: 'zh-CN', arn: 'es-CL' };
+const locale = localeMap[lang] ?? 'es-CL';
+
+const ICONS: Record<string, string> = {
+  clear: '☀️',
+  mainlyClear: '🌤️',
+  partlyCloudy: '⛅',
+  overcast: '☁️',
+  fog: '🌫️',
+  drizzle: '🌦️',
+  rain: '🌧️',
+  showers: '🌦️',
+  snow: '🌨️',
+  thunderstorm: '⛈️',
+};
+
+const icon = (group: string, isDay = true) => (group === 'clear' && !isDay ? '🌙' : ICONS[group] ?? '⛅');
+const clock = (value: string | undefined) => (value && value.length >= 16 ? value.slice(11, 16) : '—');
+const round = (n: number | null) => (n === null ? '—' : Math.round(n));
+
+const weekday = (iso: string, index: number) => {
+  if (index === 0) return w.today;
+  if (!iso) return '—';
+  return new Intl.DateTimeFormat(locale, { weekday: 'short', timeZone: 'UTC' }).format(
+    new Date(`${iso}T12:00:00Z`)
+  );
+};
+
+const current = data?.current ?? null;
+const today = data?.days?.[0] ?? null;
+
+/**
+ * The same rule table drives this render and the browser refresh below, so
+ * the advice never drifts between the pre-rendered page and a live update.
+ */
+const facts = data ? buildFacts(data) : null;
+const evaluated = facts
+  ? evaluateAdvice(facts)
+  : { risks: [] as string[], outfit: [] as string[], plan: [] as string[], gear: [] as string[] };
+
+const tipTable: Record<string, string> = (w.tips as Record<string, string>) ?? {};
+const gearTable: Record<string, string> = (w.gear as Record<string, string>) ?? {};
+const windTable: Record<string, string> = (w.windScale as Record<string, string>) ?? {};
+const pick = (ids: string[], table: Record<string, string>) =>
+  ids.map((id) => table[id]).filter((text): text is string => Boolean(text));
+
+const advice = {
+  risks: pick(evaluated.risks, tipTable),
+  outfit: pick(evaluated.outfit, tipTable),
+  plan: pick(evaluated.plan, tipTable),
+  gear: pick(evaluated.gear, gearTable),
+};
+
+const windLabel = current ? windTable[windScaleId(current.windSpeed)] ?? '' : '';
+
+const forecast = data?.days?.length
+  ? data.days.map((day, index) => ({
+      label: weekday(day.date, index),
+      group: day.group as string,
+      max: day.max,
+      min: day.min,
+      pop: day.precipitationProbability,
+    }))
+  : Array.from({ length: 7 }, (_, index) => ({
+      label: index === 0 ? w.today : '—',
+      group: 'partlyCloudy',
+      max: null,
+      min: null,
+      pop: null,
+    }));
+
+const wxUrl = buildWeatherUrl(7);
+const labels = JSON.stringify({
+  conditions: w.conditions,
+  tips: tipTable,
+  gear: gearTable,
+  windScale: windTable,
+  unavailable: w.unavailable,
+});
+---
+
+<section id="weather" class="section-padding" style="background: var(--bg-primary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="max-w-3xl mb-8">
+      <p class="text-xs uppercase tracking-[0.2em] mb-3" style="color: var(--accent);">{w.eyebrow}</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{w.title}</h2>
+      <p class="text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary);">{w.subtitle}</p>
+    </div>
+
+    <div data-wx-root data-wx-url={wxUrl} class="space-y-5">
+      <!-- safety warnings first: they outrank every other suggestion -->
+      <div data-wx="risk" class="wx-risk" hidden={advice.risks.length === 0}>
+        <p class="wx-risk-title">⚠️ {w.riskTitle}</p>
+        <ul data-wx="risk-list" class="wx-risk-list">
+          {advice.risks.map((text) => (
+            <li>{text}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] gap-5">
+        <!-- current conditions -->
+        <article class="rounded-3xl border p-6 sm:p-7" style="background: var(--card-bg); border-color: var(--border-color);">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-[0.18em] mb-2" style="color: var(--text-muted);">{w.now}</p>
+              <p class="font-display font-semibold leading-none" style="color: var(--text-primary);">
+                <span class="text-5xl sm:text-6xl" data-wx="temp">{round(current?.temperature ?? null)}</span>
+                <span class="text-2xl align-top">°C</span>
+              </p>
+              <p class="mt-3 text-base" data-wx="cond" style="color: var(--text-secondary);">
+                {current ? w.conditions[current.group] : w.unavailable}
+              </p>
+            </div>
+            <span class="text-4xl sm:text-5xl leading-none" data-wx="icon" aria-hidden="true">
+              {current ? icon(current.group, current.isDay) : '⛅'}
+            </span>
+          </div>
+
+          <dl class="mt-6 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+            <div>
+              <dt style="color: var(--text-muted);">{w.feelsLike}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);">
+                <span data-wx="feels">{round(current?.apparent ?? null)}</span>°C
+              </dd>
+            </div>
+            <div>
+              <dt style="color: var(--text-muted);">{w.humidity}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);">
+                <span data-wx="humidity">{round(current?.humidity ?? null)}</span>%
+              </dd>
+            </div>
+            <div>
+              <dt style="color: var(--text-muted);">{w.wind}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);">
+                <span data-wx="wind">{round(current?.windSpeed ?? null)}</span> km/h
+                <span class="wx-soft" data-wx="windscale">{windLabel}</span>
+              </dd>
+            </div>
+            <div>
+              <dt style="color: var(--text-muted);">{w.rainChance}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);">
+                💧 <span data-wx="pop">{round(today?.precipitationProbability ?? null)}</span>%
+              </dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- day highlights -->
+        <article class="rounded-3xl border p-6 sm:p-7" style="background: var(--card-bg); border-color: var(--border-color);">
+          <h3 class="font-display text-lg font-semibold mb-4" style="color: var(--text-primary);">{w.highlightsTitle}</h3>
+          <dl class="grid sm:grid-cols-2 gap-4 text-sm">
+            <div class="rounded-2xl px-4 py-3" style="background: var(--bg-tertiary);">
+              <dt class="mb-1" style="color: var(--text-muted);">{w.uvIndex}</dt>
+              <dd class="font-semibold text-base" style="color: var(--text-primary);">
+                <span data-wx="uv">{round(today?.uvMax ?? null)}</span>
+              </dd>
+            </div>
+            <div class="rounded-2xl px-4 py-3" style="background: var(--bg-tertiary);">
+              <dt class="mb-1" style="color: var(--text-muted);">{w.windMax}</dt>
+              <dd class="font-semibold text-base" style="color: var(--text-primary);">
+                <span data-wx="windmax">{round(today?.windMax ?? null)}</span> km/h
+              </dd>
+            </div>
+            <div class="rounded-2xl px-4 py-3" style="background: var(--bg-tertiary);">
+              <dt class="mb-1" style="color: var(--text-muted);">{w.sunrise}</dt>
+              <dd class="font-semibold text-base" style="color: var(--text-primary);">
+                <span data-wx="sunrise">{clock(today?.sunrise)}</span>
+              </dd>
+            </div>
+            <div class="rounded-2xl px-4 py-3" style="background: var(--bg-tertiary);">
+              <dt class="mb-1" style="color: var(--text-muted);">{w.sunset}</dt>
+              <dd class="font-semibold text-base" style="color: var(--text-primary);">
+                <span data-wx="sunset">{clock(today?.sunset)}</span>
+              </dd>
+            </div>
+          </dl>
+          <p class="mt-4 text-xs leading-relaxed" style="color: var(--text-muted);">
+            {w.updatedLabel} <span data-wx="updated">{clock(current?.time)}</span>
+          </p>
+        </article>
+      </div>
+
+      <!-- what to do about it: only the tips that apply today are rendered -->
+      <article class="rounded-3xl border p-6 sm:p-7" style="background: var(--card-bg); border-color: var(--border-color);">
+        <h3 class="font-display text-lg font-semibold" style="color: var(--text-primary);">{w.adviceTitle}</h3>
+        <p class="text-sm mt-1 leading-relaxed" style="color: var(--text-muted);">{w.adviceSubtitle}</p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mt-6">
+          <div data-wx="group-outfit" hidden={advice.outfit.length === 0}>
+            <h4 class="wx-group-title">👕 {w.groups.outfit}</h4>
+            <ul data-wx="list-outfit" class="wx-list">
+              {advice.outfit.map((text) => (
+                <li class="wx-line">{text}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div data-wx="group-plan" hidden={advice.plan.length === 0}>
+            <h4 class="wx-group-title">🥾 {w.groups.plan}</h4>
+            <ul data-wx="list-plan" class="wx-list">
+              {advice.plan.map((text) => (
+                <li class="wx-line">{text}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div data-wx="group-gear" hidden={advice.gear.length === 0}>
+            <h4 class="wx-group-title">🎒 {w.groups.gear}</h4>
+            <ul data-wx="list-gear" class="wx-list wx-list-chips">
+              {advice.gear.map((text) => (
+                <li class="wx-chip">{text}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-xs mt-5 leading-relaxed" style="color: var(--text-muted);">{w.riskNote}</p>
+      </article>
+
+      <!-- multi-day outlook -->
+      <article class="rounded-3xl border p-6 sm:p-7" style="background: var(--card-bg); border-color: var(--border-color);">
+        <h3 class="font-display text-lg font-semibold mb-4" style="color: var(--text-primary);">{w.forecastTitle}</h3>
+        <ul class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
+          {forecast.map((day, index) => (
+            <li
+              data-wx-day={index}
+              class="rounded-2xl border px-3 py-4 text-center"
+              style="background: var(--bg-tertiary); border-color: var(--border-color);"
+            >
+              <p class="text-[0.7rem] uppercase tracking-[0.12em] mb-2" style="color: var(--text-muted);">{day.label}</p>
+              <p class="text-2xl mb-2" data-wx="day-icon" aria-hidden="true">{icon(day.group)}</p>
+              <p class="text-sm font-semibold" style="color: var(--text-primary);">
+                <span data-wx="day-max">{round(day.max)}</span>°
+                <span class="font-normal" style="color: var(--text-muted);">
+                  / <span data-wx="day-min">{round(day.min)}</span>°
+                </span>
+              </p>
+              <p class="text-xs mt-2" style="color: var(--accent);">
+                💧 <span data-wx="day-pop">{round(day.pop)}</span>%
+              </p>
+            </li>
+          ))}
+        </ul>
+        <p class="text-xs mt-4 leading-relaxed" style="color: var(--text-muted);">{w.forecastNote}</p>
+      </article>
+    </div>
+
+    <p class="text-xs mt-5" style="color: var(--text-muted);">{w.dataSource}</p>
+  </div>
+</section>
+
+<style is:global>
+  #weather .wx-risk {
+    border: 1px solid rgba(225, 29, 72, 0.45);
+    background: rgba(225, 29, 72, 0.1);
+    border-radius: 1.5rem;
+    padding: 1.15rem 1.35rem;
+  }
+  #weather .wx-risk-title {
+    color: #e11d48;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    margin: 0 0 0.5rem;
+  }
+  #weather .wx-risk-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    list-style: disc;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+  #weather .wx-group-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0 0 0.6rem;
+  }
+  #weather .wx-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #weather .wx-line {
+    position: relative;
+    padding-left: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+  #weather .wx-line + .wx-line {
+    margin-top: 0.4rem;
+  }
+  #weather .wx-line::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+  #weather .wx-list-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+  #weather .wx-chip {
+    border: 1px solid var(--border-color);
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    border-radius: 999px;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+  #weather .wx-soft {
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-left: 0.25rem;
+  }
+</style>
+
+<script type="application/json" id="wx-labels" set:html={labels}></script>
+<script type="application/json" id="wx-rules" set:html={JSON.stringify(ADVICE_RULES)}></script>
+<script is:inline>
+  (function () {
+    var root = document.querySelector('[data-wx-root]');
+    if (!root) return;
+    var url = root.getAttribute('data-wx-url');
+    if (!url) return;
+
+    function readJson(id, fallback) {
+      var node = document.getElementById(id);
+      if (!node) return fallback;
+      try {
+        return JSON.parse(node.textContent || '') || fallback;
+      } catch (err) {
+        return fallback;
+      }
+    }
+
+    var labels = readJson('wx-labels', {});
+    var rules = readJson('wx-rules', []);
+
+    var ICONS = {
+      clear: '☀️',
+      mainlyClear: '🌤️',
+      partlyCloudy: '⛅',
+      overcast: '☁️',
+      fog: '🌫️',
+      drizzle: '🌦️',
+      rain: '🌧️',
+      showers: '🌦️',
+      snow: '🌨️',
+      thunderstorm: '⛈️',
+    };
+
+    function group(code) {
+      if (code === 0) return 'clear';
+      if (code === 1) return 'mainlyClear';
+      if (code === 2) return 'partlyCloudy';
+      if (code === 3) return 'overcast';
+      if (code === 45 || code === 48) return 'fog';
+      if (code >= 51 && code <= 57) return 'drizzle';
+      if ((code >= 61 && code <= 67) || (code >= 80 && code <= 82)) return 'rain';
+      if ((code >= 71 && code <= 77) || code === 85 || code === 86) return 'snow';
+      if (code >= 95) return 'thunderstorm';
+      return 'overcast';
+    }
+
+    function icon(g, isDay) {
+      return g === 'clear' && !isDay ? '🌙' : ICONS[g] || '⛅';
+    }
+
+    function num(value) {
+      var n = Number(value);
+      return isFinite(n) ? n : 0;
+    }
+
+    function clock(value) {
+      return typeof value === 'string' && value.length >= 16 ? value.slice(11, 16) : '—';
+    }
+
+    function set(key, value) {
+      var el = root.querySelector('[data-wx="' + key + '"]');
+      if (el && value !== undefined && value !== null) el.textContent = value;
+    }
+
+    function at(list, index) {
+      return Array.isArray(list) ? list[index] : undefined;
+    }
+
+    function windScale(kmh) {
+      if (kmh < 12) return 'calm';
+      if (kmh < 29) return 'breeze';
+      if (kmh < 39) return 'moderate';
+      if (kmh < 62) return 'strong';
+      return 'gale';
+    }
+
+    function factsFrom(raw) {
+      var daily = raw.daily || {};
+      var current = raw.current || {};
+      var max = num(at(daily.temperature_2m_max, 0));
+      var min = num(at(daily.temperature_2m_min, 0));
+      var uv = at(daily.uv_index_max, 0);
+      return {
+        temp: num(current.temperature_2m),
+        max: max,
+        min: min,
+        range: Math.max(0, max - min),
+        pop: num(at(daily.precipitation_probability_max, 0)),
+        rain: num(at(daily.precipitation_sum, 0)),
+        uv: uv === null || uv === undefined ? 0 : num(uv),
+        windMax: num(at(daily.wind_speed_10m_max, 0)),
+        windNow: num(current.wind_speed_10m),
+        group: group(num(at(daily.weather_code, 0))),
+      };
+    }
+
+    function matchRule(rule, facts) {
+      var when = rule.when || [];
+      for (var i = 0; i < when.length; i++) {
+        var c = when[i];
+        if (c.field === 'group') {
+          if ((c.value || []).indexOf(facts.group) === -1) return false;
+          continue;
+        }
+        var v = Number(facts[c.field]);
+        if (!isFinite(v)) return false;
+        if (c.op === '>=' && !(v >= c.value)) return false;
+        if (c.op === '<=' && !(v <= c.value)) return false;
+        if (c.op === '>' && !(v > c.value)) return false;
+        if (c.op === '<' && !(v < c.value)) return false;
+      }
+      return true;
+    }
+
+    function evaluate(facts) {
+      var out = { risks: [], outfit: [], plan: [], gear: [] };
+      for (var i = 0; i < rules.length; i++) {
+        var rule = rules[i];
+        if (!matchRule(rule, facts)) continue;
+        if (rule.tip && out[rule.group] && out[rule.group].indexOf(rule.tip) === -1) {
+          out[rule.group].push(rule.tip);
+        }
+        if (rule.gear) {
+          for (var j = 0; j < rule.gear.length; j++) {
+            if (out.gear.indexOf(rule.gear[j]) === -1) out.gear.push(rule.gear[j]);
+          }
+        }
+      }
+      // Mirrors ADVICE_FALLBACK in src/lib/weather.ts.
+      if (out.outfit.length === 0) out.outfit.push('outfitMild');
+      if (out.plan.length === 0) out.plan.push('planDefault');
+      out.risks = out.risks.slice(0, 3);
+      out.outfit = out.outfit.slice(0, 2);
+      out.plan = out.plan.slice(0, 2);
+      out.gear = out.gear.slice(0, 5);
+      return out;
+    }
+
+    function translate(ids, table) {
+      var out = [];
+      for (var i = 0; i < ids.length; i++) {
+        var text = (table || {})[ids[i]];
+        if (text) out.push(text);
+      }
+      return out;
+    }
+
+    function fillList(key, items, chip) {
+      var list = root.querySelector('[data-wx="list-' + key + '"]');
+      if (list) {
+        while (list.firstChild) list.removeChild(list.firstChild);
+        for (var i = 0; i < items.length; i++) {
+          var li = document.createElement('li');
+          li.className = chip ? 'wx-chip' : 'wx-line';
+          li.textContent = items[i];
+          list.appendChild(li);
+        }
+      }
+      var box = root.querySelector('[data-wx="group-' + key + '"]');
+      if (box) box.hidden = items.length === 0;
+    }
+
+    function fillRisks(items) {
+      var box = root.querySelector('[data-wx="risk"]');
+      var list = root.querySelector('[data-wx="risk-list"]');
+      if (list) {
+        while (list.firstChild) list.removeChild(list.firstChild);
+        for (var i = 0; i < items.length; i++) {
+          var li = document.createElement('li');
+          li.textContent = items[i];
+          list.appendChild(li);
+        }
+      }
+      if (box) box.hidden = items.length === 0;
+    }
+
+    fetch(url, { cache: 'no-store' })
+      .then(function (response) {
+        return response.ok ? response.json() : null;
+      })
+      .then(function (raw) {
+        if (!raw || !raw.current) return;
+
+        var current = raw.current;
+        var daily = raw.daily || {};
+        var g = group(num(current.weather_code));
+        var windNow = num(current.wind_speed_10m);
+
+        set('temp', Math.round(num(current.temperature_2m)));
+        set('cond', (labels.conditions || {})[g] || '');
+        set('icon', icon(g, current.is_day === 1));
+        set('feels', Math.round(num(current.apparent_temperature)));
+        set('humidity', Math.round(num(current.relative_humidity_2m)));
+        set('wind', Math.round(windNow));
+        set('windscale', (labels.windScale || {})[windScale(windNow)] || '');
+        set('updated', clock(current.time));
+
+        if (!daily.time) return;
+
+        set('pop', Math.round(num(at(daily.precipitation_probability_max, 0))));
+
+        var uv = at(daily.uv_index_max, 0);
+        if (uv !== null && uv !== undefined) set('uv', Math.round(num(uv)));
+        var windMax = at(daily.wind_speed_10m_max, 0);
+        if (windMax !== null && windMax !== undefined) set('windmax', Math.round(num(windMax)));
+        var sunrise = at(daily.sunrise, 0);
+        if (sunrise) set('sunrise', clock(sunrise));
+        var sunset = at(daily.sunset, 0);
+        if (sunset) set('sunset', clock(sunset));
+
+        var advice = evaluate(factsFrom(raw));
+        fillRisks(translate(advice.risks, labels.tips));
+        fillList('outfit', translate(advice.outfit, labels.tips), false);
+        fillList('plan', translate(advice.plan, labels.tips), false);
+        fillList('gear', translate(advice.gear, labels.gear), true);
+
+        var cards = root.querySelectorAll('[data-wx-day]');
+        for (var i = 0; i < cards.length; i++) {
+          var card = cards[i];
+          var dayGroup = group(num(at(daily.weather_code, i)));
+          var iconEl = card.querySelector('[data-wx="day-icon"]');
+          var maxEl = card.querySelector('[data-wx="day-max"]');
+          var minEl = card.querySelector('[data-wx="day-min"]');
+          var popEl = card.querySelector('[data-wx="day-pop"]');
+
+          if (iconEl) iconEl.textContent = icon(dayGroup, true);
+          if (maxEl) maxEl.textContent = Math.round(num(at(daily.temperature_2m_max, i)));
+          if (minEl) minEl.textContent = Math.round(num(at(daily.temperature_2m_min, i)));
+          if (popEl) popEl.textContent = Math.round(num(at(daily.precipitation_probability_max, i)));
+        }
+      })
+      .catch(function () {});
+  })();
+</script>

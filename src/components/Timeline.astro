@@ -1,0 +1,34 @@
+---
+import { getI18n } from '../i18n/ui';
+
+const { messages } = getI18n(Astro.url);
+const t = messages.timeline;
+const items = t.items ?? [];
+---
+
+<section id="history" class="section-padding" style="background: var(--bg-secondary);">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="max-w-3xl mb-8">
+      <p class="text-xs uppercase tracking-[0.2em] mb-3" style="color: var(--accent);">{t.eyebrow}</p>
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{t.title}</h2>
+      <p class="text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary);">{t.subtitle}</p>
+    </div>
+
+    <ol class="relative border-l pl-6 sm:pl-8 space-y-7" style="border-color: var(--border-color);">
+      {items.map((item: any) => (
+        <li class="relative">
+          <span
+            class="absolute -left-[1.72rem] sm:-left-[2.22rem] top-1.5 h-3 w-3 rounded-full border-2"
+            style="background: var(--bg-primary); border-color: var(--accent);"
+            aria-hidden="true"
+          ></span>
+          <p class="text-xs uppercase tracking-[0.16em] mb-1.5" style="color: var(--accent);">{item.era}</p>
+          <h3 class="font-display text-lg font-semibold mb-2" style="color: var(--text-primary);">{item.title}</h3>
+          <p class="text-sm sm:text-base leading-relaxed" style="color: var(--text-secondary);">{item.text}</p>
+        </li>
+      ))}
+    </ol>
+
+    <p class="text-xs mt-8 leading-relaxed max-w-3xl" style="color: var(--text-muted);">{t.note}</p>
+  </div>
+</section>
