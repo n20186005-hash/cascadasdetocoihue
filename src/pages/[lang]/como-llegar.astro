@@ -1,32 +1,43 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { attraction, SITE_URL } from '../../config/attraction';
-import { buildAlternates } from '../../i18n/ui';
-import { comoLlegar, horariosPrecios, fotos, mejorEpoca, subpageCards } from '../../data/subpages';
+import { buildAlternates, subpageLangs } from '../../i18n/ui';
+import { comoLlegar, horariosPrecios, fotos, mejorEpoca } from '../../data/subpages';
 
-const slug = comoLlegar.slug;
-const canonical = buildAlternates(slug).es;
+export function getStaticPaths() {
+  return subpageLangs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as 'es' | 'en' | 'zh';
+const homeLabel = { es: 'Inicio', en: 'Home', zh: '首页' }[lang];
+const slug = 'como-llegar';
+const c = comoLlegar[lang];
+const canonical = buildAlternates(slug)[lang];
 const breadcrumb = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/es/` },
-    { '@type': 'ListItem', position: 2, name: comoLlegar.h1, item: canonical },
+    { '@type': 'ListItem', position: 1, name: homeLabel, item: buildAlternates('').es },
+    { '@type': 'ListItem', position: 2, name: c.h1, item: canonical },
   ],
 };
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: comoLlegar.faq.map((item) => ({
+  mainEntity: c.faq.map((item) => ({
     '@type': 'Question',
     name: item.q,
     acceptedAnswer: { '@type': 'Answer', text: item.a },
   })),
 };
-const sisters = [horariosPrecios, fotos, mejorEpoca];
+const sisters = [
+  { slug: 'horarios-precios', h1: horariosPrecios[lang].h1 },
+  { slug: 'fotos', h1: fotos[lang].h1 },
+  { slug: 'mejor-epoca', h1: mejorEpoca[lang].h1 },
+];
 ---
 
-<BaseLayout title={comoLlegar.title} description={comoLlegar.description} path={slug} i18n={false}>
+<BaseLayout title={c.title} description={c.description} path={slug} langs={subpageLangs}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />
     <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
@@ -35,19 +46,19 @@ const sisters = [horariosPrecios, fotos, mejorEpoca];
   <article class="section-padding" style="background: var(--bg-primary);">
     <div class="max-w-4xl mx-auto px-4">
       <nav aria-label="Migas de pan" class="text-sm mb-6" style="color: var(--text-muted);">
-        <a href={`${SITE_URL}/es/`} class="hover:opacity-70" style="color: var(--accent);">Inicio</a>
+        <a href={`${SITE_URL}/${lang}/`} class="hover:opacity-70" style="color: var(--accent);">{homeLabel}</a>
         <span class="mx-2">/</span>
-        <span>{comoLlegar.h1}</span>
+        <span>{c.h1}</span>
       </nav>
 
-      <h1 class="font-display text-3xl sm:text-5xl font-semibold mb-4" style="color: var(--text-primary);">{comoLlegar.h1}</h1>
-      <p class="text-lg leading-relaxed mb-10" style="color: var(--text-secondary);">{comoLlegar.lead}</p>
+      <h1 class="font-display text-3xl sm:text-5xl font-semibold mb-4" style="color: var(--text-primary);">{c.h1}</h1>
+      <p class="text-lg leading-relaxed mb-10" style="color: var(--text-secondary);">{c.lead}</p>
 
       <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-start">
         <div>
           <h2 class="font-display text-2xl font-semibold mb-6" style="color: var(--text-primary);">Ruta desde Dalcahue</h2>
           <ol class="space-y-5">
-            {comoLlegar.fromDalcahue.map((item, index) => (
+            {c.fromDalcahue.map((item, index) => (
               <li class="flex gap-4">
                 <span class="shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm text-white" style="background: var(--accent);">
                   {index + 1}
@@ -62,7 +73,7 @@ const sisters = [horariosPrecios, fotos, mejorEpoca];
 
           <h2 class="font-display text-2xl font-semibold mt-12 mb-6" style="color: var(--text-primary);">Cómo llegar a Chiloé y a Dalcahue</h2>
           <div class="space-y-4">
-            {comoLlegar.options.map((opt) => (
+            {c.options.map((opt) => (
               <div class="rounded-2xl p-5 border" style="background: var(--card-bg); border-color: var(--border-color);">
                 <p class="font-semibold mb-1" style="color: var(--text-primary);">
                   <span aria-hidden="true" class="mr-2">{opt.icon}</span>{opt.title}
@@ -98,7 +109,7 @@ const sisters = [horariosPrecios, fotos, mejorEpoca];
 
           <div class="rounded-2xl p-6 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
             <h3 class="font-display text-xl font-semibold mb-3" style="color: var(--text-primary);">Estacionamiento</h3>
-            <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{comoLlegar.parking}</p>
+            <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{c.parking}</p>
           </div>
         </aside>
       </div>
@@ -119,7 +130,7 @@ const sisters = [horariosPrecios, fotos, mejorEpoca];
       <section class="mt-14">
         <h2 class="font-display text-2xl font-semibold mb-5" style="color: var(--text-primary);">Preguntas frecuentes</h2>
         <div class="space-y-3">
-          {comoLlegar.faq.map((item) => (
+          {c.faq.map((item) => (
             <details class="group bg-white/5 rounded-xl border border-white/10 overflow-hidden">
               <summary class="flex items-start justify-between gap-4 cursor-pointer list-none p-4 font-medium" style="color: var(--text-primary);">
                 <span>{item.q}</span>
@@ -136,8 +147,7 @@ const sisters = [horariosPrecios, fotos, mejorEpoca];
         <ul class="grid sm:grid-cols-3 gap-4">
           {sisters.map((s) => (
             <li>
-              <a href={`${SITE_URL}/es/${s.slug}/`} class="block rounded-2xl p-5 border hover:opacity-80" style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-primary);">
-                <span class="text-2xl mr-2" aria-hidden="true">{subpageCards.find((c) => c.slug === s.slug)?.icon}</span>
+              <a href={`${SITE_URL}/${lang}/${s.slug}/`} class="block rounded-2xl p-5 border hover:opacity-80" style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-primary);">
                 <span class="font-semibold">{s.h1}</span>
               </a>
             </li>

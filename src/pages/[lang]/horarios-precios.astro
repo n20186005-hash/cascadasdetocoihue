@@ -1,32 +1,63 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { SITE_URL } from '../../config/attraction';
-import { buildAlternates } from '../../i18n/ui';
-import { horariosPrecios, comoLlegar, fotos, mejorEpoca, subpageCards } from '../../data/subpages';
+import { buildAlternates, subpageLangs } from '../../i18n/ui';
+import { horariosPrecios, comoLlegar, fotos, mejorEpoca } from '../../data/subpages';
 
-const slug = horariosPrecios.slug;
-const canonical = buildAlternates(slug).es;
+export function getStaticPaths() {
+  return subpageLangs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as 'es' | 'en' | 'zh';
+const homeLabel = { es: 'Inicio', en: 'Home', zh: '首页' }[lang];
+const slug = 'horarios-precios';
+const c = horariosPrecios[lang];
+const canonical = buildAlternates(slug)[lang];
 const breadcrumb = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/es/` },
-    { '@type': 'ListItem', position: 2, name: horariosPrecios.h1, item: canonical },
+    { '@type': 'ListItem', position: 1, name: homeLabel, item: buildAlternates('').es },
+    { '@type': 'ListItem', position: 2, name: c.h1, item: canonical },
   ],
 };
 const faqLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: horariosPrecios.faq.map((item) => ({
+  mainEntity: c.faq.map((item) => ({
     '@type': 'Question',
     name: item.q,
     acceptedAnswer: { '@type': 'Answer', text: item.a },
   })),
 };
-const sisters = [comoLlegar, fotos, mejorEpoca];
+const sisters = [
+  { slug: 'como-llegar', h1: comoLlegar[lang].h1 },
+  { slug: 'fotos', h1: fotos[lang].h1 },
+  { slug: 'mejor-epoca', h1: mejorEpoca[lang].h1 },
+];
+const beforeYouGo = {
+  es: [
+    'El horario fijo solo aplica en temporada alta (verano); el resto del año confirma por teléfono.',
+    'Lleva efectivo: el cobro en la entrada rural suele ser en pesos chilenos.',
+    'El último tramo es de ripio; consulta el estado del día en Dalcahue si ha llovido.',
+    'El sendero hasta el mirador es de dificultad baja, apto para familias.',
+  ],
+  en: [
+    'The fixed schedule only applies in high season (summer); the rest of the year confirm by phone.',
+    'Bring cash: payment at the rural entrance is usually in Chilean pesos.',
+    'The last stretch is gravel; check the day’s condition in Dalcahue if it has rained.',
+    'The trail to the viewpoint is low difficulty, suitable for families.',
+  ],
+  zh: [
+    '固定时段仅在旺季（夏季）适用；其他时间请电话确认。',
+    '请带现金：乡村入口处通常以智利比索收费。',
+    '最后一段是碎石路；若下过雨，请在达尔卡韦了解当天路况。',
+    '通往观景台的步道难度低，适合家庭出行。',
+  ],
+}[lang];
 ---
 
-<BaseLayout title={horariosPrecios.title} description={horariosPrecios.description} path={slug} i18n={false}>
+<BaseLayout title={c.title} description={c.description} path={slug} langs={subpageLangs}>
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />
     <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
@@ -35,19 +66,19 @@ const sisters = [comoLlegar, fotos, mejorEpoca];
   <article class="section-padding" style="background: var(--bg-primary);">
     <div class="max-w-4xl mx-auto px-4">
       <nav aria-label="Migas de pan" class="text-sm mb-6" style="color: var(--text-muted);">
-        <a href={`${SITE_URL}/es/`} class="hover:opacity-70" style="color: var(--accent);">Inicio</a>
+        <a href={`${SITE_URL}/${lang}/`} class="hover:opacity-70" style="color: var(--accent);">{homeLabel}</a>
         <span class="mx-2">/</span>
-        <span>{horariosPrecios.h1}</span>
+        <span>{c.h1}</span>
       </nav>
 
-      <h1 class="font-display text-3xl sm:text-5xl font-semibold mb-4" style="color: var(--text-primary);">{horariosPrecios.h1}</h1>
-      <p class="text-lg leading-relaxed mb-10" style="color: var(--text-secondary);">{horariosPrecios.lead}</p>
+      <h1 class="font-display text-3xl sm:text-5xl font-semibold mb-4" style="color: var(--text-primary);">{c.h1}</h1>
+      <p class="text-lg leading-relaxed mb-10" style="color: var(--text-secondary);">{c.lead}</p>
 
       <div class="grid lg:grid-cols-2 gap-12">
         <section>
           <h2 class="font-display text-2xl font-semibold mb-6" style="color: var(--text-primary);">Horarios</h2>
           <div class="space-y-4">
-            {horariosPrecios.hours.map((row) => (
+            {c.hours.map((row) => (
               <div class="rounded-2xl p-5 border" style="background: var(--card-bg); border-color: var(--border-color);">
                 <p class="text-xs uppercase tracking-[0.14em] mb-1" style="color: var(--text-muted);">{row.label}</p>
                 <p class="font-semibold" style="color: var(--text-primary);">{row.value}</p>
@@ -57,11 +88,11 @@ const sisters = [comoLlegar, fotos, mejorEpoca];
 
           <div class="mt-8 rounded-2xl p-6 border" style="background: var(--bg-tertiary); border-color: var(--border-color);">
             <h3 class="font-display text-xl font-semibold mb-3" style="color: var(--text-primary);">Valor de la entrada</h3>
-            <p class="text-lg font-semibold mb-2" style="color: var(--accent);">{horariosPrecios.price.range}</p>
-            <p class="text-sm leading-relaxed mb-4" style="color: var(--text-secondary);">{horariosPrecios.price.note}</p>
+            <p class="text-lg font-semibold mb-2" style="color: var(--accent);">{c.price.range}</p>
+            <p class="text-sm leading-relaxed mb-4" style="color: var(--text-secondary);">{c.price.note}</p>
             <p class="text-xs uppercase tracking-[0.14em] mb-2" style="color: var(--text-muted);">Qué incluye</p>
             <ul class="space-y-2">
-              {horariosPrecios.price.includes.map((inc) => (
+              {c.price.includes.map((inc) => (
                 <li class="flex gap-2 text-sm" style="color: var(--text-secondary);">
                   <span aria-hidden="true" style="color: var(--accent);">&#9656;</span>
                   <span>{inc}</span>
@@ -74,10 +105,9 @@ const sisters = [comoLlegar, fotos, mejorEpoca];
         <aside class="rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
           <h3 class="font-display text-xl font-semibold mb-4" style="color: var(--text-primary);">Antes de salir</h3>
           <ul class="space-y-3 text-sm leading-relaxed" style="color: var(--text-secondary);">
-            <li class="flex gap-2"><span aria-hidden="true" style="color: var(--accent);">&#9656;</span><span>El horario fijo solo aplica en temporada alta (verano); el resto del año confirma por teléfono.</span></li>
-            <li class="flex gap-2"><span aria-hidden="true" style="color: var(--accent);">&#9656;</span><span>Lleva efectivo: el cobro en la entrada rural suele ser en pesos chilenos.</span></li>
-            <li class="flex gap-2"><span aria-hidden="true" style="color: var(--accent);">&#9656;</span><span>El último tramo es de ripio; consulta el estado del día en Dalcahue si ha llovido.</span></li>
-            <li class="flex gap-2"><span aria-hidden="true" style="color: var(--accent);">&#9656;</span><span>El sendero hasta el mirador es de dificultad baja, apto para familias.</span></li>
+            {beforeYouGo.map((tip) => (
+              <li class="flex gap-2"><span aria-hidden="true" style="color: var(--accent);">&#9656;</span><span>{tip}</span></li>
+            ))}
           </ul>
         </aside>
       </div>
@@ -85,7 +115,7 @@ const sisters = [comoLlegar, fotos, mejorEpoca];
       <section class="mt-14">
         <h2 class="font-display text-2xl font-semibold mb-5" style="color: var(--text-primary);">Preguntas frecuentes</h2>
         <div class="space-y-3">
-          {horariosPrecios.faq.map((item) => (
+          {c.faq.map((item) => (
             <details class="group bg-white/5 rounded-xl border border-white/10 overflow-hidden">
               <summary class="flex items-start justify-between gap-4 cursor-pointer list-none p-4 font-medium" style="color: var(--text-primary);">
                 <span>{item.q}</span>
@@ -102,8 +132,7 @@ const sisters = [comoLlegar, fotos, mejorEpoca];
         <ul class="grid sm:grid-cols-3 gap-4">
           {sisters.map((s) => (
             <li>
-              <a href={`${SITE_URL}/es/${s.slug}/`} class="block rounded-2xl p-5 border hover:opacity-80" style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-primary);">
-                <span class="text-2xl mr-2" aria-hidden="true">{subpageCards.find((c) => c.slug === s.slug)?.icon}</span>
+              <a href={`${SITE_URL}/${lang}/${s.slug}/`} class="block rounded-2xl p-5 border hover:opacity-80" style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-primary);">
                 <span class="font-semibold">{s.h1}</span>
               </a>
             </li>

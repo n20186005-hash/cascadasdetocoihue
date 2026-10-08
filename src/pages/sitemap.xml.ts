@@ -1,12 +1,12 @@
 import type { APIRoute } from 'astro';
-import { languagesList } from '../i18n/ui';
+import { languagesList, subpageLangs } from '../i18n/ui';
 import { SITE_URL } from '../config/attraction';
 
-// Home pages exist in every language; the four Spanish-only guides below do
-// not, so they are listed just for /es/ (and must not point hreflang at
-// non-existent /en|/zh|/arn versions).
+// Home pages exist in every language; the four guide subpages exist only in
+// es/en/zh (Mapudungun arn is not covered), so their hreflang must not point
+// at a non-existent /arn/<slug>/ version.
 const homeRoutes = [''];
-const esSubRoutes = ['como-llegar', 'horarios-precios', 'fotos', 'mejor-epoca'];
+const subRoutes = ['como-llegar', 'horarios-precios', 'fotos', 'mejor-epoca'];
 
 const path = (lang: string, route: string) => `${SITE_URL}/${lang}/${route ? route + '/' : ''}`;
 
@@ -29,19 +29,24 @@ ${alternates}
     })
   );
 
-  const subUrls = esSubRoutes.map((route) => {
-    const alternates = [
-      `    <xhtml:link rel="alternate" hreflang="es" href="${path('es', route)}" />`,
-      `    <xhtml:link rel="alternate" hreflang="x-default" href="${path('es', route)}" />`,
-    ].join('\n');
+  const subUrls = subRoutes.flatMap((route) =>
+    subpageLangs.map((lang) => {
+      const loc = path(lang, route);
+      const alternates = [
+        ...subpageLangs.map(
+          (alt) => `    <xhtml:link rel="alternate" hreflang="${alt}" href="${path(alt, route)}" />`
+        ),
+        `    <xhtml:link rel="alternate" hreflang="x-default" href="${path('es', route)}" />`,
+      ].join('\n');
 
-    return `  <url>
-    <loc>${path('es', route)}</loc>
+      return `  <url>
+    <loc>${loc}</loc>
 ${alternates}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>`;
-  });
+    })
+  );
 
   const urls = [...homeUrls, ...subUrls];
 

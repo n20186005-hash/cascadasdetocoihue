@@ -1,5 +1,5 @@
 ---
-import { getI18n, languagesList, languages } from '../i18n/ui';
+import { getI18n, languagesList, languages, subpageLangs } from '../i18n/ui';
 
 const { lang, t, messages } = getI18n(Astro.url);
 const h = messages.header;
@@ -8,7 +8,12 @@ const currentPath = Astro.url.pathname;
 
 // keep the same page route (e.g. /es/privacy-policy) when switching language
 const pageSeg = Astro.url.pathname.split('/').filter(Boolean).slice(1).join('/');
-const switchTo = (l: string) => (pageSeg ? `/${l}/${pageSeg}` : `/${l}`);
+// The four guide subpages only exist in es/en/zh, so picking a language that
+// has no subpage version (arn) falls back to that language's homepage.
+const switchTo = (l: string) => {
+  if (pageSeg && !subpageLangs.includes(l)) return `/${l}/`;
+  return pageSeg ? `/${l}/${pageSeg}` : `/${l}/`;
+};
 ---
 
 <header class="sticky top-0 z-50 backdrop-blur" style="background: color-mix(in srgb, var(--bg-primary) 85%, transparent); border-bottom: 1px solid var(--border-color);">

@@ -6,6 +6,11 @@ import arn from './arn.json';
 export const defaultLang = 'es';
 export const languagesList = ['es', 'en', 'zh', 'arn'] as const;
 
+// The four long-tail guide subpages exist only in these three languages
+// (Mapudungun arn is not covered), so their hreflang and language switcher
+// must not point at a non-existent /arn/<slug>/ URL.
+export const subpageLangs = ['es', 'en', 'zh'];
+
 export const languages: Record<string, string> = {
   es: 'Español',
   en: 'English',
