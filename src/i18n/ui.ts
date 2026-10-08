@@ -36,7 +36,9 @@ export function getI18n(url: URL) {
 export function buildAlternates(path = ''): Record<string, string> {
   const base = 'https://cascadasdetocoihue.com';
   const clean = path.replace(/^\/+/, '').replace(/\/+$/, '');
-  const mk = (l: string) => `${base}/${l}${clean ? '/' + clean : ''}`;
+  // Every page is served as a directory index (`/es/`, `/es/como-llegar/`), so
+  // canonical and hreflang URLs must always carry the trailing slash.
+  const mk = (l: string) => `${base}/${l}/${clean ? clean + '/' : ''}`;
   return {
     es: mk('es'),
     en: mk('en'),

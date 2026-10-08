@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Cascadas de Tocoihue: Horarios, Cómo Llegar y Guía de Visita (Chiloé)",
-    "description": "Planifica tu visita a las Cascadas de Tocoihue en Dalcahue, Chiloé. Conoce los horarios actualizados, rutas de cómo llegar, la leyenda local y tarifas."
+    "title": "Cascadas de Tocoihue: Horarios, Precios y Cómo Llegar (Chiloé)",
+    "description": "Descubre las Cascadas de Tocoihue en Dalcahue, Chiloé. Consulta horarios, precios orientativos, cómo llegar, fotos y consejos para organizar tu visita."
   },
   "header": {
     "siteName": "Cascadas de Tocoihue",
@@ -27,11 +27,11 @@
   },
   "hero": {
     "eyebrow": "Reserva de bosque templado lluvioso",
-    "title": "Cascadas de Tocoihue: lluvia, bosque nativo y memoria huilliche en una sola visita",
-    "h1Name": "Cascadas de Tocoihue (Dalcahue)",
+    "title": "Guía para visitar la cascada en Chiloé",
+    "h1Name": "Cascadas de Tocoihue",
     "subtitle": "A poca distancia de Dalcahue, este salto combina una caminata breve, geología basáltica y el paisaje cultural huilliche en uno de los mejores paseos de naturaleza de Chiloé.",
-    "rating": "4,7(6.081)",
-    "reviewCount": "6.081 opiniones",
+    "rating": "4,7(6.085)",
+    "reviewCount": "6.085 opiniones",
     "hours": "Suele abrir de día, ~10:00–20:00 (verano)",
     "locationNote": "A unos 20 km de Dalcahue por la ruta de ripio U-48",
     "primaryCta": {
@@ -185,7 +185,7 @@
         "description": "La puerta aérea más cercana en la isla es el Aeropuerto de Mocopulli (MHC), cerca de Castro. Desde el continente, el Aeropuerto El Tepual (PMC) en Puerto Montt es la opción principal.",
         "details": [
           "Desde Mocopulli hay unos 45–60 min de auto hasta Dalcahue por la Ruta 5.",
-          "Si aterrizas en Puerto Montt, primero cruzas el Canal de Chacao y luego sigues por carretera a Chiloé.",
+          "Si aterrizas en Puerto Montt, cruzas el Canal de Chacao en transbordador y luego sigues por carretera a Chiloé.",
           "El avión te deja en la isla; de ahí en adelante necesitas auto, bus o traslado para llegar a Tocoihue."
         ]
       },
@@ -201,8 +201,8 @@
       },
       {
         "label": "Opción 03",
-        "title": "Transbordador / Puente Chacao",
-        "description": "Para entrar a Chiloé desde el continente se cruza el Canal de Chacao. Hoy el cruce se hace por el Puente de Chacao, que une Pargua con la isla.",
+        "title": "Transbordador de Chacao",
+        "description": "Para entrar a Chiloé desde el continente se cruza el Canal de Chacao en transbordador (ferry) desde Pargua hasta Chacao. El Puente de Chacao sigue en construcción y todavía no está habilitado para el tránsito.",
         "details": [
           "Si vienes en auto o bus desde Puerto Montt, cruzas el canal y sigues por la Ruta 5 hacia el sur.",
           "El cruce es el acceso obligado a la isla antes de dirigirte a Dalcahue.",
@@ -222,7 +222,7 @@
       {
         "label": "Opción 05",
         "title": "Auto",
-        "description": "Conducir te da libertad para recorrer Chiloé. Desde Puerto Montt vas por la Ruta 5 hasta Pargua, cruzas el Canal de Chacao y sigues hasta Dalcahue, luego por la Ruta U-48 hacia Tocoihue.",
+        "description": "Conducir te da libertad para recorrer Chiloé. Desde Puerto Montt vas por la Ruta 5 hasta Pargua, cruzas el Canal de Chacao en transbordador y sigues hasta Dalcahue, luego por la Ruta U-48 hacia Tocoihue.",
         "details": [
           "Desde Dalcahue, la Ruta U-48 sale hacia el sector rural de Tocoihue por camino de ripio.",
           "Lleva combustible: las estaciones están en Dalcahue y Castro, no en la ruta rural.",

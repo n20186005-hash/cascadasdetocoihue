@@ -15,6 +15,8 @@ interface Props {
   imageAlt?: string;
   /** Set to true on pages that should not be indexed (e.g. redirect helpers). */
   noindex?: boolean;
+  /** Set to false on Spanish-only pages that have no other-language versions. */
+  i18n?: boolean;
 }
 
 const {
@@ -24,6 +26,7 @@ const {
   image = attraction.heroImage,
   imageAlt = `${attraction.fullName} in ${attraction.city}`,
   noindex = false,
+  i18n = true,
 } = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
@@ -46,11 +49,15 @@ const ga4Id = 'G-HXM22WWPKP';
     <link rel="canonical" href={canonical} />
 
     <!-- Language alternates -->
-    <link rel="alternate" hreflang="es" href={alts.es} />
-    <link rel="alternate" hreflang="en" href={alts.en} />
-    <link rel="alternate" hreflang="zh" href={alts.zh} />
-    <link rel="alternate" hreflang="arn" href={alts.arn} />
-    <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
+    {i18n && (
+      <>
+        <link rel="alternate" hreflang="es" href={alts.es} />
+        <link rel="alternate" hreflang="en" href={alts.en} />
+        <link rel="alternate" hreflang="zh" href={alts.zh} />
+        <link rel="alternate" hreflang="arn" href={alts.arn} />
+        <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
+      </>
+    )}
 
     <!-- Geographic signals for the physical entity (NAP / geo binding) -->
     <meta name="geo.region" content={`${attraction.countryCode}-${attraction.stateProvince}`} />

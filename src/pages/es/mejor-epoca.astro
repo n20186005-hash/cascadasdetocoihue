@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE_URL } from '../../config/attraction';
+import { buildAlternates } from '../../i18n/ui';
+import { mejorEpoca, comoLlegar, horariosPrecios, fotos, subpageCards } from '../../data/subpages';
+
+const slug = mejorEpoca.slug;
+const canonical = buildAlternates(slug).es;
+const breadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: `${SITE_URL}/es/` },
+    { '@type': 'ListItem', position: 2, name: mejorEpoca.h1, item: canonical },
+  ],
+};
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: mejorEpoca.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+const sisters = [comoLlegar, horariosPrecios, fotos];
+---
+
+<BaseLayout title={mejorEpoca.title} description={mejorEpoca.description} path={slug} i18n={false}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  </Fragment>
+
+  <article class="section-padding" style="background: var(--bg-primary);">
+    <div class="max-w-4xl mx-auto px-4">
+      <nav aria-label="Migas de pan" class="text-sm mb-6" style="color: var(--text-muted);">
+        <a href={`${SITE_URL}/es/`} class="hover:opacity-70" style="color: var(--accent);">Inicio</a>
+        <span class="mx-2">/</span>
+        <span>{mejorEpoca.h1}</span>
+      </nav>
+
+      <h1 class="font-display text-3xl sm:text-5xl font-semibold mb-4" style="color: var(--text-primary);">{mejorEpoca.h1}</h1>
+      <p class="text-lg leading-relaxed mb-10" style="color: var(--text-secondary);">{mejorEpoca.lead}</p>
+
+      <section>
+        <h2 class="font-display text-2xl font-semibold mb-6" style="color: var(--text-primary);">Por estación</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {mejorEpoca.seasons.map((s) => (
+            <div class="rounded-2xl p-5 border" style="background: var(--card-bg); border-color: var(--border-color);">
+              <p class="font-semibold mb-2" style="color: var(--text-primary);">
+                <span aria-hidden="true" class="mr-2">{s.icon}</span>{s.title}
+              </p>
+              <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{s.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <h2 class="font-display text-2xl font-semibold mb-5" style="color: var(--text-primary);">Qué llevar</h2>
+        <ul class="grid sm:grid-cols-2 gap-3">
+          {mejorEpoca.pack.map((item) => (
+            <li class="flex gap-2 text-sm leading-relaxed rounded-xl p-4 border" style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-secondary);">
+              <span aria-hidden="true" class="shrink-0" style="color: var(--accent);">&#9656;</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="mt-14">
+        <h2 class="font-display text-2xl font-semibold mb-5" style="color: var(--text-primary);">Preguntas frecuentes</h2>
+        <div class="space-y-3">
+          {mejorEpoca.faq.map((item) => (
+            <details class="group bg-white/5 rounded-xl border border-white/10 overflow-hidden">
+              <summary class="flex items-start justify-between gap-4 cursor-pointer list-none p-4 font-medium" style="color: var(--text-primary);">
+                <span>{item.q}</span>
+                <span class="shrink-0 text-xl transition-transform group-open:rotate-45" style="color: var(--accent);" aria-hidden="true">+</span>
+              </summary>
+              <p class="px-4 pb-4 text-base leading-relaxed" style="color: var(--text-secondary);">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <nav aria-label="Otras guías" class="mt-14 border-t pt-8" style="border-color: var(--border-color);">
+        <p class="text-xs uppercase tracking-[0.18em] mb-4" style="color: var(--text-muted);">Explora otras guías</p>
+        <ul class="grid sm:grid-cols-3 gap-4">
+          {sisters.map((s) => (
+            <li>
+              <a href={`${SITE_URL}/es/${s.slug}/`} class="block rounded-2xl p-5 border hover:opacity-80" style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-primary);">
+                <span class="text-2xl mr-2" aria-hidden="true">{subpageCards.find((c) => c.slug === s.slug)?.icon}</span>
+                <span class="font-semibold">{s.h1}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </div>
+  </article>
+</BaseLayout>

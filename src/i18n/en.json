@@ -27,11 +27,11 @@
   },
   "hero": {
     "eyebrow": "Chiloe Temperate Rainforest Reserve",
-    "title": "Cascadas de Tocoihue: Into Chiloe's Native Rainforest and Huilliche Legendscape",
-    "h1Name": "Cascadas de Tocoihue (Dalcahue)",
+    "title": "Visit guide for the waterfall in Chiloé",
+    "h1Name": "Cascadas de Tocoihue",
     "subtitle": "Set on ancestral Huilliche territory a short drive from Dalcahue, this waterfall combines an easy forest walk, basalt geology and cultural interpretation in one of Chiloe's most rewarding nature visits.",
-    "rating": "4.7(6,081)",
-    "reviewCount": "6,081 reviews",
+    "rating": "4.7(6,085)",
+    "reviewCount": "6,085 reviews",
     "hours": "Typically open by day, ~10:00–20:00 (summer)",
     "locationNote": "About 20 km east of Dalcahue via the U-48 gravel road",
     "primaryCta": {
@@ -185,7 +185,7 @@
         "description": "The nearest island airport is Mocopulli (MHC), near Castro. From the mainland, El Tepual Airport (PMC) in Puerto Montt is the main option.",
         "details": [
           "From Mocopulli it is about 45–60 min by car to Dalcahue via Route 5.",
-          "If you land in Puerto Montt, first cross the Chacao Channel, then continue by road into Chiloé.",
+          "If you land in Puerto Montt, cross the Chacao Channel by ferry, then continue by road into Chiloé.",
           "The plane drops you on the island; from there you still need a car, bus or transfer to reach Tocoihue."
         ]
       },
@@ -201,8 +201,8 @@
       },
       {
         "label": "Option 03",
-        "title": "Chacao Bridge / Ferry",
-        "description": "To enter Chiloé from the mainland you cross the Chacao Channel. Today the crossing is made by the Chacao Bridge, linking Pargua with the island.",
+        "title": "Chacao Ferry",
+        "description": "To reach Chiloé from the mainland you cross the Chacao Channel by ferry (transbordador) from Pargua to Chacao. The Chacao Bridge is still under construction and is not yet open to traffic.",
         "details": [
           "If you come by car or bus from Puerto Montt, you cross the channel and follow Route 5 south.",
           "The crossing is the mandatory gateway to the island before heading to Dalcahue.",
@@ -222,7 +222,7 @@
       {
         "label": "Option 05",
         "title": "Self-Drive",
-        "description": "Driving gives you freedom to explore Chiloé. From Puerto Montt take Route 5 to Pargua, cross the Chacao Channel and continue to Dalcahue, then take Route U-48 towards Tocoihue.",
+        "description": "Driving gives you freedom to explore Chiloé. From Puerto Montt take Route 5 to Pargua, cross the Chacao Channel by ferry and continue to Dalcahue, then take Route U-48 towards Tocoihue.",
         "details": [
           "From Dalcahue, Route U-48 heads into the rural sector of Tocoihue on a gravel road.",
           "Carry fuel: stations are in Dalcahue and Castro, not on the rural route.",

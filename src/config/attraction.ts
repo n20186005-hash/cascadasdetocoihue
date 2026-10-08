@@ -63,7 +63,7 @@ export const attraction = {
   isAccessibleForFree: false,
   /** Rating snapshot shown on the page (kept in sync manually). */
   rating: 4.7,
-  reviewCount: 6081,
+  reviewCount: 6085,
 } as const;
 
 /** Canonical anchor id of the entity inside the Knowledge Graph. */

@@ -27,11 +27,11 @@
   },
   "hero": {
     "eyebrow": "奇洛埃温带雨林保护地",
-    "title": "Tocoihue 瀑布：深入奇洛埃原生雨林与惠利切传说的秘境",
-    "h1Name": "Cascadas de Tocoihue（达尔卡韦）",
+    "title": "奇洛埃达尔卡韦瀑布游览指南",
+    "h1Name": "Cascadas de Tocoihue",
     "subtitle": "从达尔卡韦出发，沿短途步道穿过惠利切（Huilliche） ancestral territory 上的原生森林，抵达玄武岩壁间倾泻而下的主瀑布。这里兼具轻徒步、地质观察与文化叙事，是奇洛埃最值得专程造访的自然落点之一。",
-    "rating": "4.7(6,081)",
-    "reviewCount": "6,081 条评价",
+    "rating": "4.7(6,085)",
+    "reviewCount": "6,085 条评价",
     "hours": "通常白天开放，约 10:00–20:00（夏季）",
     "locationNote": "达尔卡韦以东约 20 公里，U-48 碎石路可达",
     "primaryCta": {
@@ -201,8 +201,8 @@
       },
       {
         "label": "方式 03",
-        "title": "查卡奥大桥 / 渡轮",
-        "description": "从大陆进入奇洛埃需跨越查卡奥海峡。如今通过连接帕尔瓜（Pargua）与岛屿的查卡奥大桥通行。",
+        "title": "查卡奥轮渡",
+        "description": "从大陆进入奇洛埃需跨越查卡奥海峡，目前由帕尔瓜（Pargua）至查卡奥（Chacao）的轮渡（transbordador）摆渡。查卡奥大桥仍在建设中，尚未通车。",
         "details": [
           "若自驾或乘大巴从蒙特港出发，过海峡后沿 5 号公路向南。",
           "过海峡是进岛前往达尔卡韦前的必经关口。",
@@ -222,7 +222,7 @@
       {
         "label": "方式 05",
         "title": "自驾",
-        "description": "自驾可自由探索奇洛埃。从蒙特港走 5 号公路到帕尔瓜，过查卡奥海峡后继续前往达尔卡韦，再经 U-48 公路驶向 Tocoihue。",
+        "description": "自驾可自由探索奇洛埃。从蒙特港走 5 号公路到帕尔瓜，乘轮渡（transbordador）过查卡奥海峡后继续前往达尔卡韦，再经 U-48 公路驶向 Tocoihue。",
         "details": [
           "从达尔卡韦出发，U-48 公路以碎石路进入 Tocoihue 乡村地带。",
           "请备好燃油：加油站位于达尔卡韦和卡斯特罗，乡村公路上没有。",
